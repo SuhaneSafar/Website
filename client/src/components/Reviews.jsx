@@ -59,16 +59,7 @@ const Reviews = () => {
               </div>
 
               {/* Spacer pushes button to bottom */}
-              <div className="mt-auto">
-                <a
-                  href={review.link}
-                  className="bg-blue-500 hover:bg-blue-600 text-white text-md font-medium px-3 py-1 rounded-xl shadow inline-block text-left"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Try Yourself
-                </a>
-              </div>
+              
             </div>
           ))}
         </div>
