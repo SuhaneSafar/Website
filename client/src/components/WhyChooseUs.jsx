@@ -28,7 +28,7 @@ const WhyChooseUs = () => (
           <li>Strong focus on female safety with verified stays and women-led coordination</li>
           <li>Trusted local partners ensure authentic, comfortable, and safe experiences</li>
           <li>100% customized trips based on your group, budget, and interests</li>
-          <li>One of India’s fastest-growing youth travel communities</li>
+          <li>One of India's fastest-growing youth travel communities</li>
           <li>Not just trips — we create unforgettable stories and lifelong friendships</li>
         </ul>
       </div>
@@ -49,6 +49,8 @@ const WhyChooseUs = () => (
                 src={img.src}
                 alt={img.label || `gallery-${idx}`}
                 className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
               {img.label && (
                 <span
