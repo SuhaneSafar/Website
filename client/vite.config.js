@@ -18,9 +18,16 @@ export default defineConfig({
     chunkSizeWarningLimit: 1000,
   },
   server: {
+    host: 'localhost',
+    port: 5173,
+    strictPort: true,
     headers: {
       'Cache-Control': 'public, max-age=31536000',
     },
+    hmr: {
+      port: 5173,
+      host: 'localhost'
+    }
   },
   optimizeDeps: {
     include: ['react', 'react-dom', 'react-router-dom'],

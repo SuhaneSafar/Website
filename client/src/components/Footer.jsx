@@ -6,6 +6,7 @@ import {
   FaXTwitter,
   FaFacebookF,
   FaWhatsapp,
+  FaTelegram,
 } from "react-icons/fa6";
 
 const Footer = () => {
@@ -18,21 +19,65 @@ const Footer = () => {
 
           {/* Social Icons */}
           <div className="flex items-center gap-5 text-3xl mb-6">
-            <FaInstagram className="hover:text-pink-500 cursor-pointer" />
-            <FaYoutube className="hover:text-red-600 cursor-pointer" />
-            <FaLinkedinIn className="hover:text-blue-500 cursor-pointer" />
-            <FaXTwitter className="hover:text-gray-300 cursor-pointer" />
-            <FaFacebookF className="hover:text-blue-600 cursor-pointer" />
-            <FaWhatsapp className="hover:text-green-500 cursor-pointer" />
+            <a
+              href="https://www.instagram.com/suhane__safar/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="hover:text-pink-500 cursor-pointer" />
+            </a>
+            
+            <a
+              href="https://t.me/+jF54AchTRxg4OGNl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTelegram className="hover:text-blue-400 cursor-pointer" />
+            </a>
+            
+            <a
+              href="https://www.facebook.com/share/1ERppvXKma/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookF className="hover:text-blue-600 cursor-pointer" />
+            </a>
+            <a
+              href="https://wa.me/917747906173"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaWhatsapp className="hover:text-green-500 cursor-pointer" />
+            </a>
           </div>
 
           {/* Links */}
           <ul className="space-y-2 text-sm text-gray-200">
-            <li><a href="#" className="hover:text-white">Community Trips</a></li>
-            <li><a href="#" className="hover:text-white">Community Treks</a></li>
-            <li><a href="#" className="hover:text-white">Amenities</a></li>
-            <li><a href="#" className="hover:text-white">Why Choose Us</a></li>
-            <li><a href="#" className="hover:text-white">Reviews</a></li>
+            <li>
+              <a href="#" className="hover:text-white">
+                Community Trips
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-white">
+                Community Treks
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-white">
+                Amenities
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-white">
+                Why Choose Us
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-white">
+                Reviews
+              </a>
+            </li>
           </ul>
         </div>
 

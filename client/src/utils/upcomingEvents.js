@@ -19,35 +19,35 @@ const upcomingEvents = [
     pickupDrop: "Bangalore - Wayanad - Bangalore",
     duration: "3 Days / 2 Nights",
     inclusions: [
-      "Accommodation 2 night stay in resort in Wyanad",
-      "5 Meals ( 3 Breakfadt + 2 Dinner )",
-      "Transportation Banglore to Banglore by traveller/cab",
+      "Accommodation 2 night stay in resort in Wayanad",
+      "5 Meals ( 3 Breakfast + 2 Dinner )",
+      "Transportation Bangalore to Bangalore by traveller/cab",
       "Surprise games and gifts",
       "Swimming pool",
-      "All kninds of permits",
+      "All kinds of permits",
       "First aid kits",
       "Driver allowance, toll tax and parking",
     ],
     exclusions: [
-      "Any personal expenses (laundary, shopping, tips, etc.)",
-      "Any adveture activities not mentioned",
+      "Any personal expenses (laundry, shopping, tips, etc.)",
+      "Any adventure activities not mentioned",
       "Entrance fees of any monuments",
       "Travel insurance",
     ],
     overview:
-      "Experience the thrill of Manali with our community trips. Enjoy scenic views, group activities, and exclusive discounts. Perfect for adventure seekers and nature lovers!",
+      "Experience the thrill of Kerala/Wayanad with our community trips. Enjoy scenic views, group activities, and exclusive discounts. Perfect for adventure seekers and nature lovers!",
     itinerary: [
       {
         day: 0,
-        title: "14th August(Nigh Departure)",
+        title: "14th August(Night Departure)",
         description:
-          "Departure from Banglore at 10:00 PM. Overnight journey to Wayanad.",
+          "Departure from Bangalore at 10:00 PM. Overnight journey to Wayanad.",
       },
       {
         day: 1,
         title: "15th August(Nature and Heritage)",
         description:
-          "Arrival and freshen up at resort, breakfast. Visit Eddakal Lake(boating and forest walk). Quick stop at Lakkidi Viewpoint. Bonfire, group dinner and interaction. Overnight stay at resort.",
+          "Arrival and freshen up at resort, breakfast. Visit Edakkal Lake(boating and forest walk). Quick stop at Lakkidi Viewpoint. Bonfire, group dinner and interaction. Overnight stay at resort.",
       },
       {
         day: 2,
@@ -59,7 +59,7 @@ const upcomingEvents = [
         day: 7,
         title: "17th August(Leisure and Return)",
         description:
-          "Breakfast and checkout. Visit Karlad Lake(optional kayaking). Local shopoing(tea, spices, souvenirs). Lunch on own. Departure for Banglore at 1:30 PM. Arrival in Banglore by 9:00-10:00 PM",
+          "Breakfast and checkout. Visit Karlad Lake(optional kayaking). Local shopping(tea, spices, souvenirs). Lunch on own. Departure for Bangalore at 1:30 PM. Arrival in Bangalore by 9:00-10:00 PM",
       },
     ],
     //buttonLabel: "Know more",
@@ -87,13 +87,13 @@ const upcomingEvents = [
         text: "The local guide was very knowledgeable and friendly.",
       },
     ],
-    pickupDrop: "IIT Delhi | IIT Roorkee | Deheradun | Chandigarh | Chopta",
+    pickupDrop: "IIT Delhi | IIT Roorkee | Dehradun | Chandigarh ",
     duration: "3 Days / 2 Nights",
     inclusions: [
-      "Round trip transportation from Delhi/Roorkee/Chandigarh/Deheradun to Chopta",
-      "2 Nights homestay/camp stay at Chopta or Makkumath(shared rooms)",
-      "5 Meals:2 breakfast, 2 dinners, 1 luncg/snacks",
-      "Local exploration: Omakreshwar Temple, Chopta meadows, Ukhimath",
+      "Round trip transportation from Delhi/Roorkee/Chandigarh/Dehradun to Chandrashila",
+      "2 Nights homestay/camp stay at Makkumath(shared rooms)",
+      "5 Meals:2 breakfast, 2 dinners, 1 lunch/snacks",
+      "Local exploration: Omkareshwar Temple, Chopta meadows, Ukhimath",
       "Guided trek to Tungnath and Chandrashila",
       "All required permits",
       "Surprise group games and gifts",
@@ -113,15 +113,15 @@ const upcomingEvents = [
       {
         day: 1,
         title:
-          "Departure from  IIT Delhi(1:00 AM), Roorkee(4:00 AM), Deheradun (5:00 AM) or Chandigarh (1:00 AM)",
+          "Departure from  IIT Delhi(1:00 AM), Roorkee(4:00 AM), Dehradun (5:00 AM) or Chandigarh (1:00 AM)",
         description:
-          "Scenic drive through GArwal hills. Visit Omkareshwar Temple Temple at Ukhimath. Transfer to Chopta/Makkumath. Dinner and interactive fun night.",
+          "Scenic drive through Garhwal hills. Visit Omkareshwar Temple at Ukhimath. Transfer to Makkumath. Dinner and interactive fun night.",
       },
       {
         day: 2,
         title: "Early morning drive to Chopta.",
         description:
-          "Trek to Tungnath Temple(6 km) and Chandrashila Peak(2km). Return to Chopta by evening Dinner and star - gazing night stay.",
+          "Trek to Tungnath Temple(6 km) and Chandrashila Peak(2km). Return to Chopta by evening. Dinner and star-gazing night stay.",
       },
       {
         day: 3,
@@ -133,7 +133,7 @@ const upcomingEvents = [
     // buttonLabel: "Know more",
   },
   {
-    id: 2,
+    id: 2, // reverted back from 3 to 2
     title: "UDAIPUR",
     gform:"https://docs.google.com/forms/d/e/1FAIpQLScHkkodEChNmwx5dN3TdBt386XQzDTPjKvzfvEsqrSvIM54GA/viewform",
     subtitle: "Join the exciting community trips with amazing discounts",
@@ -170,13 +170,13 @@ const upcomingEvents = [
     ],
     exclusions: [
       "Personal expenses(shopping, laundry, tips, etc.)",
-      "Entry fees for monuments, boat rides or folks shows",
+      "Entry fees for monuments, boat rides or folk shows",
       "Travel insurance",
       "Early check-in stay(subject to availability)",
       "Anything not mentioned under inclusions",
     ],
     overview:
-      "Discover the untouched beauty of Harshil Valley. Our trips offer a blend of adventure, relaxation, and cultural experiences. Book now for special offers!",
+      "Discover the untouched beauty of Udaipur. Our trips offer a blend of adventure, relaxation, and cultural experiences. Book now for special offers!",
     itinerary: [
       {
         day: 0,
@@ -198,7 +198,7 @@ const upcomingEvents = [
       },
       {
         day: 3,
-        title: "Checkout and travel to kumbhalgarh Fort",
+        title: "Checkout and travel to Kumbhalgarh Fort",
         description:
           "Explore the UNESCO World Heritage Site. Evening departure to Delhi NCR. Overnight journey.",
       },
