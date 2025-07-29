@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   FaInstagram,
   FaYoutube,
@@ -10,6 +10,72 @@ import {
 } from "react-icons/fa6";
 
 const Footer = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    contact: "",
+    email: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      // Create a hidden form and submit it
+      const form = document.createElement('form');
+      form.method = 'POST';
+      form.action = 'https://script.google.com/macros/s/AKfycby1CrAyM572dy3ffzs8xsT7iQ7YInvBadDrs4XdSFu_H7FRO8s-X4elWwi01vfB2r-m/exec';
+      form.target = 'hidden-iframe';
+
+      // Add form fields
+      const fields = ['name', 'contact', 'email'];
+      fields.forEach(field => {
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = field;
+        input.value = formData[field];
+        form.appendChild(input);
+      });
+
+      // Create hidden iframe
+      let iframe = document.getElementById('hidden-iframe');
+      if (!iframe) {
+        iframe = document.createElement('iframe');
+        iframe.id = 'hidden-iframe';
+        iframe.style.display = 'none';
+        document.body.appendChild(iframe);
+      }
+
+      // Submit form
+      document.body.appendChild(form);
+      form.submit();
+      document.body.removeChild(form);
+
+      // Simulate success (since we can't easily get response from iframe)
+      setTimeout(() => {
+        setSubmitStatus('success');
+        setFormData({ name: "", contact: "", email: "" });
+        setIsSubmitting(false);
+      }, 1000);
+
+    } catch (error) {
+      console.error('Form submission error:', error);
+      setSubmitStatus('error');
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <footer className="bg-[#001d3d] text-white px-4 py-12 sm:px-8 md:px-28">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -84,28 +150,49 @@ const Footer = () => {
         {/* Right Side - Join Community */}
         <div>
           <h2 className="text-4xl font-bold mb-4">Join Community</h2>
-          <form className="flex flex-col gap-4 w-full max-w-md">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full max-w-md">
             <input
               type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleInputChange}
               placeholder="Name"
               className="bg-white text-black px-4 py-2 rounded-md outline-none w-full"
+              required
             />
             <input
               type="tel"
+              name="contact"
+              value={formData.contact}
+              onChange={handleInputChange}
               placeholder="Contact Number"
               className="bg-white text-black px-4 py-2 rounded-md outline-none w-full"
+              required
             />
             <input
               type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleInputChange}
               placeholder="Email Id"
               className="bg-white text-black px-4 py-2 rounded-md outline-none w-full"
+              required
             />
             <button
               type="submit"
-              className="bg-[#1f61ff] hover:bg-blue-700 text-white font-semibold py-2 rounded-md"
+              disabled={isSubmitting}
+              className="bg-[#1f61ff] hover:bg-blue-700 disabled:bg-gray-500 text-white font-semibold py-2 rounded-md"
             >
-              Connect With Us
+              {isSubmitting ? "Connecting..." : "Connect With Us"}
             </button>
+            
+            {/* Status Messages */}
+            {submitStatus === 'success' && (
+              <p className="text-green-400 text-sm">Thank you! We'll connect with you soon.</p>
+            )}
+            {submitStatus === 'error' && (
+              <p className="text-red-400 text-sm">Something went wrong. Please try again.</p>
+            )}
           </form>
         </div>
       </div>
