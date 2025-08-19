@@ -1,5 +1,5 @@
 const upcomingEvents = [
-  {
+  /*{
     id: 1,
     title: "WAYANAD",
     gform:
@@ -63,13 +63,16 @@ const upcomingEvents = [
       },
     ],
     //buttonLabel: "Know more",
-  },
+  },*/
+
+
+
   {
     id: 2,
-    title: "CHANDRSHILLA",
-    gform:"https://docs.google.com/forms/d/e/1FAIpQLSdwx69Ua_yxRlpqG02Vbr96q8PiskudibXPiHlpFKIzuNGYdw/viewform",
+    title: "TUNGNATH-CHANDRASHILA-DEORIA TAAL(19-21 September)",
+    gform:"https://forms.gle/zLkdiZVojqsFUXfq5",
     subtitle: "Join the exciting community trips with amazing discounts",
-    mainImage: "/Images/chandrshilla.jpg",
+    mainImage: "/Images/tungnath.jpg",
     gallery: [
       "/Images/chandrashila1.jpg",
       "/Images/chandrashila2.png",
@@ -90,44 +93,48 @@ const upcomingEvents = [
     pickupDrop: "IIT Delhi | IIT Roorkee | Dehradun | Chandigarh ",
     duration: "3 Days / 2 Nights",
     inclusions: [
-      "Round trip transportation from Delhi/Roorkee/Chandigarh/Dehradun to Chandrashila",
-      "2 Nights homestay/camp stay at Makkumath(shared rooms)",
-      "5 Meals:2 breakfast, 2 dinners, 1 lunch/snacks",
-      "Local exploration: Omkareshwar Temple, Chopta meadows, Ukhimath",
-      "Guided trek to Tungnath and Chandrashila",
-      "All required permits",
-      "Surprise group games and gifts",
-      "Basic first aid kit",
-      "Toll tax, parking, driver allowance included",
+      "2 Nights stay (Chopta/Makkumath)",
+      "5 Meals (2B + 2D + 1 Lunch)",
+      "Transport (Delhi/Roorkee ↔ Chopta)",
+      "Guided treks & sightseeing as per itinerary",
+      "Permits, tolls, parking, driver allowance",
+      "Group games & gifts",
+      "Basic first aid",
     ],
     exclusions: [
-      "Personal expenses(shopping, snacks, laundry, tips)",
-      "Entry fees to temples or parks(if applicable)",
+      "Personal expenses, shopping, snacks",
       "Adventure activities not mentioned",
+      "Entrance fees to temples/parks (if any)",
       "Travel insurance",
       "Anything not specifically listed in the inclusions",
     ],
     overview:
-      "Discover the untouched beauty of Chandrashila. Our trips offer a blend of adventure, relaxation, and cultural experiences. Book now for special offers!",
+      "Discover the untouched beauty of Tungnath, Chandrashila and Deora Taal. Our trips offer a blend of adventure, relaxation, and cultural experiences. Book now for special offers!",
     itinerary: [
       {
-        day: 1,
+        day: 0,
         title:
-          "Departure from  IIT Delhi(1:00 AM), Roorkee(4:00 AM), Dehradun (5:00 AM) or Chandigarh (1:00 AM)",
+          "Departure",
         description:
-          "Scenic drive through Garhwal hills. Visit Omkareshwar Temple at Ukhimath. Transfer to Makkumath. Dinner and interactive fun night.",
+          " Night departure from IIT Delhi (1:00 AM) & IIT Roorkee (4:00 AM)",
+      },
+      {
+        day: 1,
+        title: "Stay and Visit",
+        description:
+          "Devprayag Sangam • Omkareshwar Temple • Chopta Exploration • Overnight stay",
       },
       {
         day: 2,
-        title: "Early morning drive to Chopta.",
+        title: "Trek",
         description:
-          "Trek to Tungnath Temple(6 km) and Chandrashila Peak(2km). Return to Chopta by evening. Dinner and star-gazing night stay.",
+          "Tungnath Temple Trek (6 km) • Chandrashila Peak Trek (2 km) • Overnight journey",
       },
       {
         day: 3,
-        title: "Breakfast and group photo.",
+        title: "Trek",
         description:
-          "Departure for respective cities. Reach back by evening with unforgettable memories and friends.",
+          "Deoria Taal Trek (3 km) • Afternoon departure • Night arrival",
       },
     ],
     // buttonLabel: "Know more",
