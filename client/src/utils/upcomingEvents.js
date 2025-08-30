@@ -141,14 +141,14 @@ const upcomingEvents = [
   },
   {
     id: 2, // reverted back from 3 to 2
-    title: "UDAIPUR",
-    gform:"https://docs.google.com/forms/d/e/1FAIpQLScHkkodEChNmwx5dN3TdBt386XQzDTPjKvzfvEsqrSvIM54GA/viewform",
+    title: "Gokarna – Murudeshwar Trip (2nd – 5th October)",
+    gform:"https://docs.google.com/forms/d/e/1FAIpQLSeZC8w7YzK8umg6utG5sieolPZtwrxZvqAPgsvLnMZmpz8nmw/viewform?usp=header",
     subtitle: "Join the exciting community trips with amazing discounts",
-    mainImage: "/Images/Udaipur-main.png",
+    mainImage: "/Images/gokarna1.jpg",
     gallery: [
-      "/Images/udaipur1.jpg",
-      "/Images/udaipur2.jpg",
-      "/Images/udaipur3.jpg",
+      "/Images/gokarna2.jpg",
+      "/Images/gokarna3.jpg",
+      "/Images/gokarna4.jpg",
     ],
     reviews: [
       {
@@ -162,57 +162,125 @@ const upcomingEvents = [
         text: "The local guide was very knowledgeable and friendly.",
       },
     ],
-    pickupDrop: "Delhi NCR",
-    duration: "3 Days / 2 Nights",
+    pickupDrop: "Pickup Drop Point - Bangalore",
+    duration: "Duration - 4Days",
     inclusions: [
-      "All travel by cab/traveller (Delhi NCR - Udaipur - Kumbhalgarh - return",
-      "2 Night hotel Stay in Udaipur",
-      "2 Breakfasts and 2 Dinners",
-      "Sightseeing and entry coordination as per itinerary",
-      "Suhane Safar trip leader and local guide",
-      "Surprise games and bonding activities",
-      "Swimming pool access at stay",
-      "Permits, tolls, parking and driver allowance",
-      " First aid support",
+      "5 Meals (2 Dinner + 3 Breakfast)",
+      "AC Transport (Bangalore to Bangalore)",
+      "Driver allowance, toll tax and parking",
+      "Hotel stay on sharing basis",
+      "Group games and fun activities",
     ],
     exclusions: [
-      "Personal expenses(shopping, laundry, tips, etc.)",
-      "Entry fees for monuments, boat rides or folk shows",
+      "Any monument entrance fees",
+      "Lunch (self arrangement)",
       "Travel insurance",
-      "Early check-in stay(subject to availability)",
-      "Anything not mentioned under inclusions",
+      "Shopping, tips, laundry",
     ],
     overview:
-      "Discover the untouched beauty of Udaipur. Our trips offer a blend of adventure, relaxation, and cultural experiences. Book now for special offers!",
+      "Our trips offer a blend of adventure, relaxation, and cultural experiences. Book now for special offers!",
     itinerary: [
       {
         day: 0,
-        title: "Departure from Delhi NCR at 8 PM",
-        description: "Overnight journey to Udaipur.",
+        title: "(1st Oct – Tuesday Night) Departure from Bangalore at 10:00 PM",
+        description: "Overnight journey with fun, games and interaction",
       },
       {
         day: 1,
         title:
-          "Sightseeing:City Palace,Lake Pichola, Jagdish Temple, Ghangaur Ghat",
+          " ( 2nd Oct – Wednesday) – Gokarna Beaches",
         description:
-          "Evening: Optional folk performance at Bagore Ki Haveli or local flea market visit. Dinner and overnight stay at hotel with fun activities.",
+          "Reach Gokarna early morning, hotel check-in and freshen up Kudle Beach – relax, swimming, volleyball Om Beach – kayaking, watersports, sunset views Dinner, group interaction and rest",
       },
       {
         day: 2,
-        title: "Visit Saheliyon ki Bari and Fateh Sagar Lake",
+        title: " (3rd Oct – Thursday) – Beach Trek & Adventure",
         description:
-          "Optional boat ride available (personal cost). Dinner, games and overnight hotel stay.",
+          "Breakfast at hotel Beach Trek (Om Beach – Half Moon Beach – Paradise Beach), approx. 4 km, 3–4 hrs Explore nearby waterfalls Stop at Mirjan Fort for sunset Dinner, fun activities and rest.",
       },
       {
         day: 3,
-        title: "Checkout and travel to Kumbhalgarh Fort",
+        title: "(4th Oct – Friday) – Murudeshwar Exploration",
         description:
-          "Explore the UNESCO World Heritage Site. Evening departure to Delhi NCR. Overnight journey.",
+          "Breakfast and hotel check-out Visit Murudeshwar Temple and explore the area Lunch self arrangement Departure for Bangalore (overnight journey)",
       },
       {
         day: 4,
-        title: "Early morning arrival",
-        description: " Delhi/Gurugram",
+        title: "(5th Oct – Saturday Morning)",
+        description: "Reach Bangalore between 8:00 – 10:00 AMEnd of trip with refreshed minds and great memories",
+      },
+    ],
+    // buttonLabel: "Know more",
+  },
+  {
+    id: 3, // reverted back from 3 to 2
+    title: "Valley of Flowers & Hemkund Sahib Trek",
+    gform:"https://docs.google.com/forms/d/e/1FAIpQLSdzCbHaBFYJAdh96ue45Uhh_ievXrNgpZQzvM3weB9H9Os82Q/viewform?usp=header",
+    subtitle: "Join the exciting community trips with amazing discounts",
+    mainImage: "/Images/vf1.jpg",
+    gallery: [
+      "/Images/vf2.jpg",
+      "/Images/vf3.jpg",
+      "/Images/vf4.jpg",
+    ],
+    reviews: [
+      {
+        name: "Vijay",
+        rating: 5,
+        text: "Absolutely fantastic! The views were breathtaking.",
+      },
+      {
+        name: "Sonam",
+        rating: 4,
+        text: "The local guide was very knowledgeable and friendly.",
+      },
+    ],
+    pickupDrop: "Roorkee (Roorkee Bus Stop (4 AM)) to Roorkee",
+    duration: "5 Days / 4 Nights",
+    inclusions: [
+      "4 Nights Stay (Govindghat & Ghangaria)",
+      "7 Meals (4 Dinners + 3 Breakfasts)",
+      "Transportation: Roorkee ⇄ Govindghat",
+      "Toll, Parking Charges (No Hidden Costs)",
+      "First Aid Kit",
+    ],
+    exclusions: [
+      "Lunches",
+      "Entry/Permit Fees",
+      "Travel Insurance",
+      "Anything not mentioned in itinerary",
+    ],
+    overview:
+      " Govindghat, Ghangaria, Hemkund Sahib, Valley of Flowers. Moderate Himalayan Trek. Our trips offer a blend of adventure, relaxation, and cultural experiences. Book now for special offers!",
+    itinerary: [
+      {
+        day: 0,
+        title: "4:00 AM: Depart from Roorkee Bus Stop",
+        description: "Reach base camp (Govindghat) by evening. Dinner & Overnight Stay",
+      },
+      {
+        day: 1,
+        title:
+          "Breakfast and Start trek to Ghangaria",
+        description:
+          "Reach Ghangaria, Dinner & Overnight Stay",
+      },
+      {
+        day: 2,
+        title: "Breakfast and Trek to Hemkund Sahib",
+        description:
+          "Return to Ghangaria, Dinner & Rest",
+      },
+      {
+        day: 3,
+        title: "Breakfast and Trek to Valley of Flowers, explore",
+        description:
+          "Return to Ghangaria, Dinner & Rest",
+      },
+      {
+        day: 4,
+        title: "Breakfast and Trek back to Govindghat, drive to Roorkee",
+        description: "Reach Roorkee by 10–12 PM",
       },
     ],
     // buttonLabel: "Know more",
