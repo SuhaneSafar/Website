@@ -9,6 +9,7 @@ import Reviews from "../components/Reviews";
 import Footer from "../components/Footer";
 import TeamMembers from "../components/TeamMmebers";
 import MetaData from "../container/MetaData";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Home = () => (
   <div className="cursor-default">
@@ -29,6 +30,33 @@ const Home = () => (
     <Reviews />
     <TeamMembers />
     <Footer />
+    <a
+      href="https://wa.me/917747906173"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat on WhatsApp"
+      style={{
+        position: 'fixed',
+        right: '50px',
+        bottom: '50px',
+        zIndex: 1000,
+        width: '60px',
+        height: '60px',
+        backgroundColor: '#25D366',
+        color: '#fff',
+        borderRadius: '9999px',
+      
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        boxShadow: '0 4px 12px rgba(0,0,0,0.2)',
+        textDecoration: 'none',
+        fontWeight: 700,
+        fontFamily: 'inherit'
+      }}
+    >
+        <FaWhatsapp  color="white" size={40} />
+    </a>
   </div>
 );
 
