@@ -364,7 +364,7 @@ const upcomingEvents = [
     eligibility: "Only current IIT students (UG, PG, PhD)",
     teamSize: "Maximum 15 students per campus",
     alumniRole: "Chief Guests, Jury & Prize Distribution",
-    price: "₹8,000 per student",
+    // price: "TBA",
     registrationDates: {
       open: "1st December 2025",
       close: "1st January 2026",
