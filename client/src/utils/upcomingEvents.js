@@ -285,6 +285,94 @@ const upcomingEvents = [
     ],
     // buttonLabel: "Know more",
   },
+  {
+    id: 4,
+    title: "Inter IIT Adventure Carnival 2026",
+    gform: "https://forms.gle/InterIITCarnival2026", // Replace with actual form link
+    subtitle: "A Students' Initiative, Hosted by Suhane Safar - Uniting explorers from all IITs for an epic journey",
+    mainImage: "/Images/manali-main.png", // Using Manali image as it's closest to the location
+    gallery: [
+      "/Images/manali.png",
+      "/Images/manali1.png",
+      "/Images/mountain.png",
+    ],
+    reviews: [
+      {
+        name: "Arjun (IIT Delhi)",
+        rating: 5,
+        text: "Amazing initiative bringing all IITs together for adventure!",
+      },
+      {
+        name: "Priya (IIT Bombay)",
+        rating: 5,
+        text: "Perfect blend of adventure, culture, and networking opportunities.",
+      },
+    ],
+    pickupDrop: "IIT Delhi, IIT Roorkee, Chandigarh - Manali - Return",
+    duration: "4 Days / 3 Nights",
+    inclusions: [
+      "3 Nights Stay in Manali",
+      "Dinner, Breakfast & Snacks",
+      "Local Sightseeing (Hadimba Temple, Jogini Waterfall, Solang Valley, Atal Tunnel, Sissu Village)",
+      "Transportation from pickup points to Manali",
+      "Open Mic - Music, stand-up & free performances",
+      "Singing & Dancing Competitions",
+      "Cultural Events & Activities",
+      "Catwalk, Solo & Group Performances",
+      "Bonding Games, Badminton & Cards",
+      "Trekking & Bonfire Night Celebrations",
+      "Suhane Safar Goodies (T-shirt, Hoodie, Team Gadgets)",
+      "All kinds of permits",
+      "Driver allowance, toll tax and parking",
+      "First aid kits",
+    ],
+    exclusions: [
+      "Any personal expenses (laundry, shopping, tips, etc.)",
+      "Any adventure activities not mentioned",
+      "Travel insurance",
+      "Lunch (self arrangement)",
+      "Entrance fees not mentioned in inclusions",
+    ],
+    overview:
+      "The Inter IIT Adventure Carnival 2026 is a student-only adventure and cultural festival, uniting explorers from all IITs for an epic journey. Hosted by Suhane Safar, this 4-day carnival blends adventure, sightseeing, cultural events, and bonding activities – set against the breathtaking backdrop of Manali, Himachal Pradesh. A unique opportunity for IITians to connect, compete, and create memories!",
+    itinerary: [
+      {
+        day: 1,
+        title: "23rd January - Departure & Journey",
+        description:
+          "Departure from pickup points (IIT Delhi, IIT Roorkee, Chandigarh). Overnight journey to Manali with group interactions and ice-breaking activities.",
+      },
+      {
+        day: 2,
+        title: "24th January - Manali Exploration",
+        description:
+          "Arrival in Manali and check-in. Visit Hadimba Temple (Ancient wooden temple surrounded by deodar forests). Explore Jogini Waterfall (A scenic trek with mesmerizing views). Evening cultural events and open mic sessions. Overnight stay in Manali.",
+      },
+      {
+        day: 3,
+        title: "25th January - Adventure & Culture",
+        description:
+          "Morning visit to Solang Valley (Activities and scenic beauty). Explore Atal Tunnel (World's longest highway tunnel). Visit Sissu Village (Charming spot in Lahaul Valley with snow views). Evening competitions, performances, and bonding games. Bonfire night with trekking activities. Overnight stay in Manali.",
+      },
+      {
+        day: 4,
+        title: "26th January - Closing Ceremony & Return",
+        description:
+          "Morning leisure activities and final group interactions. Awards ceremony with cash prizes, gifts & exclusive merchandise. Departure for return journey. Arrival at pickup points by evening/night.",
+      },
+    ],
+    eligibility: "Only current IIT students (UG, PG, PhD)",
+    teamSize: "Maximum 15 students per campus",
+    alumniRole: "Chief Guests, Jury & Prize Distribution",
+    price: "₹8,000 per student",
+    registrationDates: {
+      open: "1st December 2025",
+      close: "1st January 2026",
+      carnivalDates: "23rd - 26th January 2026"
+    },
+    awards: "Cash Prizes, Gifts & Exclusive Merchandise for winners. Alumni Guests to felicitate winners during the Closing Ceremony",
+    specialNote: "This is a students' initiative powered by Suhane Safar, creating unity and adventure among IITians.",
+  },
   // {
   //   id: 3,
   //   title: "Harshil Valley",
