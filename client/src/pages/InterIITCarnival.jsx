@@ -18,7 +18,8 @@ import {
   FaChevronRight,
   FaMusic,
   FaGamepad,
-  FaCampground
+  FaCampground,
+  FaInstagram
 } from 'react-icons/fa';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
@@ -194,9 +195,18 @@ const InterIITCarnival = () => {
                 href={eventData.gform}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gradient-to-r from-sky-500 via-purple-600 to-yellow-500 hover:from-sky-600 hover:via-purple-700 hover:to-yellow-600 text-white font-bold py-4 px-10 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-xl"
+                className="bg-sky-600 hover:bg-sky-700 text-white font-bold py-4 px-10 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-xl"
               >
                 Register Now
+              </a>
+              <a 
+                href="https://www.instagram.com/interiit_adventure_carnival?igsh=MTE2NzRrajE5bDRuZA=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-purple-600 to-indigo-700 hover:from-purple-700 hover:to-indigo-800 text-white font-bold py-4 px-10 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-xl flex items-center justify-center gap-3"
+              >
+                <FaInstagram className="text-xl" />
+                Follow Us
               </a>
               <a href="#details" className="bg-white/10 backdrop-blur-xl border-2 border-sky-400/50 hover:border-yellow-400/70 text-white hover:bg-white/15 font-bold py-4 px-10 rounded-full text-lg transition-all duration-300">
                 Explore Details
@@ -642,10 +652,19 @@ const InterIITCarnival = () => {
                 href={eventData.gform}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gradient-to-r from-sky-500 via-purple-600 to-yellow-500 hover:from-sky-600 hover:via-purple-700 hover:to-yellow-600 text-white font-bold py-4 px-10 rounded-full text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center shadow-xl"
+                className="bg-sky-600 hover:bg-sky-700 text-white font-bold py-4 px-10 rounded-full text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center shadow-xl"
               >
                 <FaCalendarAlt className="mr-3 text-xl" />
                 Register Now
+              </a>
+              <a 
+                href="https://www.instagram.com/interiit_adventure_carnival?igsh=MTE2NzRrajE5bDRuZA=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-purple-600 to-indigo-700 hover:from-purple-700 hover:to-indigo-800 text-white font-bold py-4 px-10 rounded-full text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center shadow-xl"
+              >
+                <FaInstagram className="mr-3 text-xl" />
+                Follow Instagram
               </a>
               <a 
                 href="https://api.whatsapp.com/send/?phone=917747906173&text=Hi, I'm interested in Inter IIT Adventure Carnival 2026" 
