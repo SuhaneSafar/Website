@@ -39,7 +39,7 @@ const Navbar = () => {
         
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex gap-2 xl:gap-4 items-center justify-around">
-          <a href="#community-trips" className="relative group px-4 py-2 text-white/90 hover:text-white transition-all duration-300 text-sm xl:text-base font-medium">
+          {/* <a href="#community-trips" className="relative group px-4 py-2 text-white/90 hover:text-white transition-all duration-300 text-sm xl:text-base font-medium">
             <span className="relative z-10">Community Trips</span>
             <div className="absolute inset-0 bg-white/10 backdrop-blur-sm rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-sky-400 to-yellow-400 group-hover:w-full transition-all duration-300"></div>
@@ -48,27 +48,42 @@ const Navbar = () => {
             <span className="relative z-10">Community Treks</span>
             <div className="absolute inset-0 bg-white/10 backdrop-blur-sm rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-sky-400 to-yellow-400 group-hover:w-full transition-all duration-300"></div>
+          </a> */}
+            <a href="/inter-iit-carnival" className="relative group px-3 py-2 text-white/90 hover:text-white transition-all duration-300 text-sm xl:text-base font-medium bg-gradient-to-r from-purple-600/20 to-yellow-500/20 rounded-lg border border-yellow-400/30 hover:border-yellow-400/60">
+            <span className="relative z-10 font-semibold">🏆 Inter IIT Carnival</span>
+            {/* Enhanced NEW Badge with glow effect */}
+            <div className="absolute -top-2 -right-2 z-30">
+              <div className="relative">
+                <div className="absolute inset-0 bg-red-500 rounded-full blur-md opacity-60 animate-pulse"></div>
+                <div className="relative bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 text-white text-xs font-black px-2 py-1 rounded-full shadow-xl border border-white/50 animate-bounce">
+                  NEW
+                </div>
+              </div>
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-yellow-500/10 backdrop-blur-sm rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-yellow-400 group-hover:w-full transition-all duration-300"></div>
           </a>
           <a href="/work-from-hills" className="relative group px-4 py-2 text-white/90 hover:text-white transition-all duration-300 text-sm xl:text-base font-medium">
             <span className="relative z-10">Work From Hills</span>
             <div className="absolute inset-0 bg-white/10 backdrop-blur-sm rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-sky-400 to-yellow-400 group-hover:w-full transition-all duration-300"></div>
           </a>
+        
           <a href="/college-ambassador" className="relative group px-4 py-2 text-white/90 hover:text-white transition-all duration-300 text-sm xl:text-base font-medium">
             <span className="relative z-10">College Ambassador</span>
             <div className="absolute inset-0 bg-white/10 backdrop-blur-sm rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-sky-400 to-yellow-400 group-hover:w-full transition-all duration-300"></div>
           </a>
-          <a href="#amenities" className="relative group px-4 py-2 text-white/90 hover:text-white transition-all duration-300 text-sm xl:text-base font-medium">
+          {/* <a href="#amenities" className="relative group px-4 py-2 text-white/90 hover:text-white transition-all duration-300 text-sm xl:text-base font-medium">
             <span className="relative z-10">Amenities</span>
             <div className="absolute inset-0 bg-white/10 backdrop-blur-sm rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-sky-400 to-yellow-400 group-hover:w-full transition-all duration-300"></div>
-          </a>
-          <a href="#reviews" className="relative group px-4 py-2 text-white/90 hover:text-white transition-all duration-300 text-sm xl:text-base font-medium">
+          </a> */}
+          {/* <a href="#reviews" className="relative group px-4 py-2 text-white/90 hover:text-white transition-all duration-300 text-sm xl:text-base font-medium">
             <span className="relative z-10">Reviews</span>
             <div className="absolute inset-0 bg-white/10 backdrop-blur-sm rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-sky-400 to-yellow-400 group-hover:w-full transition-all duration-300"></div>
-          </a>
+          </a> */}
         </nav>
 
         {/* Enhanced Mobile Menu Button */}
@@ -118,6 +133,24 @@ const Navbar = () => {
             <span className="relative z-10">Work From Hills</span>
             <div className="absolute inset-0 bg-white/10 backdrop-blur-sm rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-yellow-400 group-hover:w-16 transition-all duration-300"></div>
+          </a>
+          <a 
+            href="/inter-iit-carnival" 
+            className="relative group w-full max-w-xs text-center py-3 px-6 text-white/90 hover:text-white transition-all duration-300 text-lg font-medium bg-gradient-to-r from-purple-600/20 to-yellow-500/20 rounded-xl border border-yellow-400/40 hover:border-yellow-400/70"
+            onClick={closeMobileMenu}
+          >
+            <span className="relative z-10 font-semibold">🏆 Inter IIT Carnival</span>
+            {/* Enhanced NEW Badge for Mobile */}
+            <div className="absolute -top-3 -right-3 z-30">
+              <div className="relative">
+                <div className="absolute inset-0 bg-red-500 rounded-full blur-lg opacity-60 animate-pulse"></div>
+                <div className="relative bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 text-white text-xs font-black px-3 py-1 rounded-full shadow-xl border border-white/50 animate-bounce">
+                  NEW
+                </div>
+              </div>
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-yellow-500/10 backdrop-blur-sm rounded-xl scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-yellow-400 group-hover:w-16 transition-all duration-300"></div>
           </a>
           <a 
             href="/college-ambassador" 
