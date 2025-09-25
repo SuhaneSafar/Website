@@ -14,6 +14,7 @@ const Footer = () => {
     name: "",
     contact: "",
     email: "",
+    message: "",  
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
@@ -35,11 +36,11 @@ const Footer = () => {
       // Create a hidden form and submit it
       const form = document.createElement('form');
       form.method = 'POST';
-      form.action = 'https://script.google.com/macros/s/AKfycby1CrAyM572dy3ffzs8xsT7iQ7YInvBadDrs4XdSFu_H7FRO8s-X4elWwi01vfB2r-m/exec';
+      form.action = 'https://script.google.com/macros/s/AKfycbw5iyJZPKAvvZdkxo0iCHw3lGu0RaZ_Fvc-VSWv9WezuXzjBCX2Fxf7pVIOCJHAOiO1/exec';
       form.target = 'hidden-iframe';
 
       // Add form fields
-      const fields = ['name', 'contact', 'email'];
+      const fields = ['name', 'contact', 'email', 'message'];
       fields.forEach(field => {
         const input = document.createElement('input');
         input.type = 'hidden';
@@ -65,7 +66,7 @@ const Footer = () => {
       // Simulate success (since we can't easily get response from iframe)
       setTimeout(() => {
         setSubmitStatus('success');
-        setFormData({ name: "", contact: "", email: "" });
+        setFormData({ name: "", contact: "", email: "", message: "" }); // ✅ clear all fields
         setIsSubmitting(false);
       }, 1000);
 
@@ -248,6 +249,15 @@ const Footer = () => {
                 className="bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder-gray-400 px-4 py-3 rounded-xl outline-none w-full focus:border-sky-400 focus:bg-white/15 transition-all duration-300"
                 required
               />
+
+             <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleInputChange}
+                placeholder="Your Message"
+                className="bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder-gray-400 px-4 py-3 rounded-xl outline-none w-full h-28 resize-none focus:border-sky-400 focus:bg-white/15 transition-all duration-300"
+              />
+
               <button
                 type="submit"
                 disabled={isSubmitting}
