@@ -69,14 +69,83 @@ const upcomingEvents = [
 
   {
     id: 2,
-    title: "TUNGNATH-CHANDRASHILA-DEORIA TAAL(19-21 September)",
-    gform:"https://forms.gle/zLkdiZVojqsFUXfq5",
+    title: "TUNGNATH-CHANDRASHILA-DEORIA TAAL(1-3 October)",
+    gform:"https://docs.google.com/forms/d/e/1FAIpQLSdn8Qn9zMc0h-Tz1vC0aYo6vW8fJMlOrjVB75BDStoYQ6iU1A/viewform?usp=header ",
     subtitle: "Join the exciting community trips with amazing discounts",
-    mainImage: "/Images/tungnath.jpg",
+    mainImage: "/Images/chandrshilla.jpeg",
     gallery: [
       "/Images/chandrashila1.jpg",
       "/Images/chandrashila2.png",
       "/Images/chandrashila3.jpg",
+    ],
+    reviews: [
+      {
+        name: "Mohit",
+        rating: 4,
+        text: "The views were breathtaking.",
+      },
+      {
+        name: "Snehal",
+        rating: 5,
+        text: "The local guide was very knowledgeable and friendly.",
+      },
+    ],
+    pickupDrop: "IIT Delhi | IIT Roorkee | Dehradun | Chandigarh ",
+    duration: "3 Days / 2 Nights",
+    inclusions: [
+      "2 Nights stay (Chopta/Makkumath)",
+      "5 Meals (2B + 2D + 1 Lunch)",
+      "Transport (Delhi/Roorkee ↔ Chopta)",
+      "Guided treks & sightseeing as per itinerary",
+      "Permits, tolls, parking, driver allowance",
+      "Group games & gifts",
+      "Basic first aid",
+    ],
+    exclusions: [
+      "Personal expenses, shopping, snacks",
+      "Adventure activities not mentioned",
+      "Entrance fees to temples/parks (if any)",
+      "Travel insurance",
+      "Anything not specifically listed in the inclusions",
+    ],
+    overview:
+      "Discover the untouched beauty of Tungnath, Chandrashila and Deora Taal. Our trips offer a blend of adventure, relaxation, and cultural experiences. Book now for special offers!",
+    itinerary: [
+      {
+        day: 0,
+        title:
+          "Departure",
+        description:
+          " Night departure from IIT Delhi (1:00 AM) & IIT Roorkee (4:00 AM)",
+      },
+      {
+        day: 1,
+        title: "Stay and Visit",
+        description:
+          "Devprayag Sangam • Omkareshwar Temple • Chopta Exploration • Overnight stay",
+      },
+      {
+        day: 2,
+        title: "Trek",
+        description:
+          "Tungnath Temple Trek (6 km) • Chandrashila Peak Trek (2 km) • Overnight journey",
+      },
+      {
+        day: 3,
+        title: "Trek",
+        description:
+          "Deoria Taal Trek (3 km) • Afternoon departure • Night arrival",
+      },
+    ],
+    // buttonLabel: "Know more",
+  },{
+    id: 4,
+    title: "Kedarnath Trek(1-4 October)",
+    gform:"https://docs.google.com/forms/d/e/1FAIpQLSeKTDyYPKufjQ1o-hZ-d8MwWp561nU7VD5dN2_8rK8ititwXw/viewform?usp=header",
+    subtitle: "Join the exciting community trips with amazing discounts",
+    mainImage: "/Images/kedarnath.jpeg",
+    gallery: [
+      "/Images/kedarnath.jpeg",
     ],
     reviews: [
       {
