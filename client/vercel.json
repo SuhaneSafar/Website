@@ -35,6 +35,7 @@
     {
       "source": "/Images/(.*)",
       "destination": "/Images/$1"
-    }
+    },
+    { "source": "/(.*)", "destination": "/" }
   ]
 } 

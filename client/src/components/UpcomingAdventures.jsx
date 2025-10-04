@@ -91,7 +91,7 @@ const UpcomingAdventures = () => {
                   hover:shadow-2xl transition-all duration-500
                   relative group border-2 border-transparent hover:border-blue-200
                   max-w-sm mx-auto backdrop-blur-sm
-                  transform hover:-translate-y-2
+                
                 "
                 onClick={() => setSelectedEvent(event)}
               >
@@ -125,7 +125,7 @@ const UpcomingAdventures = () => {
                   </div>
                   
                   {/* Explore button - appears on hover */}
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
+                  {/* <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
                     <button
                       className="bg-gradient-to-r from-sky-500 to-purple-600 hover:from-sky-600 hover:to-purple-700 text-white font-bold px-8 py-3 rounded-full text-lg shadow-xl transition-all duration-300 transform hover:scale-105"
                       onClick={(e) => {
@@ -135,21 +135,22 @@ const UpcomingAdventures = () => {
                     >
                       Explore Details
                     </button>
-                  </div>
+                  </div> */}
                 </div>
                 
                 {/* Card footer with quick info */}
                 <div className="p-4 bg-gradient-to-r from-gray-50 via-white to-gray-50">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-4">
-                      <div className="flex items-center text-gray-600 text-sm">
-                        <FaUsers className="mr-1 text-purple-500" />
-                        <span className="font-medium">Group</span>
-                      </div>
-                      <div className="flex items-center text-gray-600 text-sm">
-                        <FaStar className="mr-1 text-yellow-500" />
-                        <span className="font-medium">4.8</span>
-                      </div>
+                    
+                      {/* Show last date if available */}
+                      {event.lastDate && (
+                        <div className="flex items-center text-gray-600 text-sm">
+                          <span className="font-medium ml-2">
+                            Last Date: <span className="text-red-500">{event.lastDate}</span>
+                          </span>
+                        </div>
+                      )}
                     </div>
                     <div className="text-sky-600 font-medium text-sm hover:text-sky-800 transition-colors">
                       View Details →

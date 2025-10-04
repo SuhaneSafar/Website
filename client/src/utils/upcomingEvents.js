@@ -69,15 +69,16 @@ const upcomingEvents = [
 
   {
     id: 2,
-    title: "TUNGNATH-CHANDRASHILA-DEORIA TAAL(1-3 October)",
-    gform:"https://docs.google.com/forms/d/e/1FAIpQLSdn8Qn9zMc0h-Tz1vC0aYo6vW8fJMlOrjVB75BDStoYQ6iU1A/viewform?usp=header ",
+    title: "TUNGNATH-CHANDRASHILA-DEORIA TAAL(21-23 October)",
+    gform:"https://docs.google.com/forms/d/e/1FAIpQLSdn8Qn9zMc0h-Tz1vC0aYo6vW8fJMlOrjVB75BDStoYQ6iU1A/viewform?usp=header",
     subtitle: "Join the exciting community trips with amazing discounts",
-    mainImage: "/Images/chandrshilla.jpeg",
+    mainImage: "/Images/chandrashilla.jpeg",
     gallery: [
       "/Images/chandrashila1.jpg",
       "/Images/chandrashila2.png",
       "/Images/chandrashila3.jpg",
     ],
+    price:"3299/5299",
     reviews: [
       {
         name: "Mohit",
@@ -137,77 +138,79 @@ const upcomingEvents = [
           "Deoria Taal Trek (3 km) • Afternoon departure • Night arrival",
       },
     ],
-    // buttonLabel: "Know more",
-  },{
-    id: 4,
-    title: "Kedarnath Trek(1-4 October)",
-    gform:"https://docs.google.com/forms/d/e/1FAIpQLSeKTDyYPKufjQ1o-hZ-d8MwWp561nU7VD5dN2_8rK8ititwXw/viewform?usp=header",
-    subtitle: "Join the exciting community trips with amazing discounts",
-    mainImage: "/Images/kedarnath.jpeg",
-    gallery: [
-      "/Images/kedarnath.jpeg",
-    ],
-    reviews: [
-      {
-        name: "Mohit",
-        rating: 4,
-        text: "The views were breathtaking.",
-      },
-      {
-        name: "Snehal",
-        rating: 5,
-        text: "The local guide was very knowledgeable and friendly.",
-      },
-    ],
-    pickupDrop: "IIT Delhi | IIT Roorkee | Dehradun | Chandigarh ",
-    duration: "3 Days / 2 Nights",
-    inclusions: [
-      "2 Nights stay (Chopta/Makkumath)",
-      "5 Meals (2B + 2D + 1 Lunch)",
-      "Transport (Delhi/Roorkee ↔ Chopta)",
-      "Guided treks & sightseeing as per itinerary",
-      "Permits, tolls, parking, driver allowance",
-      "Group games & gifts",
-      "Basic first aid",
-    ],
-    exclusions: [
-      "Personal expenses, shopping, snacks",
-      "Adventure activities not mentioned",
-      "Entrance fees to temples/parks (if any)",
-      "Travel insurance",
-      "Anything not specifically listed in the inclusions",
-    ],
-    overview:
-      "Discover the untouched beauty of Tungnath, Chandrashila and Deora Taal. Our trips offer a blend of adventure, relaxation, and cultural experiences. Book now for special offers!",
-    itinerary: [
-      {
-        day: 0,
-        title:
-          "Departure",
-        description:
-          " Night departure from IIT Delhi (1:00 AM) & IIT Roorkee (4:00 AM)",
-      },
-      {
-        day: 1,
-        title: "Stay and Visit",
-        description:
-          "Devprayag Sangam • Omkareshwar Temple • Chopta Exploration • Overnight stay",
-      },
-      {
-        day: 2,
-        title: "Trek",
-        description:
-          "Tungnath Temple Trek (6 km) • Chandrashila Peak Trek (2 km) • Overnight journey",
-      },
-      {
-        day: 3,
-        title: "Trek",
-        description:
-          "Deoria Taal Trek (3 km) • Afternoon departure • Night arrival",
-      },
-    ],
+    lastDate: "15th October,2025",
     // buttonLabel: "Know more",
   },
+  // {
+  //   id: 4,
+  //   title: "Kedarnath Trek(1-4 October)",
+  //   gform:"https://docs.google.com/forms/d/e/1FAIpQLSeKTDyYPKufjQ1o-hZ-d8MwWp561nU7VD5dN2_8rK8ititwXw/viewform?usp=header",
+  //   subtitle: "Join the exciting community trips with amazing discounts",
+  //   mainImage: "/Images/kedarnath.jpeg",
+  //   gallery: [
+  //     "/Images/kedarnath.jpeg",
+  //   ],
+  //   reviews: [
+  //     {
+  //       name: "Mohit",
+  //       rating: 4,
+  //       text: "The views were breathtaking.",
+  //     },
+  //     {
+  //       name: "Snehal",
+  //       rating: 5,
+  //       text: "The local guide was very knowledgeable and friendly.",
+  //     },
+  //   ],
+  //   pickupDrop: "IIT Delhi | IIT Roorkee | Dehradun | Chandigarh ",
+  //   duration: "3 Days / 2 Nights",
+  //   inclusions: [
+  //     "2 Nights stay (Chopta/Makkumath)",
+  //     "5 Meals (2B + 2D + 1 Lunch)",
+  //     "Transport (Delhi/Roorkee ↔ Chopta)",
+  //     "Guided treks & sightseeing as per itinerary",
+  //     "Permits, tolls, parking, driver allowance",
+  //     "Group games & gifts",
+  //     "Basic first aid",
+  //   ],
+  //   exclusions: [
+  //     "Personal expenses, shopping, snacks",
+  //     "Adventure activities not mentioned",
+  //     "Entrance fees to temples/parks (if any)",
+  //     "Travel insurance",
+  //     "Anything not specifically listed in the inclusions",
+  //   ],
+  //   overview:
+  //     "Discover the untouched beauty of Tungnath, Chandrashila and Deora Taal. Our trips offer a blend of adventure, relaxation, and cultural experiences. Book now for special offers!",
+  //   itinerary: [
+  //     {
+  //       day: 0,
+  //       title:
+  //         "Departure",
+  //       description:
+  //         " Night departure from IIT Delhi (1:00 AM) & IIT Roorkee (4:00 AM)",
+  //     },
+  //     {
+  //       day: 1,
+  //       title: "Stay and Visit",
+  //       description:
+  //         "Devprayag Sangam • Omkareshwar Temple • Chopta Exploration • Overnight stay",
+  //     },
+  //     {
+  //       day: 2,
+  //       title: "Trek",
+  //       description:
+  //         "Tungnath Temple Trek (6 km) • Chandrashila Peak Trek (2 km) • Overnight journey",
+  //     },
+  //     {
+  //       day: 3,
+  //       title: "Trek",
+  //       description:
+  //         "Deoria Taal Trek (3 km) • Afternoon departure • Night arrival",
+  //     },
+  //   ],
+  //   // buttonLabel: "Know more",
+  // },
   {
     id: 2, // reverted back from 3 to 2
     title: "Gokarna – Murudeshwar Trip (2nd – 5th October)",
@@ -281,79 +284,80 @@ const upcomingEvents = [
     ],
     // buttonLabel: "Know more",
   },
-  {
-    id: 3, // reverted back from 3 to 2
-    title: "Valley of Flowers & Hemkund Sahib Trek",
-    gform:"https://docs.google.com/forms/d/e/1FAIpQLSdzCbHaBFYJAdh96ue45Uhh_ievXrNgpZQzvM3weB9H9Os82Q/viewform?usp=header",
-    subtitle: "Join the exciting community trips with amazing discounts",
-    mainImage: "/Images/vf1.jpg",
-    gallery: [
-      "/Images/vf2.jpg",
-      "/Images/vf3.jpg",
-      "/Images/vf4.jpg",
-    ],
-    reviews: [
-      {
-        name: "Vijay",
-        rating: 5,
-        text: "Absolutely fantastic! The views were breathtaking.",
-      },
-      {
-        name: "Sonam",
-        rating: 4,
-        text: "The local guide was very knowledgeable and friendly.",
-      },
-    ],
-    pickupDrop: "Roorkee (Roorkee Bus Stop (4 AM)) to Roorkee",
-    duration: "5 Days / 4 Nights",
-    inclusions: [
-      "4 Nights Stay (Govindghat & Ghangaria)",
-      "7 Meals (4 Dinners + 3 Breakfasts)",
-      "Transportation: Roorkee ⇄ Govindghat",
-      "Toll, Parking Charges (No Hidden Costs)",
-      "First Aid Kit",
-    ],
-    exclusions: [
-      "Lunches",
-      "Entry/Permit Fees",
-      "Travel Insurance",
-      "Anything not mentioned in itinerary",
-    ],
-    overview:
-      " Govindghat, Ghangaria, Hemkund Sahib, Valley of Flowers. Moderate Himalayan Trek. Our trips offer a blend of adventure, relaxation, and cultural experiences. Book now for special offers!",
-    itinerary: [
-      {
-        day: 0,
-        title: "4:00 AM: Depart from Roorkee Bus Stop",
-        description: "Reach base camp (Govindghat) by evening. Dinner & Overnight Stay",
-      },
-      {
-        day: 1,
-        title:
-          "Breakfast and Start trek to Ghangaria",
-        description:
-          "Reach Ghangaria, Dinner & Overnight Stay",
-      },
-      {
-        day: 2,
-        title: "Breakfast and Trek to Hemkund Sahib",
-        description:
-          "Return to Ghangaria, Dinner & Rest",
-      },
-      {
-        day: 3,
-        title: "Breakfast and Trek to Valley of Flowers, explore",
-        description:
-          "Return to Ghangaria, Dinner & Rest",
-      },
-      {
-        day: 4,
-        title: "Breakfast and Trek back to Govindghat, drive to Roorkee",
-        description: "Reach Roorkee by 10–12 PM",
-      },
-    ],
-    // buttonLabel: "Know more",
-  },
+
+  // {
+  //   id: 3, // reverted back from 3 to 2
+  //   title: "Valley of Flowers & Hemkund Sahib Trek",
+  //   gform:"https://docs.google.com/forms/d/e/1FAIpQLSdzCbHaBFYJAdh96ue45Uhh_ievXrNgpZQzvM3weB9H9Os82Q/viewform?usp=header",
+  //   subtitle: "Join the exciting community trips with amazing discounts",
+  //   mainImage: "/Images/vf1.jpg",
+  //   gallery: [
+  //     "/Images/vf2.jpg",
+  //     "/Images/vf3.jpg",
+  //     "/Images/vf4.jpg",
+  //   ],
+  //   reviews: [
+  //     {
+  //       name: "Vijay",
+  //       rating: 5,
+  //       text: "Absolutely fantastic! The views were breathtaking.",
+  //     },
+  //     {
+  //       name: "Sonam",
+  //       rating: 4,
+  //       text: "The local guide was very knowledgeable and friendly.",
+  //     },
+  //   ],
+  //   pickupDrop: "Roorkee (Roorkee Bus Stop (4 AM)) to Roorkee",
+  //   duration: "5 Days / 4 Nights",
+  //   inclusions: [
+  //     "4 Nights Stay (Govindghat & Ghangaria)",
+  //     "7 Meals (4 Dinners + 3 Breakfasts)",
+  //     "Transportation: Roorkee ⇄ Govindghat",
+  //     "Toll, Parking Charges (No Hidden Costs)",
+  //     "First Aid Kit",
+  //   ],
+  //   exclusions: [
+  //     "Lunches",
+  //     "Entry/Permit Fees",
+  //     "Travel Insurance",
+  //     "Anything not mentioned in itinerary",
+  //   ],
+  //   overview:
+  //     " Govindghat, Ghangaria, Hemkund Sahib, Valley of Flowers. Moderate Himalayan Trek. Our trips offer a blend of adventure, relaxation, and cultural experiences. Book now for special offers!",
+  //   itinerary: [
+  //     {
+  //       day: 0,
+  //       title: "4:00 AM: Depart from Roorkee Bus Stop",
+  //       description: "Reach base camp (Govindghat) by evening. Dinner & Overnight Stay",
+  //     },
+  //     {
+  //       day: 1,
+  //       title:
+  //         "Breakfast and Start trek to Ghangaria",
+  //       description:
+  //         "Reach Ghangaria, Dinner & Overnight Stay",
+  //     },
+  //     {
+  //       day: 2,
+  //       title: "Breakfast and Trek to Hemkund Sahib",
+  //       description:
+  //         "Return to Ghangaria, Dinner & Rest",
+  //     },
+  //     {
+  //       day: 3,
+  //       title: "Breakfast and Trek to Valley of Flowers, explore",
+  //       description:
+  //         "Return to Ghangaria, Dinner & Rest",
+  //     },
+  //     {
+  //       day: 4,
+  //       title: "Breakfast and Trek back to Govindghat, drive to Roorkee",
+  //       description: "Reach Roorkee by 10–12 PM",
+  //     },
+  //   ],
+  //   // buttonLabel: "Know more",
+  // },
   
   // {
   //   id: 3,
