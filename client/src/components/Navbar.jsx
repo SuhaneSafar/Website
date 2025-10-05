@@ -24,7 +24,7 @@ const Navbar = () => {
             <img
               src="/logo.png"
               alt="Suhane Safar Logo"
-              className="relative h-100 w-100 sm:h-16 sm:w-16 lg:h-16 lg:w-16 object-cover transition-transform duration-300 group-hover:rotate-12"
+              className="relative h-30 w-30 sm:h-16 sm:w-16 lg:h-16 lg:w-16 object-cover transition-transform duration-300 group-hover:rotate-12"
             />
           </div>
           <div className="flex flex-col">
