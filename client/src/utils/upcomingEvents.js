@@ -211,79 +211,79 @@ const upcomingEvents = [
   //   ],
   //   // buttonLabel: "Know more",
   // },
-  {
-    id: 2, // reverted back from 3 to 2
-    title: "Gokarna – Murudeshwar Trip (2nd – 5th October)",
-    gform:"https://docs.google.com/forms/d/e/1FAIpQLSeZC8w7YzK8umg6utG5sieolPZtwrxZvqAPgsvLnMZmpz8nmw/viewform?usp=header",
-    subtitle: "Join the exciting community trips with amazing discounts",
-    mainImage: "/Images/gokarna1.jpg",
-    gallery: [
-      "/Images/gokarna2.jpg",
-      "/Images/gokarna3.jpg",
-      "/Images/gokarna4.jpg",
-    ],
-    reviews: [
-      {
-        name: "Rahul",
-        rating: 5,
-        text: "Absolutely fantastic! The views were breathtaking.",
-      },
-      {
-        name: "Sneha",
-        rating: 4,
-        text: "The local guide was very knowledgeable and friendly.",
-      },
-    ],
-    pickupDrop: "Pickup Drop Point - Bangalore",
-    duration: "Duration - 4Days",
-    inclusions: [
-      "5 Meals (2 Dinner + 3 Breakfast)",
-      "AC Transport (Bangalore to Bangalore)",
-      "Driver allowance, toll tax and parking",
-      "Hotel stay on sharing basis",
-      "Group games and fun activities",
-    ],
-    exclusions: [
-      "Any monument entrance fees",
-      "Lunch (self arrangement)",
-      "Travel insurance",
-      "Shopping, tips, laundry",
-    ],
-    overview:
-      "Our trips offer a blend of adventure, relaxation, and cultural experiences. Book now for special offers!",
-    itinerary: [
-      {
-        day: 0,
-        title: "(1st Oct – Tuesday Night) Departure from Bangalore at 10:00 PM",
-        description: "Overnight journey with fun, games and interaction",
-      },
-      {
-        day: 1,
-        title:
-          " ( 2nd Oct – Wednesday) – Gokarna Beaches",
-        description:
-          "Reach Gokarna early morning, hotel check-in and freshen up Kudle Beach – relax, swimming, volleyball Om Beach – kayaking, watersports, sunset views Dinner, group interaction and rest",
-      },
-      {
-        day: 2,
-        title: " (3rd Oct – Thursday) – Beach Trek & Adventure",
-        description:
-          "Breakfast at hotel Beach Trek (Om Beach – Half Moon Beach – Paradise Beach), approx. 4 km, 3–4 hrs Explore nearby waterfalls Stop at Mirjan Fort for sunset Dinner, fun activities and rest.",
-      },
-      {
-        day: 3,
-        title: "(4th Oct – Friday) – Murudeshwar Exploration",
-        description:
-          "Breakfast and hotel check-out Visit Murudeshwar Temple and explore the area Lunch self arrangement Departure for Bangalore (overnight journey)",
-      },
-      {
-        day: 4,
-        title: "(5th Oct – Saturday Morning)",
-        description: "Reach Bangalore between 8:00 – 10:00 AMEnd of trip with refreshed minds and great memories",
-      },
-    ],
-    // buttonLabel: "Know more",
-  },
+  // {
+  //   id: 2, // reverted back from 3 to 2
+  //   title: "Gokarna – Murudeshwar Trip (2nd – 5th October)",
+  //   gform:"https://docs.google.com/forms/d/e/1FAIpQLSeZC8w7YzK8umg6utG5sieolPZtwrxZvqAPgsvLnMZmpz8nmw/viewform?usp=header",
+  //   subtitle: "Join the exciting community trips with amazing discounts",
+  //   mainImage: "/Images/gokarna1.jpg",
+  //   gallery: [
+  //     "/Images/gokarna2.jpg",
+  //     "/Images/gokarna3.jpg",
+  //     "/Images/gokarna4.jpg",
+  //   ],
+  //   reviews: [
+  //     {
+  //       name: "Rahul",
+  //       rating: 5,
+  //       text: "Absolutely fantastic! The views were breathtaking.",
+  //     },
+  //     {
+  //       name: "Sneha",
+  //       rating: 4,
+  //       text: "The local guide was very knowledgeable and friendly.",
+  //     },
+  //   ],
+  //   pickupDrop: "Pickup Drop Point - Bangalore",
+  //   duration: "Duration - 4Days",
+  //   inclusions: [
+  //     "5 Meals (2 Dinner + 3 Breakfast)",
+  //     "AC Transport (Bangalore to Bangalore)",
+  //     "Driver allowance, toll tax and parking",
+  //     "Hotel stay on sharing basis",
+  //     "Group games and fun activities",
+  //   ],
+  //   exclusions: [
+  //     "Any monument entrance fees",
+  //     "Lunch (self arrangement)",
+  //     "Travel insurance",
+  //     "Shopping, tips, laundry",
+  //   ],
+  //   overview:
+  //     "Our trips offer a blend of adventure, relaxation, and cultural experiences. Book now for special offers!",
+  //   itinerary: [
+  //     {
+  //       day: 0,
+  //       title: "(1st Oct – Tuesday Night) Departure from Bangalore at 10:00 PM",
+  //       description: "Overnight journey with fun, games and interaction",
+  //     },
+  //     {
+  //       day: 1,
+  //       title:
+  //         " ( 2nd Oct – Wednesday) – Gokarna Beaches",
+  //       description:
+  //         "Reach Gokarna early morning, hotel check-in and freshen up Kudle Beach – relax, swimming, volleyball Om Beach – kayaking, watersports, sunset views Dinner, group interaction and rest",
+  //     },
+  //     {
+  //       day: 2,
+  //       title: " (3rd Oct – Thursday) – Beach Trek & Adventure",
+  //       description:
+  //         "Breakfast at hotel Beach Trek (Om Beach – Half Moon Beach – Paradise Beach), approx. 4 km, 3–4 hrs Explore nearby waterfalls Stop at Mirjan Fort for sunset Dinner, fun activities and rest.",
+  //     },
+  //     {
+  //       day: 3,
+  //       title: "(4th Oct – Friday) – Murudeshwar Exploration",
+  //       description:
+  //         "Breakfast and hotel check-out Visit Murudeshwar Temple and explore the area Lunch self arrangement Departure for Bangalore (overnight journey)",
+  //     },
+  //     {
+  //       day: 4,
+  //       title: "(5th Oct – Saturday Morning)",
+  //       description: "Reach Bangalore between 8:00 – 10:00 AMEnd of trip with refreshed minds and great memories",
+  //     },
+  //   ],
+  //   // buttonLabel: "Know more",
+  // },
 
   // {
   //   id: 3, // reverted back from 3 to 2
