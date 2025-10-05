@@ -115,7 +115,7 @@ const WorkFromHills = () => {
       name: "Priya Sharma",
       role: "Software Developer",
       company: "Tech Corp",
-      image: "/Images/founder.jpg",
+      image: "/Images/user.png",
       rating: 5,
       text: "Working from Manali for 2 weeks was life-changing. The perfect balance of productivity and adventure. The WiFi was excellent and the views were breathtaking!"
     },
@@ -123,7 +123,7 @@ const WorkFromHills = () => {
       name: "Rohit Kumar",
       role: "Marketing Manager", 
       company: "Digital Agency",
-      image: "/Images/cofounder.png",
+      image: "/Images/user.png",
       rating: 5,
       text: "Dharamshala workation exceeded all expectations. The peaceful environment boosted my creativity, and the team activities were amazing. Highly recommend!"
     },
@@ -131,7 +131,7 @@ const WorkFromHills = () => {
       name: "Anjali Patel",
       role: "Freelance Designer",
       company: "Independent",
-      image: "/Images/cofounder2.png",
+      image: "/Images/user.png",
       rating: 5,
       text: "Spiti Valley workation was surreal. Working surrounded by such natural beauty was inspiring. The networking opportunities were also great!"
     }

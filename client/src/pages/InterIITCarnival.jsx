@@ -42,9 +42,18 @@ const InterIITCarnival = () => {
     subtitle: "Uniting explorers from all IITs for an epic journey",
     mainImage: "/Images/manali-main.png", // Using Manali image as it's closest to the location
     gallery: [
-      "/Images/manali.png",
-      "/Images/manali1.png",
-      "/Images/mountain.png",
+      "/Images/in1.jpeg",
+      "/Images/in2.jpeg",
+      "/Images/in3.jpeg",
+      "/Images/in4.jpeg",
+      "/Images/in5.jpeg",
+      "/Images/in6.jpeg",
+      "/Images/in7.jpeg",
+      "/Images/in8.jpeg",
+      "/Images/in9.jpeg",
+      "/Images/in10.jpeg",
+      "/Images/in11.jpeg",
+      
     ],
     reviews: [
       {
@@ -67,9 +76,10 @@ const InterIITCarnival = () => {
       "Transportation from pickup points to Manali",
       "Open Mic - Music, stand-up & free performances",
       "Singing & Dancing Competitions",
+      "Team Performances",
       "Cultural Events & Activities",
       "Catwalk, Solo & Group Performances",
-      "Bonding Games, Badminton & Cards",
+      "Treasure Hunt, Music Chairs, Magic Carpet Ride, Nerf Shooting Game, Balloon Pyramid, Blindfold Game & Cards",
       "Trekking & Bonfire Night Celebrations",
       "Suhane Safar Goodies (T-shirt, Hoodie, Team Gadgets)",
       "All kinds of permits",
@@ -80,7 +90,6 @@ const InterIITCarnival = () => {
       "Any personal expenses (laundry, shopping, tips, etc.)",
       "Any adventure activities not mentioned",
       "Travel insurance",
-      "Lunch (self arrangement)",
       "Entrance fees not mentioned in inclusions",
     ],
     overview:
@@ -88,37 +97,38 @@ const InterIITCarnival = () => {
     itinerary: [
       {
         day: 1,
-        title: "23rd January - Departure & Journey",
+        title: "22nd January - Departure & Journey",
         description:
-          "Departure from pickup points (IIT Delhi, IIT Roorkee, Chandigarh). Overnight journey to Manali with group interactions and ice-breaking activities.",
+          "Departure from pickup points (IIT Delhi, IIT Roorkee, Chandigarh) at 8:00 PM. Overnight journey to Manali with group interactions and ice-breaking activities.",
       },
       {
         day: 2,
-        title: "24th January - Manali Exploration",
+        title: "23rd January - Manali Exploration",
         description:
           "Arrival in Manali and check-in. Visit Hadimba Temple (Ancient wooden temple surrounded by deodar forests). Explore Jogini Waterfall (A scenic trek with mesmerizing views). Evening cultural events and open mic sessions. Overnight stay in Manali.",
       },
       {
         day: 3,
-        title: "25th January - Adventure & Culture",
+        title: "24th January - Adventure & Culture",
         description:
           "Morning visit to Solang Valley (Activities and scenic beauty). Explore Atal Tunnel (World's longest highway tunnel). Visit Sissu Village (Charming spot in Lahaul Valley with snow views). Evening competitions, performances, and bonding games. Bonfire night with trekking activities. Overnight stay in Manali.",
       },
       {
         day: 4,
-        title: "26th January - Closing Ceremony & Return",
+        title: "25th January - Closing Ceremony & Return",
         description:
-          "Morning leisure activities and final group interactions. Awards ceremony with cash prizes, gifts & exclusive merchandise. Departure for return journey. Arrival at pickup points by evening/night.",
+          "Morning leisure activities and final group interactions. Awards ceremony with cash prizes, gifts & exclusive merchandise. Departure for return journey. Arrival at pickup points on 27th January early morning.",
       },
     ],
     eligibility: "Only current IIT students (UG, PG, PhD)",
     teamSize: "Maximum 15 students per campus",
+    joiningProcess: "First come, first serve basis",
     alumniRole: "Chief Guests, Jury & Prize Distribution",
     // price: "TBA",
     registrationDates: {
       open: "1st December 2025",
       close: "1st January 2026",
-      carnivalDates: "23rd - 26th January 2026"
+      carnivalDates: "22nd - 25th January 2026"
     },
     awards: "Cash Prizes, Gifts & Exclusive Merchandise for winners. Alumni Guests to felicitate winners during the Closing Ceremony",
     specialNote: "This is a students' initiative powered by Suhane Safar, creating unity and adventure among IITians.",
@@ -183,7 +193,7 @@ const InterIITCarnival = () => {
                 Inter IIT
               </span>
               <span className="block mt-2">Adventure Carnival</span>
-              <span className="text-2xl md:text-3xl lg:text-4xl block mt-2 text-yellow-400 font-bold">
+              <span className="text-6xl md:text-3xl lg:text-4xl block mt-2 text-yellow-400 font-bold">
                 2026
               </span>
             </h1>
@@ -271,6 +281,12 @@ const InterIITCarnival = () => {
                       <FaTrophy className="text-white" />
                     </div>
                     <span className="font-semibold text-gray-800">Cash prizes, gifts & exclusive merchandise</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="bg-gradient-to-r from-green-500 to-blue-500 rounded-full p-2">
+                      <FaCheckCircle className="text-white" />
+                    </div>
+                    <span className="font-semibold text-gray-800">Registration: First come, first serve basis</span>
                   </div>
                 </div>
               </div>
@@ -417,6 +433,10 @@ const InterIITCarnival = () => {
                 </li>
                 <li className="flex items-center gap-2">
                   <FaCheckCircle className="text-green-500 flex-shrink-0" />
+                  Team Performances
+                </li>
+                <li className="flex items-center gap-2">
+                  <FaCheckCircle className="text-green-500 flex-shrink-0" />
                   Catwalk & Group Performances
                 </li>
               </ul>
@@ -430,7 +450,15 @@ const InterIITCarnival = () => {
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-center gap-2">
                   <FaCheckCircle className="text-green-500 flex-shrink-0" />
-                  Bonding Games & Badminton
+                  Treasure Hunt & Magic Carpet Ride
+                </li>
+                <li className="flex items-center gap-2">
+                  <FaCheckCircle className="text-green-500 flex-shrink-0" />
+                  Musical Chairs & Nerf Shooting Game
+                </li>
+                <li className="flex items-center gap-2">
+                  <FaCheckCircle className="text-green-500 flex-shrink-0" />
+                  Balloon Pyramid & Blindfold Games
                 </li>
                 <li className="flex items-center gap-2">
                   <FaCheckCircle className="text-green-500 flex-shrink-0" />
