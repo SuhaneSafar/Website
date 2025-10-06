@@ -19,6 +19,9 @@ const CollegeAmbassador = () => {
     communityReason: ''
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState('');
+
   const handleInputChange = (e) => {
     setFormData({
       ...formData,
@@ -28,9 +31,55 @@ const CollegeAmbassador = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you would typically send the data to your backend
-    console.log('Form submitted:', formData);
-    alert('Application submitted successfully! We will get back to you soon.');
+    setIsSubmitting(true);
+    setSubmitStatus('');
+    
+    try {
+
+
+      // Create a temporary form element
+      const tempForm = document.createElement('form');
+      tempForm.method = 'POST';
+      tempForm.action = 'https://script.google.com/macros/s/AKfycbzlvWjukZeXv4GHX5xsqVFEYw3LOkZIl3JgZ0fr4U2pYgaGW602MoGdD4PE92ybIA8U/exec';
+      tempForm.target = 'hidden-iframe';
+      tempForm.style.display = 'none';
+
+      // Add all form fields as hidden inputs
+      const fields = ['name', 'email', 'phone','address','college','year','course','experience','socialMedia','motivation','communityReason'];
+      fields.forEach(field => {
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = field;
+        input.value = formData[field];
+        tempForm.appendChild(input);
+      });
+
+      // Create hidden iframe
+      let iframe = document.getElementById('hidden-iframe');
+      if (!iframe) {
+        iframe = document.createElement('iframe');
+        iframe.id = 'hidden-iframe';
+        iframe.style.display = 'none';
+        document.body.appendChild(iframe);
+      }
+
+      // Submit form
+      document.body.appendChild(tempForm);
+      tempForm.submit();
+      document.body.removeChild(tempForm);
+
+      // Simulate success (since we can't easily get response from iframe)
+      setTimeout(() => {
+        setSubmitStatus('success');
+        setFormData({ name: "", email: "", phone: "", address: "", college: "", year: "", course: "", experience: "", socialMedia: "", motivation: "", communityReason: "" }); // ✅ clear all fields
+        setIsSubmitting(false);
+      }, 1000);
+
+    } catch (error) {
+      console.error('Form submission error:', error);
+      setSubmitStatus('error');
+      setIsSubmitting(false);
+    }
   };
 
   const benefits = [
@@ -353,11 +402,29 @@ const CollegeAmbassador = () => {
                 <div className="text-center">
                   <button
                     type="submit"
-                    className="bg-gradient-to-r from-sky-600 to-purple-600 hover:from-sky-700 hover:to-purple-700 text-white font-bold py-4 px-12 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+                    disabled={isSubmitting}
+                    className={`bg-gradient-to-r from-sky-600 to-purple-600 hover:from-sky-700 hover:to-purple-700 text-white font-bold py-4 px-12 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg ${
+                      isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
+                    }`}
                   >
-                    Submit Application
+                    {isSubmitting ? 'Submitting...' : 'Submit Application'}
                   </button>
                 </div>
+
+                {/* Success/Error Messages */}
+                {submitStatus === 'success' && (
+                  <div className="mt-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg text-center">
+                    <p className="font-semibold">Application Submitted Successfully! 🎉</p>
+                    <p className="text-sm mt-1">We'll get back to you within 2-3 business days.</p>
+                  </div>
+                )}
+                
+                {submitStatus === 'error' && (
+                  <div className="mt-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg text-center">
+                    <p className="font-semibold">Submission Failed ❌</p>
+                    <p className="text-sm mt-1">Please try again or contact us directly.</p>
+                  </div>
+                )}
               </form>
             </div>
           </div>
