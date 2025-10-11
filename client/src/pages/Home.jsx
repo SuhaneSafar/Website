@@ -40,64 +40,9 @@ const Home = () => {
     <Footer />
     
     {/* Chatbot Iframe */}
-    {isChatbotOpen && (
-      <iframe
-        src="https://app.vectorshift.ai/chatbots/embedded/68ea576d27a1e3044bd01b4c?openChatbot=true"
-        width="500px"
-        height="600px"
-        style={{
-          border: 'none',
-          position: 'fixed',
-          bottom: '10px',
-          right: '10px',
-          zIndex: 1001,
-          borderRadius: '12px',
-          boxShadow: '0 8px 32px rgba(0,0,0,0.3)',
-        }}
-        allow="clipboard-read; clipboard-write; microphone"
-        title="AI Chatbot"
-      />
-    )}
+  
 
-    {/* Chatbot Toggle Button */}
-    <button
-      onClick={toggleChatbot}
-      aria-label={isChatbotOpen ? "Close AI Chatbot" : "Open AI Chatbot"}
-      style={{
-        position: 'fixed',
-        right: '50px',
-        bottom: '120px',
-        zIndex: 1002,
-        width: '60px',
-        height: '60px',
-        backgroundColor: isChatbotOpen ? '#DC2626' : '#4F46E5',
-        color: '#fff',
-        border: 'none',
-        borderRadius: '9999px',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        boxShadow: '0 4px 12px rgba(0,0,0,0.2)',
-        cursor: 'pointer',
-        fontWeight: 700,
-        fontFamily: 'inherit',
-        transition: 'all 0.3s ease',
-      }}
-      onMouseEnter={(e) => {
-        e.target.style.backgroundColor = isChatbotOpen ? '#B91C1C' : '#3730A3';
-        e.target.style.transform = 'scale(1.1)';
-      }}
-      onMouseLeave={(e) => {
-        e.target.style.backgroundColor = isChatbotOpen ? '#DC2626' : '#4F46E5';
-        e.target.style.transform = 'scale(1)';
-      }}
-    >
-      {isChatbotOpen ? (
-        <FaTimes color="white" size={30} />
-      ) : (
-        <FaRobot color="white" size={30} />
-      )}
-    </button>
+    
 
     {/* WhatsApp Button */}
     <a
