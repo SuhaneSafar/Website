@@ -141,6 +141,73 @@ const upcomingEvents = [
     lastDate: "15th October,2025",
     // buttonLabel: "Know more",
   },
+  {
+    id: 3,
+    title: "Mussoorie, Landour & Rishikesh(31st Oct – 2nd Nov)",
+    gform:"https://docs.google.com/forms/d/e/1FAIpQLSdV1qbu8YR4izU_HKxVfLVV6DXbzyA5vOmFbegiHCiJRLi_VA/viewform?usp=dialog",
+    subtitle: "Join the exciting community trips with amazing discounts",
+    mainImage: "/Images/mussoorie1.jpeg",
+    gallery: [
+      "/Images/mussoorie1.jpeg",
+      "/Images/mussoorie2.jpeg",
+
+    ],
+    price:"3499/4999",
+    reviews: [
+      {
+        name: "Mohit",
+        rating: 4,
+        text: "The views were breathtaking.",
+      },
+      {
+        name: "Snehal",
+        rating: 5,
+        text: "The local guide was very knowledgeable and friendly.",
+      },
+    ],
+    pickupDrop: "IIT Delhi | IIT Roorkee ",
+    duration: "2 Days / 1 Nights",
+    inclusions: [
+      "2 Breakfasts",
+      "1 Dinner",
+      "Snacks and games",
+      "Winner gifts",
+      "Toll charges",
+      "Parking charges",
+      "Driver allowance"
+    ],
+    exclusions: [
+      "Personal expenses, shopping, extra snacks",
+      "Adventure activities not mentioned",
+      "Entrance fees to attractions not included above",
+      "Travel insurance",
+      "Anything not specifically listed in the inclusions"
+    ],
+    overview:
+      "A memorable weekend escape to Mussoorie, Landour and Rishikesh! Enjoy scenic waterfalls, hilltop viewpoints, colonial charm, and riverbank serenity – all with friends and a fun, student-friendly vibe. Perfect for relaxing, exploring, and making new memories!",
+    itinerary: [
+      {
+        day: 0,
+        title: "Day 0 (Friday) - Departure",
+        description:
+          "Departure from Delhi ISBT & IIT Delhi around 11:00 PM. Overnight journey to Mussoorie, to reach Mussoorie around 7:00 AM."
+      },
+      {
+        day: 1,
+        title: "Day 1 (Saturday) - Mussoorie Exploration",
+        description:
+          "Morning hotel check-in with breakfast. Visit Kempty Fall (1 hr), Company Garden (45 min), Lama Top (45 min), Landour (2 hr), and George Everest (if time allows, 2-3 hr). Evening Mall Road Mussoorie exploration. Overnight stay at Mussoorie."
+      },
+      {
+        day: 2,
+        title: "Day 2 (Sunday) - Rishikesh",
+        description:
+          "After breakfast, visit George Everest (if not covered on Day 1, 2-3 hr). Depart for Rishikesh to arrive around 12:30 PM. Visit Parmarth Yoga Ashram, Ram Jhula/Lakshman Jhula, and explore local market. Departure for IIT Roorkee, IIT Delhi & Delhi ISBT around 6:00 PM."
+      }
+    ],
+    lastDate: "22th October,2025",
+    // buttonLabel: "Know more",
+  },
   // {
   //   id: 4,
   //   title: "Kedarnath Trek(1-4 October)",

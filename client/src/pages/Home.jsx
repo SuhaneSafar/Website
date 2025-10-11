@@ -9,7 +9,7 @@ import Reviews from "../components/Reviews";
 import Footer from "../components/Footer";
 import TeamMembers from "../components/TeamMmebers";
 import MetaData from "../container/MetaData";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaRobot } from "react-icons/fa";
 
 const Home = () => (
   <div className="cursor-default">
@@ -30,6 +30,45 @@ const Home = () => (
     <Reviews />
     <TeamMembers />
     <Footer />
+    
+    {/* Chatbot Button */}
+    <a
+      href="https://app.vectorshift.ai/chatbots/deployed/68ea576d27a1e3044bd01b4c"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Open AI Chatbot"
+      style={{
+        position: 'fixed',
+        right: '50px',
+        bottom: '120px',
+        zIndex: 1000,
+        width: '60px',
+        height: '60px',
+        backgroundColor: '#4F46E5',
+        color: '#fff',
+        borderRadius: '9999px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        boxShadow: '0 4px 12px rgba(0,0,0,0.2)',
+        textDecoration: 'none',
+        fontWeight: 700,
+        fontFamily: 'inherit',
+        transition: 'all 0.3s ease',
+      }}
+      onMouseEnter={(e) => {
+        e.target.style.backgroundColor = '#3730A3';
+        e.target.style.transform = 'scale(1.1)';
+      }}
+      onMouseLeave={(e) => {
+        e.target.style.backgroundColor = '#4F46E5';
+        e.target.style.transform = 'scale(1)';
+      }}
+    >
+      <FaRobot color="white" size={30} />
+    </a>
+
+    {/* WhatsApp Button */}
     <a
       href="https://wa.me/917747906173"
       target="_blank"
@@ -45,17 +84,25 @@ const Home = () => (
         backgroundColor: '#25D366',
         color: '#fff',
         borderRadius: '9999px',
-      
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         boxShadow: '0 4px 12px rgba(0,0,0,0.2)',
         textDecoration: 'none',
         fontWeight: 700,
-        fontFamily: 'inherit'
+        fontFamily: 'inherit',
+        transition: 'all 0.3s ease',
+      }}
+      onMouseEnter={(e) => {
+        e.target.style.backgroundColor = '#128C7E';
+        e.target.style.transform = 'scale(1.1)';
+      }}
+      onMouseLeave={(e) => {
+        e.target.style.backgroundColor = '#25D366';
+        e.target.style.transform = 'scale(1)';
       }}
     >
-        <FaWhatsapp  color="white" size={40} />
+      <FaWhatsapp color="white" size={40} />
     </a>
   </div>
 );
