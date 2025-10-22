@@ -68,17 +68,19 @@ const upcomingEvents = [
 
 
   {
-    id: 2,
-    title: "TUNGNATH-CHANDRASHILA-DEORIA TAAL(21-23 October)",
-    gform:"https://docs.google.com/forms/d/e/1FAIpQLSdn8Qn9zMc0h-Tz1vC0aYo6vW8fJMlOrjVB75BDStoYQ6iU1A/viewform?usp=header",
+    id: 1,
+    title: "SPITI(28th Nov – 5th Dec 2025)",
+    gform:"https://docs.google.com/forms/d/e/1FAIpQLSeKDjow8nG-DD1PiQpipQDDH04z461HE_Z9AOE1s74gFQv1DQ/viewform?usp=header",
     subtitle: "Join the exciting community trips with amazing discounts",
-    mainImage: "/Images/chandrashilla.jpeg",
+    mainImage: "/Images/spiti.jpeg",
     gallery: [
-      "/Images/chandrashila1.jpg",
-      "/Images/chandrashila2.png",
-      "/Images/chandrashila3.jpg",
+      "/Images/spiti.jpeg",
+      "/Images/spiti1.jpeg",
+      "/Images/spiti2.jpeg",
+      "/Images/spiti3.jpeg",
+      "/Images/spiti4.jpeg",
     ],
-    price:"3299/5299",
+    price:"14999",
     reviews: [
       {
         name: "Mohit",
@@ -92,15 +94,15 @@ const upcomingEvents = [
       },
     ],
     pickupDrop: "IIT Delhi | IIT Roorkee | Dehradun | Chandigarh ",
-    duration: "3 Days / 2 Nights",
+    duration: "7 Days / 8 Nights",
     inclusions: [
-      "2 Nights stay (Chopta/Makkumath)",
-      "5 Meals (2B + 2D + 1 Lunch)",
-      "Transport (Delhi/Roorkee ↔ Chopta)",
+      "7 Nights stay (Sarahan/Kaza/Kalpa)",
+      "6 Meals (6 Breakfasts + 6 Dinners)",
+      "Transport (Delhi/Roorkee ↔ Shimla)",
       "Guided treks & sightseeing as per itinerary",
       "Permits, tolls, parking, driver allowance",
       "Group games & gifts",
-      "Basic first aid",
+      "Basic first aid"
     ],
     exclusions: [
       "Personal expenses, shopping, snacks",
@@ -111,103 +113,133 @@ const upcomingEvents = [
     ],
     overview:
       "Discover the untouched beauty of Tungnath, Chandrashila and Deora Taal. Our trips offer a blend of adventure, relaxation, and cultural experiences. Book now for special offers!",
-    itinerary: [
-      {
-        day: 0,
-        title:
-          "Departure",
-        description:
-          " Night departure from IIT Delhi (1:00 AM) & IIT Roorkee (4:00 AM)",
-      },
-      {
-        day: 1,
-        title: "Stay and Visit",
-        description:
-          "Devprayag Sangam • Omkareshwar Temple • Chopta Exploration • Overnight stay",
-      },
-      {
-        day: 2,
-        title: "Trek",
-        description:
-          "Tungnath Temple Trek (6 km) • Chandrashila Peak Trek (2 km) • Overnight journey",
-      },
-      {
-        day: 3,
-        title: "Trek",
-        description:
-          "Deoria Taal Trek (3 km) • Afternoon departure • Night arrival",
-      },
-    ],
-    lastDate: "15th October,2025",
+      itinerary: [
+        {
+          day: 0,
+          title: "Departure",
+          description:
+            "Departure from Delhi, Roorkee & Chandigarh at 9–10 PM. Overnight journey to Shimla (28th Nov).",
+        },
+        {
+          day: 1,
+          title: "Sarahan Stay",
+          description:
+            "Reach Shimla, transfer to Sarahan, and overnight stay at Sarahan.",
+        },
+        {
+          day: 2,
+          title: "Chitkul Exploration",
+          description:
+            "Explore Chitkul and stay at Sangla/Chitkul.",
+        },
+        {
+          day: 3,
+          title: "Tabo Exploration",
+          description:
+            "Explore Tabo and Nako villages, move towards Tabo, and stay overnight at Tabo.",
+        },
+        {
+          day: 4,
+          title: "Kaza Local Exploration",
+          description:
+            "Explore Kaza local market and visit Dhankar Monastery. Overnight stay in Kaza.",
+        },
+        {
+          day: 5,
+          title: "Spiti Valley Exploration",
+          description:
+            "Explore Hikkim, Chicham Bridge, Komic, and Langza. Stay in Kaza.",
+        },
+        {
+          day: 6,
+          title: "Kalpa Visit",
+          description:
+            "Move towards Kalpa, visit Gue Monastery and Kinnaur Valley. Stay at Kalpa.",
+        },
+        {
+          day: 7,
+          title: "Return Journey",
+          description:
+            "Explore Suicide Point, Narkanda, then leave for Shimla. Transfer to Chandigarh, Delhi, and Roorkee via Volvo.",
+        },
+        {
+          day: 8,
+          title: "Trip End",
+          description:
+            "Reach Chandigarh, Delhi, and Roorkee early morning (6–8 AM). Trip ends with unforgettable memories (6th Dec).",
+        },
+      ]
+,      
+    lastDate: "12th November 2025",
     // buttonLabel: "Know more",
   },
-  {
-    id: 3,
-    title: "Mussoorie, Landour & Rishikesh(31st Oct – 2nd Nov)",
-    gform:"https://docs.google.com/forms/d/e/1FAIpQLSdV1qbu8YR4izU_HKxVfLVV6DXbzyA5vOmFbegiHCiJRLi_VA/viewform?usp=dialog",
-    subtitle: "Join the exciting community trips with amazing discounts",
-    mainImage: "/Images/mussoorie1.jpeg",
-    gallery: [
-      "/Images/mussoorie1.jpeg",
-      "/Images/mussoorie2.jpeg",
+  // {
+  //   id: 3,
+  //   title: "Mussoorie, Landour & Rishikesh(31st Oct – 2nd Nov)",
+  //   gform:"https://docs.google.com/forms/d/e/1FAIpQLSdV1qbu8YR4izU_HKxVfLVV6DXbzyA5vOmFbegiHCiJRLi_VA/viewform?usp=dialog",
+  //   subtitle: "Join the exciting community trips with amazing discounts",
+  //   mainImage: "/Images/mussoorie1.jpeg",
+  //   gallery: [
+  //     "/Images/mussoorie1.jpeg",
+  //     "/Images/mussoorie2.jpeg",
 
-    ],
-    price:"3499/4999",
-    reviews: [
-      {
-        name: "Mohit",
-        rating: 4,
-        text: "The views were breathtaking.",
-      },
-      {
-        name: "Snehal",
-        rating: 5,
-        text: "The local guide was very knowledgeable and friendly.",
-      },
-    ],
-    pickupDrop: "IIT Delhi | IIT Roorkee ",
-    duration: "2 Days / 1 Nights",
-    inclusions: [
-      "2 Breakfasts",
-      "1 Dinner",
-      "Snacks and games",
-      "Winner gifts",
-      "Toll charges",
-      "Parking charges",
-      "Driver allowance"
-    ],
-    exclusions: [
-      "Personal expenses, shopping, extra snacks",
-      "Adventure activities not mentioned",
-      "Entrance fees to attractions not included above",
-      "Travel insurance",
-      "Anything not specifically listed in the inclusions"
-    ],
-    overview:
-      "A memorable weekend escape to Mussoorie, Landour and Rishikesh! Enjoy scenic waterfalls, hilltop viewpoints, colonial charm, and riverbank serenity – all with friends and a fun, student-friendly vibe. Perfect for relaxing, exploring, and making new memories!",
-    itinerary: [
-      {
-        day: 0,
-        title: "Day 0 (Friday) - Departure",
-        description:
-          "Departure from Delhi ISBT & IIT Delhi around 11:00 PM. Overnight journey to Mussoorie, to reach Mussoorie around 7:00 AM."
-      },
-      {
-        day: 1,
-        title: "Day 1 (Saturday) - Mussoorie Exploration",
-        description:
-          "Morning hotel check-in with breakfast. Visit Kempty Fall (1 hr), Company Garden (45 min), Lama Top (45 min), Landour (2 hr), and George Everest (if time allows, 2-3 hr). Evening Mall Road Mussoorie exploration. Overnight stay at Mussoorie."
-      },
-      {
-        day: 2,
-        title: "Day 2 (Sunday) - Rishikesh",
-        description:
-          "After breakfast, visit George Everest (if not covered on Day 1, 2-3 hr). Depart for Rishikesh to arrive around 12:30 PM. Visit Parmarth Yoga Ashram, Ram Jhula/Lakshman Jhula, and explore local market. Departure for IIT Roorkee, IIT Delhi & Delhi ISBT around 6:00 PM."
-      }
-    ],
-    lastDate: "22th October,2025",
-    // buttonLabel: "Know more",
-  },
+  //   ],
+  //   price:"3499/4999",
+  //   reviews: [
+  //     {
+  //       name: "Mohit",
+  //       rating: 4,
+  //       text: "The views were breathtaking.",
+  //     },
+  //     {
+  //       name: "Snehal",
+  //       rating: 5,
+  //       text: "The local guide was very knowledgeable and friendly.",
+  //     },
+  //   ],
+  //   pickupDrop: "IIT Delhi | IIT Roorkee ",
+  //   duration: "2 Days / 1 Nights",
+  //   inclusions: [
+  //     "2 Breakfasts",
+  //     "1 Dinner",
+  //     "Snacks and games",
+  //     "Winner gifts",
+  //     "Toll charges",
+  //     "Parking charges",
+  //     "Driver allowance"
+  //   ],
+  //   exclusions: [
+  //     "Personal expenses, shopping, extra snacks",
+  //     "Adventure activities not mentioned",
+  //     "Entrance fees to attractions not included above",
+  //     "Travel insurance",
+  //     "Anything not specifically listed in the inclusions"
+  //   ],
+  //   overview:
+  //     "A memorable weekend escape to Mussoorie, Landour and Rishikesh! Enjoy scenic waterfalls, hilltop viewpoints, colonial charm, and riverbank serenity – all with friends and a fun, student-friendly vibe. Perfect for relaxing, exploring, and making new memories!",
+  //   itinerary: [
+  //     {
+  //       day: 0,
+  //       title: "Day 0 (Friday) - Departure",
+  //       description:
+  //         "Departure from Delhi ISBT & IIT Delhi around 11:00 PM. Overnight journey to Mussoorie, to reach Mussoorie around 7:00 AM."
+  //     },
+  //     {
+  //       day: 1,
+  //       title: "Day 1 (Saturday) - Mussoorie Exploration",
+  //       description:
+  //         "Morning hotel check-in with breakfast. Visit Kempty Fall (1 hr), Company Garden (45 min), Lama Top (45 min), Landour (2 hr), and George Everest (if time allows, 2-3 hr). Evening Mall Road Mussoorie exploration. Overnight stay at Mussoorie."
+  //     },
+  //     {
+  //       day: 2,
+  //       title: "Day 2 (Sunday) - Rishikesh",
+  //       description:
+  //         "After breakfast, visit George Everest (if not covered on Day 1, 2-3 hr). Depart for Rishikesh to arrive around 12:30 PM. Visit Parmarth Yoga Ashram, Ram Jhula/Lakshman Jhula, and explore local market. Departure for IIT Roorkee, IIT Delhi & Delhi ISBT around 6:00 PM."
+  //     }
+  //   ],
+  //   lastDate: "22th October,2025",
+  //   // buttonLabel: "Know more",
+  // },
   // {
   //   id: 4,
   //   title: "Kedarnath Trek(1-4 October)",

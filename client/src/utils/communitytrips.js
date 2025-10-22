@@ -28,7 +28,7 @@ const communityTrips = [
     duration: "7N/8D",
     price: 14999,
     image: "/Images/spiti-main.png",
-    registrationLink: "Not aviable",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeKDjow8nG-DD1PiQpipQDDH04z461HE_Z9AOE1s74gFQv1DQ/viewform?usp=header",
     tags: []
   },
   {
