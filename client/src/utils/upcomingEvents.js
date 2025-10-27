@@ -173,6 +173,164 @@ const upcomingEvents = [
     lastDate: "12th November 2025",
     // buttonLabel: "Know more",
   },
+  {
+    "id"   : 2,
+    "title": "KedarKantha Trek(27th Nov-1st Dec)",
+    "gform":"https://docs.google.com/forms/d/e/1FAIpQLSdmdp2Y4tLxQVc5DcV4Onnt4wUNG2f50DsAfGsgUA8YYhLzug/viewform?usp=publish-editor",
+    "subtitle": "Join the exciting community trips with amazing discounts",
+    "mainImage": "/Images/kedarkantha.jpeg",
+    "gallery"   : [
+      "/Images/kedarkantha1.jpeg",
+      "/Images/kedarkantha2.jpeg",
+      "/Images/kedarkantha3.jpeg",
+      "/Images/kedarkantha4.jpeg",
+    ],
+    "price":"5499",
+    "reviews"   : [
+      {
+        "name": "Mohit",
+        "rating": 4,
+        "text": "The views were breathtaking."
+      },
+      {
+        "name": "Snehal",
+        "rating": 5,
+        "text": "The local guide was very knowledgeable and friendly."
+      }
+    ],
+    "pickupDrop": "IIT Delhi | IIT Roorkee | Dehradun | Chandigarh ",
+    "duration": "3 Days / 2 Nights",
+  "inclusions": [
+    "4 Nights Stay in Homestay & Tents",
+    "Transfer by AC bus from Delhi/Roorkee/Chandigarh to Dehradun & Back",
+    "12 Delicious Meals – 4 Breakfasts + 4 Dinners + 4 Packed lunch + (Evening snacks Bonus)",
+    "Trek guide and cook",
+    "Forest camping charges",
+    "All Required Permits for trekking and travel",
+    "Surprise Games & Gifts to make your experience even more memorable",
+    "Basic First Aid Kit for safety during the trip",
+    "Driver Allowance, Toll Tax & Parking Charges included in the package"
+  ],
+  "exclusions": [
+    "Any expense of personal Nature",
+    "Any expenses caused by reasons beyond our control such as road blocks, accidents & any medical evacuations. Weather conditions. Any train/bus delays, or re-scheduling etc.",
+    "Any personal expenses such as laundry, shopping, tips, or snacks",
+    "Any adventure activities not specifically mentioned in the itinerary",
+    "Entrance fees to temples, trek, parks, or sightseeing spots (if applicable)",
+    "Travel insurance",
+    "Anything else not clearly mentioned in the inclusions"
+  ],
+    "overview":
+      "Discover the untouched beauty of Tungnath, Chandrashila and Deora Taal. Our trips offer a blend of adventure, relaxation, and cultural experiences. Book now for special offers!",
+    "itinerary": [
+      {
+        "day": 0,
+        "title":
+          "Departure",
+        "description":
+          " Night departure from IIT Delhi (1:00 AM) & IIT Roorkee (4:00 AM)"
+      },
+      {
+        "day": 1,
+        "title" : "Stay and Visit",
+        "description":
+            "Devprayag Sangam • Omkareshwar Temple • Chopta Exploration • Overnight stay"
+      },
+      {
+        "day": 2,
+        "title": "Trek",
+        "description":
+          "Tungnath Temple Trek (6 km) • Chandrashila Peak Trek (2 km) • Overnight journey"
+      },
+      {
+        "day": 3,
+        "title": "Trek",
+        "description":
+          "Deoria Taal Trek (3 km) • Afternoon departure • Night arrival"
+      }
+    ],
+  
+
+  },
+  {
+    "id"   : 2,
+    "title": "TUNGNATH-CHANDRASHILA-DEORIA TAAL(1-3 December)",
+    "gform":"https://docs.google.com/forms/d/e/1FAIpQLSexkSIlcvqt_XhgwdfYvCU7AvqNilMQ84uNfyBqU-VTonpZLg/viewform?usp=publish-editor",
+    "subtitle": "Join the exciting community trips with amazing discounts",
+    "mainImage": "/Images/chandrab4.jpeg",
+    "gallery"   : [
+      "/Images/chandrashila1.jpg",
+      "/Images/chandrashila2.png",
+      "/Images/chandrashila3.jpg"
+    ],
+    "price":"3299/5299",
+    "reviews"   : [
+      {
+        "name": "Mohit",
+        "rating": 4,
+        "text": "The views were breathtaking."
+      },
+      {
+        "name": "Snehal",
+        "rating": 5,
+        "text": "The local guide was very knowledgeable and friendly."
+      }
+    ],
+    "pickupDrop": "IIT Delhi | IIT Roorkee | Dehradun | Chandigarh ",
+    "duration": "3 Days / 2 Nights",
+    "inclusions": [
+      "2 Nights stay (Chopta/Makkumath)",
+      "5 Meals (2B + 2D + 1 Lunch)",
+      "Transport (Delhi/Roorkee ↔ Chopta)",
+      "Guided treks & sightseeing as per itinerary",
+      "Permits, tolls, parking, driver allowance",
+      "Group games & gifts",
+      "Basic first aid"
+    ],
+    "exclusions": [
+      "Personal expenses, shopping, snacks",
+      "Adventure activities not mentioned",
+      "Entrance fees to temples/parks (if any)",
+      "Travel insurance",
+      "Anything not specifically listed in the inclusions"
+    ],
+    "overview":
+      "Discover the untouched beauty of Tungnath, Chandrashila and Deora Taal. Our trips offer a blend of adventure, relaxation, and cultural experiences. Book now for special offers!",
+    "itinerary": [
+    {
+      "day": 0,
+      "title": "Departure",
+      "description": "Departure from Delhi, Roorkee, Chandigarh to Dehradun — overnight journey by Volvo bus"
+    },
+    {
+      "day": 1,
+      "title": "Drive to Sankri",
+      "description": "Pickup from Dehradun and drive to Sankri"
+    },
+    {
+      "day": 2,
+      "title": "Trek to Juda Ka Talab",
+      "description": "Trek from Sankri to Juda Ka Talab (4 km | 2.5 hrs)"
+    },
+    {
+      "day": 3,
+      "title": "Trek to Kedarkantha Base Camp",
+      "description": "Trek from Juda Ka Talab to Kedarkantha Base Camp (Lohasu) (4 km | 2.5 hrs)"
+    },
+    {
+      "day": 4,
+      "title": "Summit Trek",
+      "description": "Trek from Kedarkantha Base to Kedarkantha Peak, then descend to Hargaon Camp (8 km | 8 hrs)"
+    },
+    {
+      "day": 5,
+      "title": "Return Journey",
+      "description": "Descend to Sankri Base Camp, then drive from Sankri to Dehradun (4 km trek, 190 km drive | 8 hrs) and return to Delhi, Roorkee & Chandigarh"
+    }
+  ]
+  
+
+  },
   // {
   //   id: 3,
   //   title: "Mussoorie, Landour & Rishikesh(31st Oct – 2nd Nov)",
