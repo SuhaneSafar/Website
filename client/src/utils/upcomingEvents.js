@@ -222,33 +222,39 @@ const upcomingEvents = [
   ],
     "overview":
       "Discover the untouched beauty of Tungnath, Chandrashila and Deora Taal. Our trips offer a blend of adventure, relaxation, and cultural experiences. Book now for special offers!",
-    "itinerary": [
-      {
-        "day": 0,
-        "title":
-          "Departure",
-        "description":
-          " Night departure from IIT Delhi (1:00 AM) & IIT Roorkee (4:00 AM)"
-      },
-      {
-        "day": 1,
-        "title" : "Stay and Visit",
-        "description":
-            "Devprayag Sangam • Omkareshwar Temple • Chopta Exploration • Overnight stay"
-      },
-      {
-        "day": 2,
-        "title": "Trek",
-        "description":
-          "Tungnath Temple Trek (6 km) • Chandrashila Peak Trek (2 km) • Overnight journey"
-      },
-      {
-        "day": 3,
-        "title": "Trek",
-        "description":
-          "Deoria Taal Trek (3 km) • Afternoon departure • Night arrival"
-      }
-    ],
+  
+  "itinerary": [
+    {
+      "day": 0,
+      "title": "Departure",
+      "description": "Departure from Delhi, Roorkee, Chandigarh to Dehradun — overnight journey by Volvo bus"
+    },
+    {
+      "day": 1,
+      "title": "Drive to Sankri",
+      "description": "Pickup from Dehradun and drive to Sankri"
+    },
+    {
+      "day": 2,
+      "title": "Trek to Juda Ka Talab",
+      "description": "Trek from Sankri to Juda Ka Talab (4 km | 2.5 hrs)"
+    },
+    {
+      "day": 3,
+      "title": "Trek to Kedarkantha Base Camp",
+      "description": "Trek from Juda Ka Talab to Kedarkantha Base Camp (Lohasu) (4 km | 2.5 hrs)"
+    },
+    {
+      "day": 4,
+      "title": "Summit Trek",
+      "description": "Trek from Kedarkantha Base to Kedarkantha Peak, then descend to Hargaon Camp (8 km | 8 hrs)"
+    },
+    {
+      "day": 5,
+      "title": "Return Journey",
+      "description": "Descend to Sankri Base Camp, then drive from Sankri to Dehradun (4 km trek, 190 km drive | 8 hrs) and return to Delhi, Roorkee & Chandigarh"
+    }
+  ]
   
 
   },
@@ -297,37 +303,33 @@ const upcomingEvents = [
     "overview":
       "Discover the untouched beauty of Tungnath, Chandrashila and Deora Taal. Our trips offer a blend of adventure, relaxation, and cultural experiences. Book now for special offers!",
     "itinerary": [
-    {
-      "day": 0,
-      "title": "Departure",
-      "description": "Departure from Delhi, Roorkee, Chandigarh to Dehradun — overnight journey by Volvo bus"
-    },
-    {
-      "day": 1,
-      "title": "Drive to Sankri",
-      "description": "Pickup from Dehradun and drive to Sankri"
-    },
-    {
-      "day": 2,
-      "title": "Trek to Juda Ka Talab",
-      "description": "Trek from Sankri to Juda Ka Talab (4 km | 2.5 hrs)"
-    },
-    {
-      "day": 3,
-      "title": "Trek to Kedarkantha Base Camp",
-      "description": "Trek from Juda Ka Talab to Kedarkantha Base Camp (Lohasu) (4 km | 2.5 hrs)"
-    },
-    {
-      "day": 4,
-      "title": "Summit Trek",
-      "description": "Trek from Kedarkantha Base to Kedarkantha Peak, then descend to Hargaon Camp (8 km | 8 hrs)"
-    },
-    {
-      "day": 5,
-      "title": "Return Journey",
-      "description": "Descend to Sankri Base Camp, then drive from Sankri to Dehradun (4 km trek, 190 km drive | 8 hrs) and return to Delhi, Roorkee & Chandigarh"
-    }
-  ]
+      {
+        "day": 0,
+        "title":
+          "Departure",
+        "description":
+          " Night departure from IIT Delhi (1:00 AM) & IIT Roorkee (4:00 AM)"
+      },
+      {
+        "day": 1,
+        "title" : "Stay and Visit",
+        "description":
+            "Devprayag Sangam • Omkareshwar Temple • Chopta Exploration • Overnight stay"
+      },
+      {
+        "day": 2,
+        "title": "Trek",
+        "description":
+          "Tungnath Temple Trek (6 km) • Chandrashila Peak Trek (2 km) • Overnight journey"
+      },
+      {
+        "day": 3,
+        "title": "Trek",
+        "description":
+          "Deoria Taal Trek (3 km) • Afternoon departure • Night arrival"
+      }
+    ],
+    "lastDate": "12h November 2025",
   
 
   },
