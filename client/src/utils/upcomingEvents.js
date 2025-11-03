@@ -69,9 +69,8 @@ const upcomingEvents = [
 
   {
     id: 1,
-    title: "SPITI(27th Dec – 3rd Jan 2026)",
-    gform:"https://docs.google.com/forms/d/e/1FAIpQLSeI8m2OTPUB_BHwAGbooAx2iPDiG1yRB2ECYO1LdT9yrUw_nA/viewform?usp=publish-editor",
-    subtitle: "Join the exciting community trips with amazing discounts",
+     title: "SPITI(28th Nov – 5th Dec 2025)",
+    gform:"https://docs.google.com/forms/d/e/1FAIpQLSeKDjow8nG-DD1PiQpipQDDH04z461HE_Z9AOE1s74gFQv1DQ/viewform?usp=header",subtitle: "Join the exciting community trips with amazing discounts",
     mainImage: "/Images/spiti.jpeg",
     gallery: [
       "/Images/spiti.jpeg",
@@ -79,15 +78,11 @@ const upcomingEvents = [
       "/Images/spiti2.jpeg",
       "/Images/spiti3.jpeg",
       "/Images/spiti4.jpeg",
-      "/Images/spiti-4.jpg",
-      "/Images/spiti-5.jpg",
-      "/Images/spiti-6.jpg",
-      "/Images/spiti-7.jpg",
-      "/Images/spiti-8.jpg",
+    
 
 
     ],
-    price:"17999",
+    price:"14999",
     reviews: [
       {
         name: "Mohit",
@@ -100,7 +95,7 @@ const upcomingEvents = [
         text: "The local guide was very knowledgeable and friendly.",
       },
     ],
-    pickupDrop: "Delhi | Roorkee | Chandigarh ",
+    pickupDrop: "IIT Delhi | IIT Roorkee | Dehradun | Chandigarh ",
     duration: "7 Days / 8 Nights",
     inclusions: [
       "7 Nights stay (Sarahan/Kaza/Kalpa)",
@@ -125,7 +120,7 @@ const upcomingEvents = [
           day: 0,
           title: "Departure",
           description:
-            "Departure from Delhi, Roorkee & Chandigarh at 9–10 PM. Overnight journey to Shimla (26th Dec).",
+            "Departure from Delhi, Roorkee & Chandigarh at 9–10 PM. Overnight journey to Shimla (28th Nov).",
         },
         {
           day: 1,
@@ -173,11 +168,11 @@ const upcomingEvents = [
           day: 8,
           title: "Trip End",
           description:
-            "Reach Chandigarh, Delhi, and Roorkee early morning (6–8 AM). Trip ends with unforgettable memories (3rd Jan).",
+            "Reach Chandigarh, Delhi, and Roorkee early morning (6–8 AM). Trip ends with unforgettable memories (6th Dec).",
         },
       ]
 ,      
-    lastDate: "12th December 2025",
+    lastDate: "12th November 2025",
     // buttonLabel: "Know more",
   },
   {
@@ -731,8 +726,114 @@ const upcomingEvents = [
     }
   ],
   "lastDate": "12th November 2025"
-}
+},
+{
+    id: 5,
+     title: "SPITI(27th Dec – 3rd Jan 2026)",
+     gform:"https://docs.google.com/forms/d/e/1FAIpQLSeI8m2OTPUB_BHwAGbooAx2iPDiG1yRB2ECYO1LdT9yrUw_nA/viewform?usp=publish-editor",
+    mainImage: "/Images/spiti.jpeg",
+    gallery: [
+      "/Images/spiti-4.jpg",
+      "/Images/spiti-5.jpg",
+      "/Images/spiti-6.jpg",
+      "/Images/spiti-7.jpg",
+      "/Images/spiti-8.jpg",
+    
 
+
+    ],
+    price:"17999",
+    reviews: [
+      {
+        name: "Mohit",
+        rating: 4,
+        text: "The views were breathtaking.",
+      },
+      {
+        name: "Snehal",
+        rating: 5,
+        text: "The local guide was very knowledgeable and friendly.",
+      },
+    ],
+    pickupDrop: " Delhi | Roorkee | Chandigarh ",
+    duration: "7 Days / 8 Nights",
+    inclusions: [
+      "7 Nights stay (Sarahan/Kaza/Kalpa)",
+      "6 Meals (6 Breakfasts + 6 Dinners)",
+      "Transport (Delhi/Roorkee ↔ Shimla)",
+      "Guided treks & sightseeing as per itinerary",
+      "Permits, tolls, parking, driver allowance",
+      "Group games & gifts",
+      "Basic first aid"
+    ],
+    exclusions: [
+      "Personal expenses, shopping, snacks",
+      "Adventure activities not mentioned",
+      "Entrance fees to temples/parks (if any)",
+      "Travel insurance",
+      "Anything not specifically listed in the inclusions",
+    ],
+    overview:
+      "Discover the untouched beauty of Tungnath, Chandrashila and Deora Taal. Our trips offer a blend of adventure, relaxation, and cultural experiences. Book now for special offers!",
+      itinerary: [
+        {
+          day: 0,
+          title: "Departure",
+          description:
+            "Departure from Delhi, Roorkee & Chandigarh at 9–10 PM. Overnight journey to Shimla (26th Dec).",
+        },
+        {
+          day: 1,
+          title: "Sarahan Stay",
+          description:
+            "Reach Shimla, transfer to Sarahan, and overnight stay at Sarahan.",
+        },
+        {
+          day: 2,
+          title: "Chitkul Exploration",
+          description:
+            "Explore Chitkul and stay at Sangla/Chitkul.",
+        },
+        {
+          day: 3,
+          title: "Tabo Exploration",
+          description:
+            "Explore Tabo and Nako villages, move towards Tabo, and stay overnight at Tabo.",
+        },
+        {
+          day: 4,
+          title: "Kaza Local Exploration",
+          description:
+            "Explore Kaza local market and visit Dhankar Monastery. Overnight stay in Kaza.",
+        },
+        {
+          day: 5,
+          title: "Spiti Valley Exploration",
+          description:
+            "Explore Hikkim, Chicham Bridge, Komic, and Langza. Stay in Kaza.",
+        },
+        {
+          day: 6,
+          title: "Kalpa Visit",
+          description:
+            "Move towards Kalpa, visit Gue Monastery and Kinnaur Valley. Stay at Kalpa.",
+        },
+        {
+          day: 7,
+          title: "Return Journey",
+          description:
+            "Explore Suicide Point, Narkanda, then leave for Shimla. Transfer to Chandigarh, Delhi, and Roorkee via Volvo.",
+        },
+        {
+          day: 8,
+          title: "Trip End",
+          description:
+            "Reach Chandigarh, Delhi, and Roorkee early morning (6–8 AM). Trip ends with unforgettable memories (3rd Jan).",
+        },
+      ]
+,      
+    lastDate: "12th December 2025",
+    }
 ];
 
 export default upcomingEvents;
