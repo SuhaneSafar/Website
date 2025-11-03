@@ -731,7 +731,7 @@ const upcomingEvents = [
     id: 5,
      title: "SPITI(27th Dec – 3rd Jan 2026)",
      gform:"https://docs.google.com/forms/d/e/1FAIpQLSeI8m2OTPUB_BHwAGbooAx2iPDiG1yRB2ECYO1LdT9yrUw_nA/viewform?usp=publish-editor",
-    mainImage: "/Images/spitimain.jpeg",
+    mainImage: "/Images/spitimain.jpg",
     gallery: [
       "/Images/spiti-4.jpg",
       "/Images/spiti-5.jpg",
