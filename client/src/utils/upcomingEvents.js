@@ -114,7 +114,7 @@ const upcomingEvents = [
       "Anything not specifically listed in the inclusions",
     ],
     overview:
-      "Discover the untouched beauty of Tungnath, Chandrashila and Deora Taal. Our trips offer a blend of adventure, relaxation, and cultural experiences. Book now for special offers!",
+      "Discover the untouched beauty of Spiti Valley. Our trips offer a blend of adventure, relaxation, and cultural experiences. Book now for special offers!",
       itinerary: [
         {
           day: 0,
@@ -271,7 +271,7 @@ const upcomingEvents = [
       "/Images/chandrashila2.png",
       "/Images/chandrashila3.jpg"
     ],
-    "price":"3299/5299",
+    "price":"3999/5499",
     "reviews"   : [
       {
         "name": "Mohit",
@@ -774,7 +774,7 @@ const upcomingEvents = [
       "Anything not specifically listed in the inclusions",
     ],
     overview:
-      "Discover the untouched beauty of Tungnath, Chandrashila and Deora Taal. Our trips offer a blend of adventure, relaxation, and cultural experiences. Book now for special offers!",
+      "Discover the untouched beauty of Spiti Valley. Our trips offer a blend of adventure, relaxation, and cultural experiences. Book now for special offers!",
       itinerary: [
         {
           day: 0,
