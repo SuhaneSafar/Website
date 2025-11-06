@@ -833,7 +833,78 @@ const upcomingEvents = [
       ]
 ,      
     lastDate: "12th December 2025",
+    },
+    {
+  id: 6,
+  title: "NAG TIBBA (22nd - 23rd November 2025)",
+  gform: "https://docs.google.com/forms/d/e/1FAIpQLSdX82kAIYm4lu7bWVoFyXPcO_136IIrQ2n6qe3I-fYD82tswQ/viewform?usp=header",
+  mainImage: "/Images/Nagtibba-main.jpg",
+  gallery: [
+    "/Images/Nagtibba-main.jpg",
+    "/Images/Nag-main2.jpg",
+    "/Images/nag1.jpg",
+    "/Images/nag2.jpg",
+    "/Images/nag3.jpg",
+    "/Images/nag4.jpg"
+
+  ],
+  price: "2499",
+  reviews: [
+    {
+        name: "Mohit",
+        rating: 4,
+        text: "The views were breathtaking.",
+      },
+      {
+        name: "Snehal",
+        rating: 5,
+        text: "The local guide was very knowledgeable and friendly.",
+      }
+  ],
+  pickupDrop: "IIT Roorkee | Delhi | Dehradun",
+  duration: "2D/1N",
+  grade: "Easy To Moderate",
+  maxAltitude: "9,915 Ft",
+  trekkingKm: "10 Kms",
+  inclusions: [
+    "1 Night stay at Base Camp (tent)",
+    "2 Meals (1 Breakfast + 1 Dinner)",
+    "Transport (Pickup/Drop from IIT Roorkee/Delhi/Dehradun)",
+    "Guided trek and sightseeing",
+    "Permits and parking",
+    "Group games and gifts",
+    "Basic first aid"
+  ],
+  exclusions: [
+    "Personal expenses and shopping",
+    "Snacks and beverages",
+    "Adventure activities not mentioned",
+    "Entrance fees",
+    "Travel insurance",
+    "Anything not specifically listed in inclusions"
+  ],
+  overview: "Exam Over, Adventure Starts! Discover the untouched beauty of Nag Tibba trek. Perfect post-exam trek for students with breathtaking Himalayan views and group bonding moments.",
+  itinerary: [
+    {
+      day: 0,
+      title: "Departure",
+      description: "Early morning departure from Campus (IIT Roorkee/Delhi/Dehradun) at 6-7 AM. Breakfast on the way. Reach Pantwari base by 1:30 PM."
+    },
+    {
+      day: 1,
+      title: "Trek to Base Camp",
+      description: "Start trek from Pantwari (1:30 PM). Trek distance: 5-6 km. Trek time: 3-4 hours to Base Camp. Evening snacks, sunset moments, dinner, bonfire, group games. Overnight stay at Base Camp."
+    },
+    {
+      day: 2,
+      title: "Summit & Return",
+      description: "Early morning start for summit. Trek distance to summit: 3-4 km (one side). Summit time: 2-3 hours. Explore summit and photography. Descend back to Base Camp (8-9 km total). Lunch at Base Camp. Trek down to Pantwari. Drive back to IIT Roorkee/Delhi/Dehradun by 10:00 PM - 11:59 PM."
     }
+  ],
+  lastDate: "14th November 2025"
+}
+
+
 ];
 
 export default upcomingEvents;
