@@ -69,9 +69,8 @@ const upcomingEvents = [
 
   {
     id: 1,
-    title: "SPITI(28th Nov – 5th Dec 2025)",
-    gform:"https://docs.google.com/forms/d/e/1FAIpQLSeKDjow8nG-DD1PiQpipQDDH04z461HE_Z9AOE1s74gFQv1DQ/viewform?usp=header",
-    subtitle: "Join the exciting community trips with amazing discounts",
+     title: "SPITI(28th Nov – 5th Dec 2025)",
+    gform:"https://docs.google.com/forms/d/e/1FAIpQLSeKDjow8nG-DD1PiQpipQDDH04z461HE_Z9AOE1s74gFQv1DQ/viewform?usp=header",subtitle: "Join the exciting community trips with amazing discounts",
     mainImage: "/Images/spiti.jpeg",
     gallery: [
       "/Images/spiti.jpeg",
@@ -79,6 +78,9 @@ const upcomingEvents = [
       "/Images/spiti2.jpeg",
       "/Images/spiti3.jpeg",
       "/Images/spiti4.jpeg",
+    
+
+
     ],
     price:"14999",
     reviews: [
@@ -94,10 +96,10 @@ const upcomingEvents = [
       },
     ],
     pickupDrop: "IIT Delhi | IIT Roorkee | Dehradun | Chandigarh ",
-    duration: "7 Days / 8 Nights",
+    duration: "8 Days / 7 Nights",
     inclusions: [
-      "7 Nights stay (Sarahan/Kaza/Kalpa)",
-      "6 Meals (6 Breakfasts + 6 Dinners)",
+      "6 Nights stay (Sarahan/Kaza/Kalpa)",
+      "12 Meals (6 Breakfasts + 6 Dinners)",
       "Transport (Delhi/Roorkee ↔ Shimla)",
       "Guided treks & sightseeing as per itinerary",
       "Permits, tolls, parking, driver allowance",
@@ -112,7 +114,7 @@ const upcomingEvents = [
       "Anything not specifically listed in the inclusions",
     ],
     overview:
-      "Discover the untouched beauty of Tungnath, Chandrashila and Deora Taal. Our trips offer a blend of adventure, relaxation, and cultural experiences. Book now for special offers!",
+      "Discover the untouched beauty of Spiti Valley. Our trips offer a blend of adventure, relaxation, and cultural experiences. Book now for special offers!",
       itinerary: [
         {
           day: 0,
@@ -259,7 +261,7 @@ const upcomingEvents = [
 
   },
   {
-    "id"   : 2,
+    "id"   : 3,
     "title": "TUNGNATH-CHANDRASHILA-DEORIA TAAL(1-3 December)",
     "gform":"https://docs.google.com/forms/d/e/1FAIpQLSexkSIlcvqt_XhgwdfYvCU7AvqNilMQ84uNfyBqU-VTonpZLg/viewform?usp=publish-editor",
     "subtitle": "Join the exciting community trips with amazing discounts",
@@ -269,7 +271,7 @@ const upcomingEvents = [
       "/Images/chandrashila2.png",
       "/Images/chandrashila3.jpg"
     ],
-    "price":"3299/5299",
+    "price":"3999/5499",
     "reviews"   : [
       {
         "name": "Mohit",
@@ -651,6 +653,258 @@ const upcomingEvents = [
   //   ],
   //   buttonLabel: "Know more"
   // }
+  {
+  "id": 4,
+  "title": "MANALI - KASOL TRIP (25th - 29th November)",
+  "gform": "https://docs.google.com/forms/d/e/1FAIpQLSe9GfsWwTcejKqIr61KkDuhdnxqgJFd50hEj6ClqkdRIXGYpQ/viewform?usp=publish-editor",
+  "subtitle": "Join the exciting Manali–Kasol community trip with unforgettable memories and amazing experiences!",
+  "mainImage": "/Images/Manali-main.jpg",
+  "gallery": [
+    "/Images/Man-2.jpg",
+    "/Images/Man-3.jpg",
+    "/Images/Man1.jpg",
+    "/Images/Man-5.jpg",
+    "/Images/Man-6.jpg"
+  ],
+  "price": "₹3299 / ₹5299",
+  "reviews": [
+    {
+      "name": "Mohit",
+      "rating": 4,
+      "text": "The views were breathtaking."
+    },
+    {
+      "name": "Snehal",
+      "rating": 5,
+      "text": "The local guide was very knowledgeable and friendly."
+    }
+  ],
+  "pickupDrop": "IIT Delhi | IIT Roorkee | Chandigarh",
+  "duration": "4 Days / 3 Nights",
+  "inclusions": [
+    "Hotel stay on triple/quad sharing basis",
+    "Meals as per itinerary (Breakfast & Dinner)",
+    "Comfortable AC/Non-AC transport",
+    "Bonfire night with music and games",
+    "Sightseeing as per itinerary (Hadimba Temple, Solang Valley, Sissu, Kasol, etc.)",
+    "Tolls, parking, driver allowance",
+    "Trip captain and basic first aid"
+  ],
+  "exclusions": [
+    "Personal expenses, shopping, snacks",
+    "Adventure activities (paragliding, skiing, etc.)",
+    "Entry fees to monuments/temples (if applicable)",
+    "Travel insurance",
+    "Anything not specifically listed in the inclusions"
+  ],
+  "overview": "Experience the perfect blend of adventure and peace with our Manali–Kasol trip! Explore Hadimba Temple, Solang Valley, Sissu, Atal Tunnel, Parvati Valley, and Kasol Market. Enjoy bonfire nights, fun games, and scenic mountain views while making memories and friends for life.",
+  "itinerary": [
+    {
+      "day": 0,
+      "title": "Departure",
+      "description": "Departure from IIT Delhi & Chandigarh at 8:00 PM. Overnight journey with fun and music night."
+    },
+    {
+      "day": 1,
+      "title": "Manali Sightseeing",
+      "description": "Early morning hotel check-in & freshen up. After breakfast, explore local sightseeing – Hadimba Temple and Mall Road (shopping & cafes). Evening bonfire, dinner, and interaction games."
+    },
+    {
+      "day": 2,
+      "title": "Sissu & Solang Valley",
+      "description": "Early morning breakfast followed by visit to Sissu (scenic spots) and Atal Tunnel. Explore Solang Valley for adventure activities. Return to hotel for dinner, fun activities, and rest."
+    },
+    {
+      "day": 3,
+      "title": "Kasol & Manikaran Visit",
+      "description": "Early morning check-out for Kasol. Visit Manikaran Sahib (hot spring water) and explore Parvati Valley & Kasol Market. Departure for Delhi/Roorkee at 3:00 PM with overnight music journey."
+    },
+    {
+      "day": 4,
+      "title": "Return",
+      "description": "Morning arrival back home – tired body but happiest soul! Memories made, friends gained!"
+    }
+  ],
+  "lastDate": "12th November 2025"
+},
+{
+    id: 5,
+     title: "SPITI(27th Dec – 3rd Jan 2026)",
+     gform:"https://docs.google.com/forms/d/e/1FAIpQLSeI8m2OTPUB_BHwAGbooAx2iPDiG1yRB2ECYO1LdT9yrUw_nA/viewform?usp=publish-editor",
+    mainImage: "/Images/spitimain.jpg",
+    gallery: [
+      "/Images/spiti-4.jpg",
+      "/Images/spiti-5.jpg",
+      "/Images/spiti-6.jpg",
+      "/Images/spiti-7.jpg",
+      "/Images/spiti-8.jpg",
+    
+
+
+    ],
+    price:"17999",
+    reviews: [
+      {
+        name: "Mohit",
+        rating: 4,
+        text: "The views were breathtaking.",
+      },
+      {
+        name: "Snehal",
+        rating: 5,
+        text: "The local guide was very knowledgeable and friendly.",
+      },
+    ],
+    pickupDrop: " Delhi | Roorkee | Chandigarh ",
+    duration: "8 Days / 7 Nights",
+    inclusions: [
+      "6 Nights stay (Sarahan/Kaza/Kalpa)",
+      "12 Meals (6 Breakfasts + 6 Dinners)",
+      "Transport (Delhi/Roorkee ↔ Shimla)",
+      "Guided treks & sightseeing as per itinerary",
+      "Permits, tolls, parking, driver allowance",
+      "Group games & gifts",
+      "Basic first aid"
+    ],
+    exclusions: [
+      "Personal expenses, shopping, snacks",
+      "Adventure activities not mentioned",
+      "Entrance fees to temples/parks (if any)",
+      "Travel insurance",
+      "Anything not specifically listed in the inclusions",
+    ],
+    overview:
+      "Discover the untouched beauty of Spiti Valley. Our trips offer a blend of adventure, relaxation, and cultural experiences. Book now for special offers!",
+      itinerary: [
+        {
+          day: 0,
+          title: "Departure",
+          description:
+            "Departure from Delhi, Roorkee & Chandigarh at 9–10 PM. Overnight journey to Shimla (26th Dec).",
+        },
+        {
+          day: 1,
+          title: "Sarahan Stay",
+          description:
+            "Reach Shimla, transfer to Sarahan, and overnight stay at Sarahan.",
+        },
+        {
+          day: 2,
+          title: "Chitkul Exploration",
+          description:
+            "Explore Chitkul and stay at Sangla/Chitkul.",
+        },
+        {
+          day: 3,
+          title: "Tabo Exploration",
+          description:
+            "Explore Tabo and Nako villages, move towards Tabo, and stay overnight at Tabo.",
+        },
+        {
+          day: 4,
+          title: "Kaza Local Exploration",
+          description:
+            "Explore Kaza local market and visit Dhankar Monastery. Overnight stay in Kaza.",
+        },
+        {
+          day: 5,
+          title: "Spiti Valley Exploration",
+          description:
+            "Explore Hikkim, Chicham Bridge, Komic, and Langza. Stay in Kaza.",
+        },
+        {
+          day: 6,
+          title: "Kalpa Visit",
+          description:
+            "Move towards Kalpa, visit Gue Monastery and Kinnaur Valley. Stay at Kalpa.",
+        },
+        {
+          day: 7,
+          title: "Return Journey",
+          description:
+            "Explore Suicide Point, Narkanda, then leave for Shimla. Transfer to Chandigarh, Delhi, and Roorkee via Volvo.",
+        },
+        {
+          day: 8,
+          title: "Trip End",
+          description:
+            "Reach Chandigarh, Delhi, and Roorkee early morning (6–8 AM). Trip ends with unforgettable memories (3rd Jan).",
+        },
+      ]
+,      
+    lastDate: "12th December 2025",
+    },
+    {
+  id: 6,
+  title: "NAG TIBBA (22nd - 23rd November 2025)",
+  gform: "https://docs.google.com/forms/d/e/1FAIpQLSdX82kAIYm4lu7bWVoFyXPcO_136IIrQ2n6qe3I-fYD82tswQ/viewform?usp=header",
+  mainImage: "/Images/Nagtibba-main.jpg",
+  gallery: [
+    "/Images/Nagtibba-main.jpg",
+    "/Images/Nag-main2.jpg",
+    "/Images/nag1.jpg",
+    "/Images/nag2.jpg",
+    "/Images/nag3.jpg",
+    "/Images/nag4.jpg"
+
+  ],
+  price: "2499",
+  reviews: [
+    {
+        name: "Mohit",
+        rating: 4,
+        text: "The views were breathtaking.",
+      },
+      {
+        name: "Snehal",
+        rating: 5,
+        text: "The local guide was very knowledgeable and friendly.",
+      }
+  ],
+  pickupDrop: "IIT Roorkee | Delhi | Dehradun",
+  duration: "2D/1N",
+  grade: "Easy To Moderate",
+  maxAltitude: "9,915 Ft",
+  trekkingKm: "10 Kms",
+  inclusions: [
+    "1 Night stay at Base Camp (tent)",
+    "2 Meals (1 Breakfast + 1 Dinner)",
+    "Transport (Pickup/Drop from IIT Roorkee/Delhi/Dehradun)",
+    "Guided trek and sightseeing",
+    "Permits and parking",
+    "Group games and gifts",
+    "Basic first aid"
+  ],
+  exclusions: [
+    "Personal expenses and shopping",
+    "Snacks and beverages",
+    "Adventure activities not mentioned",
+    "Entrance fees",
+    "Travel insurance",
+    "Anything not specifically listed in inclusions"
+  ],
+  overview: "Exam Over, Adventure Starts! Discover the untouched beauty of Nag Tibba trek. Perfect post-exam trek for students with breathtaking Himalayan views and group bonding moments.",
+  itinerary: [
+    {
+      day: 0,
+      title: "Departure",
+      description: "Early morning departure from Campus (IIT Roorkee/Delhi/Dehradun) at 6-7 AM. Breakfast on the way. Reach Pantwari base by 1:30 PM."
+    },
+    {
+      day: 1,
+      title: "Trek to Base Camp",
+      description: "Start trek from Pantwari (1:30 PM). Trek distance: 5-6 km. Trek time: 3-4 hours to Base Camp. Evening snacks, sunset moments, dinner, bonfire, group games. Overnight stay at Base Camp."
+    },
+    {
+      day: 2,
+      title: "Summit & Return",
+      description: "Early morning start for summit. Trek distance to summit: 3-4 km (one side). Summit time: 2-3 hours. Explore summit and photography. Descend back to Base Camp (8-9 km total). Lunch at Base Camp. Trek down to Pantwari. Drive back to IIT Roorkee/Delhi/Dehradun by 10:00 PM - 11:59 PM."
+    }
+  ],
+  lastDate: "14th November 2025"
+}
+
+
 ];
 
 export default upcomingEvents;
