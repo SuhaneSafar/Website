@@ -79,120 +79,228 @@ const upcomingEvents = [
   }
 ,
 {
-  "id": 5,
-  "title": "NAG TIBBA TREK",
-  "gform": "https://docs.google.com/forms",
-  "subtitle": "Perfect weekend snow trek near Dehradun",
-  "mainImage": "/Images/nagtibba.jpeg",
+  "id": 9,
+  "title": "HARSHIL VALLEY – WINTER SPECIAL",
+  "gform": "https://docs.google.com/forms/d/e/1FAIpQLSfqq4w3XcC5T3IBZ5F3BR2X9nddnLDUBgB1uqVu77_fC4DC1Q/viewform?usp=header",
+  "subtitle": "Snow-covered Himalayan escape with treks, temples & cozy village vibes",
+  "mainImage": "/Images/harshil-main.png",
   "gallery": [
-  "/Images/nagtibba.jpeg",
+    "/Images/harshil-1.jpg",
   ],
-  "price": "2499/3999",
+  "price": "5499/6999",
   "reviews": [
     {
-      "name": "Ravi",
-      "rating": 4,
-      "text": "Short but very scenic trek."
-    },
-    {
-      "name": "Neha",
+      "name": "Aman",
       "rating": 5,
-      "text": "Great for beginners, loved the campsite."
-    }
-  ],
-  "pickupDrop": "IIT Delhi | IIT Roorkee | Chandigarh",
-  "duration": "2 Days / 1 Night",
-  "inclusions": [
-    "1 Night stay at Base Camp",
-    "3 Meals (1B + 1D + 1 Lunch + Snacks)",
-    "Transport (Delhi/Roorkee/Chandigarh ↔ Dehradun)",
-    "Tempo Traveller (Dehradun ↔ Pantwari)",
-    "Local trek guide & permits",
-    "Surprise games & gifts",
-    "Basic first aid"
-  ],
-  "exclusions": [
-    "Personal expenses",
-    "Travel insurance",
-    "Anything not mentioned in inclusions"
-  ],
-  "overview": "Nag Tibba is an ideal beginner trek offering snow trails, forest walks, and stunning views of the Garhwal Himalayas.",
-  "itinerary": [
-    {
-      "day": 1,
-      "title": "Pantwari to Base Camp",
-      "description": "Drive to Pantwari, trek to base camp & overnight stay."
+      "text": "Harshil was magical in winters. Bonfire night and stargazing were unforgettable."
     },
     {
-      "day": 2,
-      "title": "Summit & Return",
-      "description": "Early morning summit trek, descend to Pantwari & drive back."
-    }
-  ],
-  "lastDate": "8th January 2026"
-}
-,{
-  "id": 6,
-  "title": "TUNGNATH–CHANDRASHILA–KARTIK SWAMI",
-  "gform": "https://docs.google.com/forms",
-  "subtitle": "Spiritual Himalayan trek with breathtaking peaks",
-  "mainImage": "/Images/chandrashila.jpeg",
-  "gallery": [
-    "/Images/chandrashila.jpeg",
-    "/Images/chandrashila1.jpg",
-    "/Images/chandrashila2.png",
-    "/Images/chandrashila3.jpg"
-  ],
-  "price": "4299/5999",
-  "reviews": [
-    {
-      "name": "Saurabh",
-      "rating": 5,
-      "text": "Chandrashila views were unreal."
-    },
-    {
-      "name": "Isha",
+      "name": "Shreya",
       "rating": 4,
-      "text": "Perfect mix of trekking and spirituality."
+      "text": "Loved Gangotri visit and Lama Top trek. Very peaceful trip."
     }
   ],
-  "pickupDrop": "IIT Delhi | IIT Roorkee | Chandigarh",
+  "pickupDrop": "IIT Roorkee | Delhi NCR | Rishikesh | Chandigarh",
   "duration": "4 Days / 3 Nights",
   "inclusions": [
-    "2 Nights stay (Chopta/Makkumath)",
-    "4 Meals (1B + 2D + 1 Lunch)",
-    "Transport (Delhi/Roorkee ↔ Chopta)",
-    "Tungnath & Chandrashila trek",
-    "Local sightseeing & permits",
-    "Group games & gifts",
-    "Basic first aid"
+    "2 Nights stay in homestay at Harshil",
+    "Transport by Traveller/Bus from Delhi/Roorkee/Chandigarh to Dehradun & back",
+    "Tempo traveller from Dehradun to Harshil",
+    "4 Meals (2 Breakfasts + 2 Dinners)",
+    "Visit to Uttarkashi & waterfall",
+    "Gangotri Temple visit",
+    "Surya Kund trek",
+    "Lama Top trek (2.5 km)",
+    "Local village exploration (Harshil & Bagori)",
+    "Bonfire night with music & interaction games",
+    "All required permits",
+    "Trip leader & support staff",
+    "Basic first aid kit",
+    "Driver allowance, toll tax & parking"
   ],
   "exclusions": [
-    "Personal expenses",
-    "Adventure activities not mentioned",
+    "Personal expenses (shopping, laundry, snacks)",
+    "Any adventure activities not mentioned",
+    "Entry fees at temples or sightseeing spots (if applicable)",
     "Travel insurance",
     "Anything not mentioned in inclusions"
   ],
-  "overview": "Visit the world’s highest Shiva temple and trek to Chandrashila summit, combined with Kartik Swami temple exploration.",
+  "overview": "Escape to the serene Harshil Valley this winter with Suhane Safar. Explore snow-laden villages, trek to Lama Top and Surya Kund, seek blessings at Gangotri Temple, and enjoy cozy homestays, bonfires, and stargazing — a perfect short Himalayan getaway with college vibes.",
   "itinerary": [
     {
+      "day": 0,
+      "title": "Departure",
+      "description": "Evening departure from Delhi & Chandigarh. Overnight journey with music and fun."
+    },
+    {
       "day": 1,
-      "title": "Arrival & Sightseeing",
-      "description": "Pickup from Delhi/Roorkee, visit Omkareshwar Temple, stay at Chopta."
+      "title": "Uttarkashi & Harshil",
+      "description": "Early morning departure from IIT Roorkee. Reach Uttarkashi, visit waterfall, reach Harshil by evening. Homestay check-in, village walk, dinner and bonfire."
     },
     {
       "day": 2,
-      "title": "Tungnath Trek",
-      "description": "Trek to Tungnath & Chandrashila peak. Overnight journey."
+      "title": "Gangotri & Surya Kund Trek",
+      "description": "Visit Gangotri Temple and Surya Kund trek. Return to Harshil for dinner, stargazing and overnight stay."
     },
     {
       "day": 3,
-      "title": "Kartik Swami",
-      "description": "Early morning Kartik Swami trek & return journey."
+      "title": "Lama Top Trek & Return",
+      "description": "Early morning Lama Top trek (2.5 km), explore Bagori village. Check-out and departure for Delhi & Roorkee. Late-night arrival."
     }
   ],
-  "lastDate": "8th January 2026"
+  "lastDate": "16 January 2026"
 }
+,
+{
+  "id": 7,
+  "title": "ALUMNI CORPORATE TRIP – KULLU–MANALI",
+  "gform": "https://docs.google.com/forms/d/e/1FAIpQLSdAuC-whXDk253KF0cDeb_m6o5N3Oa7kV4PqLqLkgxr58iohg/viewform?usp=header",
+  "subtitle": "Snow adventure, alumni bonding & inter-IIT carnival experience",
+  "mainImage": "/Images/kullu.png",
+  "gallery": [
+    "/Images/kullu.png",
+  ],
+  "price": "8999",
+  "reviews": [
+    {
+      "name": "Ankit",
+      "rating": 5,
+      "text": "Perfect alumni trip with adventure, snow and amazing bonding sessions."
+    },
+    {
+      "name": "Neha",
+      "rating": 4,
+      "text": "Loved the bonfire night and Solang Valley snow activities."
+    }
+  ],
+  "pickupDrop": "Delhi | Gurgaon | IIT Roorkee",
+  "duration": "4 Days / 3 Nights",
+  "inclusions": [
+    "Comfortable cab journey from Delhi/Gurgaon/Roorkee",
+    "Hotel accommodation in Manali",
+    "Manali local sightseeing",
+    "Visit to Solang Valley & Atal Tunnel (subject to weather)",
+    "Snow activities & sightseeing",
+    "Alumni–Junior bonding meet-up",
+    "Fun games, DJ night & bonfire",
+    "Trip coordinator support"
+  ],
+  "exclusions": [
+    "Personal expenses",
+    "Adventure activities in Kullu (River rafting, paragliding, zipline)",
+    "Any meals not mentioned",
+    "Anything not mentioned in inclusions"
+  ],
+  "overview": "Reconnect with college friends and relive memories on this alumni corporate trip to Kullu–Manali. Enjoy snow adventures, scenic mountain views, alumni bonding sessions, DJ nights, and the Inter-IIT Adventure Carnival — all wrapped in a stress-free travel experience.",
+  "itinerary": [
+    {
+      "day": 0,
+      "title": "Departure",
+      "description": "Evening/Night departure from Delhi, Gurgaon & IIT Roorkee."
+    },
+    {
+      "day": 1,
+      "title": "Manali Local Sightseeing",
+      "description": "Visit Hadimba Temple, Manu Temple, Old Manali and Mall Road. Evening fun games, alumni–junior bonding meet-up and bonfire night."
+    },
+    {
+      "day": 2,
+      "title": "Snow Adventure Day",
+      "description": "Snow sightseeing at Atal Tunnel, Solang Valley and Sissu/Koksar (subject to weather). Enjoy snow activities followed by DJ night."
+    },
+    {
+      "day": 3,
+      "title": "Kullu Adventures & Return",
+      "description": "Optional adventure activities like river rafting, paragliding and zipline in Kullu. Departure at 11:00 AM and late-night arrival in Delhi/Gurgaon."
+    }
+  ],
+  "lastDate": "16 January 2026"
+}
+,{
+  "id": 8,
+  "title": "CHHATTISGARH TO MANALI – WINTER SPECIAL",
+  "gform": "https://docs.google.com/forms/d/e/1FAIpQLSf7Qe2E0hx8FuOzCslG6TB9qN7738Lu7oszq4e_FItyMsC5cA/viewform?usp=header",
+  "subtitle": "Snow-filled Himalayan journey with Manali & Kullu adventures",
+  "mainImage": "/Images/cg-manali.jpeg",
+  "gallery": [
+    "/Images/cg-manali.jpeg"
+  ],
+  "price": "9999",
+  "reviews": [
+    {
+      "name": "Rahul",
+      "rating": 5,
+      "text": "Best winter trip from Chhattisgarh. Snow, fun and great people!"
+    },
+    {
+      "name": "Pooja",
+      "rating": 4,
+      "text": "Loved Manali vibes, bonfire night and Solang Valley."
+    }
+  ],
+  "pickupDrop": "Raipur | Bilaspur | Raigarh",
+  "duration": "7 Days / 6 Nights",
+  "inclusions": [
+    "Round-trip train transportation from Chhattisgarh to Delhi",
+    "Delhi to Delhi transport by Traveller/Cab",
+    "2 Nights stay in Manali & 1 Day half stay in Delhi (shared rooms)",
+    "6 Meals (3 Breakfasts + 3 Dinners)",
+    "Manali local sightseeing (Hadimba Temple, Mall Road)",
+    "Visit to Sissu, Atal Tunnel & Solang Valley (subject to weather)",
+    "Bonfire night & fun interaction games",
+    "Trip leader, team guidance & support staff",
+    "All required travel permits",
+    "Basic first aid kit",
+    "Driver allowance, toll tax & parking"
+  ],
+  "exclusions": [
+    "Personal expenses (shopping, laundry, tips, snacks)",
+    "Adventure activities like paragliding & river rafting",
+    "Entry fees at temples or sightseeing spots (if applicable)",
+    "Travel insurance",
+    "Anything not mentioned in inclusions"
+  ],
+  "overview": "Experience the magic of winter in Manali on this specially curated Chhattisgarh to Himalayas trip. Enjoy snow landscapes, local sightseeing, Solang Valley adventures, Kullu activities, fun train journeys, and unforgettable bonding moments — all planned with comfort and safety by Suhane Safar.",
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Departure from Chhattisgarh",
+      "description": "Pickup from Raigarh, Bilaspur & Raipur. Meet-up at railway stations, trip briefing and overnight train journey to Delhi with games and music."
+    },
+    {
+      "day": 2,
+      "title": "Delhi to Manali",
+      "description": "Departure from Delhi/Chandigarh at 8:00 PM. Overnight journey with music and fun."
+    },
+    {
+      "day": 3,
+      "title": "Manali Sightseeing",
+      "description": "Early morning hotel check-in. Visit Hadimba Temple and explore Mall Road. Dinner, bonfire and interaction games."
+    },
+    {
+      "day": 4,
+      "title": "Snow Adventure Day",
+      "description": "Visit Sissu scenic spots, Atal Tunnel and Solang Valley for snow and adventure activities. Night dinner and rest."
+    },
+    {
+      "day": 5,
+      "title": "Kullu Adventures & Return",
+      "description": "Check-out for Kullu. Optional river rafting and paragliding. Departure for Delhi/Roorkee at 3:00 PM."
+    },
+    {
+      "day": 6,
+      "title": "Delhi to Chhattisgarh",
+      "description": "Morning arrival in Delhi. Fresh-up and departure to Chhattisgarh by train."
+    },
+    {
+      "day": 7,
+      "title": "Arrival Home",
+      "description": "Arrival in Chhattisgarh with unforgettable memories and new friends."
+    }
+  ],
+  "lastDate": "February 2026"
+}
+
 
 
 ];

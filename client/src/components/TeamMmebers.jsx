@@ -11,10 +11,15 @@ const TeamMembers = () => {
     {
       name: "GAURAV ARYA",
       role: "CO-FOUNDER",
-      desc: "B-Tech student who loves travel, inspired by my college trips in Uttarakhand and Himachal. At Suhane Safar, I focus on planning smooth, safe, and budget-friendly trips, helping students explore and connect through meaningful travel experiences.",
+      desc: "IIT Roorkee Alumni. B-Tech student who loves travel, inspired by my college trips in Uttarakhand and Himachal. At Suhane Safar, I focus on planning smooth, safe, and budget-friendly trips, helping students explore and connect through meaningful travel experiences.",
       img: "/Images/cofounder.png",
     },
-  
+    {
+      name: "SAURAV KUMAR",
+      role: "CO-FOUNDER",
+      desc: "IIT Roorkee Alumni | Co-Founder – Suhane Safar. Driving growth through marketing and sponsorship, Saurav plays a key role in building partnerships and brand presence for Suhane Safar. With strong dedication and a clear vision, he began this journey to create meaningful travel experiences for students and young communities.",
+      img: "/Images/saurav.jpeg",
+    },
   ];
 
   return (
