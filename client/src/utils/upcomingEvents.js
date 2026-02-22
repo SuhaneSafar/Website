@@ -148,165 +148,139 @@ const upcomingEvents = [
         "description": "Breakfast, then explore Kullu, enjoy river rafting, paragliding, waterfalls. River rafting, Paragliding (self-paid), Hot balloon. Checkout from hotel in the early morning and reach to respective pickup points. Early morning arrival at the pickup point."
       }
     ],
-    "lastDate": "3rd – 6th March 2026"
+    "lastDate": "27 February 2026"
   }
   ,
   {
     "id": 9,
-    "title": "HARSHIL VALLEY – WINTER SPECIAL",
-    "gform": "https://docs.google.com/forms/d/e/1FAIpQLSfqq4w3XcC5T3IBZ5F3BR2X9nddnLDUBgB1uqVu77_fC4DC1Q/viewform?usp=header",
-    "subtitle": "Snow-covered Himalayan escape with treks, temples & cozy village vibes",
-    "mainImage": "/Images/harshil-main.png",
+    "title": "Munsiyari",
+    "gform": "https://docs.google.com/forms/d/e/1FAIpQLSdjHBejsnHs6nj_nFCiVRPOZ9b1bQlMOYkQ2VYq5sPMOTwPcw/viewform?usp=header",
+    "subtitle": "Beyond the Summit",
+    "mainImage": "/Images/MunsiyariHome.jpg",
     "gallery": [
-      "/Images/harshil-1.jpg",
+      "/Images/Munsiyari.jpg",
+      "/Images/Munsiyari1.jpeg",
+      "/Images/Munsiyari2.jpeg",
     ],
-    "price": "5499/6999",
+    "price": "5499",
     "reviews": [
       {
         "name": "Aman",
         "rating": 5,
-        "text": "Harshil was magical in winters. Bonfire night and stargazing were unforgettable."
+        "text": "Munsiyari was magical. Bonfire night and stargazing were unforgettable."
       },
       {
         "name": "Shreya",
         "rating": 4,
-        "text": "Loved Gangotri visit and Lama Top trek. Very peaceful trip."
+        "text": "Loved Munsiyari visit and Khaliya Top trek. Very peaceful trip."
       }
     ],
-    "pickupDrop": "IIT Roorkee | Delhi NCR | Rishikesh | Chandigarh",
-    "duration": "4 Days / 3 Nights",
+    "pickupDrop": "IITR, Delhi, IIT BHU, IIT Bombay, IIT KGP, IITH,IIT Madras & IITK",
+    "duration": "3 Days / 2 Nights",
     "inclusions": [
-      "2 Nights stay in homestay at Harshil",
-      "Transport by Traveller/Bus from Delhi/Roorkee/Chandigarh to Dehradun & back",
-      "Tempo traveller from Dehradun to Harshil",
-      "4 Meals (2 Breakfasts + 2 Dinners)",
-      "Visit to Uttarkashi & waterfall",
-      "Gangotri Temple visit",
-      "Surya Kund trek",
-      "Lama Top trek (2.5 km)",
-      "Local village exploration (Harshil & Bagori)",
-      "Bonfire night with music & interaction games",
-      "All required permits",
-      "Trip leader & support staff",
-      "Basic first aid kit",
-      "Driver allowance, toll tax & parking"
+      "All internal transportation from Roorkee to Munsiyari and return as per itinerary",
+      "Accommodation on sharing basis 2 Night stay (Homestay in Munsiyari & campsite at Khaliya Top)",
+      "Meals as mentioned (Breakfast & Dinner)",
+      "Khaliya Top trek coordination & campsite arrangement",
+      "Camping charges at Khaliya Top",
+      "Experienced Trip Leader / Coordinator throughout the trip",
+      "Basic first-aid support during the trip",
+      "All applicable local permits & entry fees (wherever required)"
     ],
     "exclusions": [
-      "Personal expenses (shopping, laundry, snacks)",
-      "Any adventure activities not mentioned",
-      "Entry fees at temples or sightseeing spots (if applicable)",
-      "Travel insurance",
-      "Anything not mentioned in inclusions"
+      "Lunch & personal expenses",
+      "Entry / jeep / cab charges",
+      "Scooty / car rental for self-exploration",
+      "Club entry fees (if applicable)",
+      "Any food, drinks or services not mentioned in inclusions"
     ],
-    "overview": "Escape to the serene Harshil Valley this winter with Suhane Safar. Explore snow-laden villages, trek to Lama Top and Surya Kund, seek blessings at Gangotri Temple, and enjoy cozy homestays, bonfires, and stargazing — a perfect short Himalayan getaway with college vibes.",
+    "overview": "Escape to Munsiyari, a 'Little Kashmir' where vibrant rhododendron forests meet whispering, snow-laden peaks. Trek into the heart of the Himalayas, where the mighty Panchachuli peaks stand as your guide in the untouched wilderness of Munsiyari.",
     "itinerary": [
       {
         "day": 0,
         "title": "Departure",
-        "description": "Evening departure from Delhi & Chandigarh. Overnight journey with music and fun."
+        "description": "Participants from other pickup points will first reach Delhi. Evening departure from IIT Delhi & NCR. Overnight journey to IIT Roorkee / Rishikesh."
       },
       {
         "day": 1,
-        "title": "Uttarkashi & Harshil",
-        "description": "Early morning departure from IIT Roorkee. Reach Uttarkashi, visit waterfall, reach Harshil by evening. Homestay check-in, village walk, dinner and bonfire."
+        "title": "Journey to Munsiyari",
+        "description": "Early Morning Start From Roorkee. Scenic Drive Via Devprayag – Karnaprayag – Bageshwar. Reach Munsiyari By Evening. Dinner & Overnight Stay."
       },
       {
         "day": 2,
-        "title": "Gangotri & Surya Kund Trek",
-        "description": "Visit Gangotri Temple and Surya Kund trek. Return to Harshil for dinner, stargazing and overnight stay."
+        "title": "Trek & Camping",
+        "description": "Morning Visit To Maheshwar Kund. Trek To Khaliya Top (5-6 Km). Sunset At Zero Point. Dinner & Night Camping."
       },
       {
         "day": 3,
-        "title": "Lama Top Trek & Return",
-        "description": "Early morning Lama Top trek (2.5 km), explore Bagori village. Check-out and departure for Delhi & Roorkee. Late-night arrival."
+        "title": "Sunrise & Return",
+        "description": "Sunrise Views Of Panchachuli & Nanda Devi Peaks. Descend To Munsiyari. Visit Nanda Devi Temple. Morning Departure For Roorkee / Delhi. Arrival In Delhi, Then Onward Journey To Respective Pickup Points."
       }
     ],
-    "lastDate": "16 January 2026"
+    "lastDate": "3rd March 2026"
   }
 
   , {
     "id": 8,
-    "title": "CHHATTISGARH TO MANALI – WINTER SPECIAL",
-    "gform": "https://docs.google.com/forms/d/e/1FAIpQLSf7Qe2E0hx8FuOzCslG6TB9qN7738Lu7oszq4e_FItyMsC5cA/viewform?usp=header",
-    "subtitle": "Snow-filled Himalayan journey with Manali & Kullu adventures",
-    "mainImage": "/Images/cg-manali.jpeg",
+    "title": "YULLA KANDA",
+    "gform": "https://docs.google.com/forms/d/e/1FAIpQLSdjHBejsnHs6nj_nFCiVRPOZ9b1bQlMOYkQ2VYq5sPMOTwPcw/viewform?usp=header",
+    "subtitle": "World’s Highest Shri Krishna Temple",
+    "mainImage": "/Images/YullaKandaHome.png",
     "gallery": [
-      "/Images/cg-manali.jpeg"
+      "/Images/YullaKanda.jpeg",
+      "/Images/YullaKanda1.jpeg",
+      "/Images/YullaKanda2.jpeg",
     ],
-    "price": "9999",
+    "price": "4499",
     "reviews": [
       {
         "name": "Rahul",
         "rating": 5,
-        "text": "Best winter trip from Chhattisgarh. Snow, fun and great people!"
+        "text": "Yulla Kanda trekking offers an enchanting view of Kinnaur mountains."
       },
       {
         "name": "Pooja",
         "rating": 4,
-        "text": "Loved Manali vibes, bonfire night and Solang Valley."
+        "text": "The world's highest Lord Krishna temple located beside a sacred lake in Kinnaur, Himachal Pradesh."
       }
     ],
-    "pickupDrop": "Raipur | Bilaspur | Raigarh",
-    "duration": "7 Days / 6 Nights",
+    "pickupDrop": "IIT Roorkee | IIT Delhi | Chandigarh",
+    "duration": "3 Days / 2 Nights",
     "inclusions": [
-      "Round-trip train transportation from Chhattisgarh to Delhi",
-      "Delhi to Delhi transport by Traveller/Cab",
-      "2 Nights stay in Manali & 1 Day half stay in Delhi (shared rooms)",
-      "6 Meals (3 Breakfasts + 3 Dinners)",
-      "Manali local sightseeing (Hadimba Temple, Mall Road)",
-      "Visit to Sissu, Atal Tunnel & Solang Valley (subject to weather)",
-      "Bonfire night & fun interaction games",
-      "Trip leader, team guidance & support staff",
-      "All required travel permits",
-      "Basic first aid kit",
-      "Driver allowance, toll tax & parking"
+      "1 Nights Camp Stay in Yulla Base Camp (comfortable, shared rooms)",
+      "3 Delicious Meals - 1 Breakfasts + 1 Dinners + 1 Packed Lunch",
+      "Round-trip Transportation from iit Delhi, Roorkee to Yulla Village by Tempo Traveller",
+      "All Required Permits for trekking and travel",
+      "Surprise Group Games & Gifts to make your experience even more memorable",
+      "Basic First Aid Kit for safety during the trek",
+      "Driver Allowance, Toll Tax & Parking Charges included in the package"
     ],
     "exclusions": [
-      "Personal expenses (shopping, laundry, tips, snacks)",
-      "Adventure activities like paragliding & river rafting",
-      "Entry fees at temples or sightseeing spots (if applicable)",
+      "Any personal expenses such as laundry, shopping, tips, or snacks",
+      "Any adventure activities not specifically mentioned in the itinerary",
+      "Entrance fees to temples, trek, parks, or sightseeing spots (if applicable)",
       "Travel insurance",
-      "Anything not mentioned in inclusions"
+      "Anything else not clearly mentioned in the inclusions"
     ],
     "overview": "Experience the magic of winter in Manali on this specially curated Chhattisgarh to Himalayas trip. Enjoy snow landscapes, local sightseeing, Solang Valley adventures, Kullu activities, fun train journeys, and unforgettable bonding moments — all planned with comfort and safety by Suhane Safar.",
     "itinerary": [
       {
         "day": 1,
-        "title": "Departure from Chhattisgarh",
-        "description": "Pickup from Raigarh, Bilaspur & Raipur. Meet-up at railway stations, trip briefing and overnight train journey to Delhi with games and music."
+        "title": "DEPARTURE TO YULLA VILLAGE",
+        "description": "The group assembles at the pick-up point. Departure Location - IIT Roorkee | IIT Delhi | Chandigarh. Departure Time - 08:00 PM. Meet the team captain at Departure Location and get a TOUR briefing. After which, we'll head out on an overnight journey to Udaipur. Halt for dinner in between (not on us)."
       },
       {
         "day": 2,
-        "title": "Delhi to Manali",
-        "description": "Departure from Delhi/Chandigarh at 8:00 PM. Overnight journey with music and fun."
+        "title": "TREK TO BASE CAMP & TEMPLE VISIT",
+        "description": "6:00 AM - Arrive at Yulla village. 6:20 AM - Start the scenic trek to base camp through pine forests and mountain views. 10:30 AM - Reach base camp, freshen up and relax. Afternoon visit to Shri Krishna Yulla Kanda Temple (just 500m from base camp). Evening - Return to base camp for a magical night: Bonfire under the stars, Stargazing sessions, Fun interactions, laughter, bonding games & soulful conversations. Make unforgettable memories & new friendships surrounded by the Himalayas. Meals Included: Breakfast & Dinner. Stay: Tent stay at base camp."
       },
       {
         "day": 3,
-        "title": "Manali Sightseeing",
-        "description": "Early morning hotel check-in. Visit Hadimba Temple and explore Mall Road. Dinner, bonfire and interaction games."
-      },
-      {
-        "day": 4,
-        "title": "Snow Adventure Day",
-        "description": "Visit Sissu scenic spots, Atal Tunnel and Solang Valley for snow and adventure activities. Night dinner and rest."
-      },
-      {
-        "day": 5,
-        "title": "Kullu Adventures & Return",
-        "description": "Check-out for Kullu. Optional river rafting and paragliding. Departure for Delhi/Roorkee at 3:00 PM."
-      },
-      {
-        "day": 6,
-        "title": "Delhi to Chhattisgarh",
-        "description": "Morning arrival in Delhi. Fresh-up and departure to Chhattisgarh by train."
-      },
-      {
-        "day": 7,
-        "title": "Arrival Home",
-        "description": "Arrival in Chhattisgarh with unforgettable memories and new friends."
+        "title": "DESCENT & RETURN",
+        "description": "7:30 AM - Breakfast at base camp. 10:30 AM - Begin descent to road point near bus stop. 11:00 AM - Explore the Yulla Village and culture. 2:00 PM - Begin the return journey in the afternoon and reach the destination early the next morning. Trip ended, memories started. Back with stories and stronger bonds."
       }
     ],
-    "lastDate": "February 2026"
+    "lastDate": "March 2026"
   }
 
 
