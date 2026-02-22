@@ -36,11 +36,11 @@ const UpcomingAdventures = () => {
           <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-32 h-2 bg-gradient-to-r from-sky-500 via-purple-500 to-yellow-400 rounded-full opacity-80"></div>
         </h2>
         <p className="text-gray-600 text-xl max-w-3xl mx-auto leading-relaxed">
-          Embark on extraordinary journeys that will leave you with stories to tell for a lifetime. 
+          Embark on extraordinary journeys that will leave you with stories to tell for a lifetime.
           Each adventure is carefully crafted to deliver unforgettable experiences.
         </p>
       </div>
-      
+
       {/* Enhanced Swiper Slider */}
       <div className="relative">
         <Swiper
@@ -60,7 +60,7 @@ const UpcomingAdventures = () => {
             delay: 5000,
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
-            
+
           }}
           loop={true}
           breakpoints={{
@@ -103,12 +103,12 @@ const UpcomingAdventures = () => {
                   />
                   {/* Enhanced gradient overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
-                  
+
                   {/* Price badge */}
                   <div className="absolute top-4 right-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-bold px-3 py-1 rounded-full text-sm shadow-lg">
                     ₹{event.price || 'TBA'}
                   </div>
-                  
+
                   {/* Title and location overlay */}
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                     <h3 className="text-2xl font-bold drop-shadow-lg mb-3 leading-tight">{event.title}</h3>
@@ -123,7 +123,7 @@ const UpcomingAdventures = () => {
                       </div>
                     </div>
                   </div>
-                  
+
                   {/* Explore button - appears on hover */}
                   {/* <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/20">
                     <button
@@ -137,12 +137,12 @@ const UpcomingAdventures = () => {
                     </button>
                   </div> */}
                 </div>
-                
+
                 {/* Card footer with quick info */}
                 <div className="p-4 bg-gradient-to-r from-gray-50 via-white to-gray-50">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-4">
-                    
+
                       {/* Show last date if available */}
                       {event.lastDate && (
                         <div className="flex items-center text-gray-600 text-sm">
@@ -161,7 +161,7 @@ const UpcomingAdventures = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        
+
         {/* Custom Navigation Buttons */}
         <div className="swiper-button-prev-custom absolute left-2 top-1/2 transform -translate-y-1/2 z-10 bg-white/95 hover:bg-white shadow-xl rounded-full p-4 cursor-pointer transition-all duration-300 hover:scale-110 border border-gray-100">
           <FaChevronLeft className="text-sky-600 text-xl" />
@@ -170,7 +170,7 @@ const UpcomingAdventures = () => {
           <FaChevronRight className="text-sky-600 text-xl" />
         </div>
       </div>
-      
+
       {/* Custom styles for pagination and animations */}
       <style jsx>{`
         .custom-bullet {
@@ -223,7 +223,7 @@ const UpcomingAdventures = () => {
                 className="object-cover w-full h-full"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-              
+
               <button
                 className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white rounded-full p-3 text-xl font-bold transition-all duration-300 hover:scale-110"
                 onClick={() => setSelectedEvent(null)}
@@ -231,7 +231,7 @@ const UpcomingAdventures = () => {
               >
                 &times;
               </button>
-              
+
               <div className="absolute bottom-6 left-6 right-6 text-white">
                 <h3 className="text-3xl md:text-4xl font-black mb-2 drop-shadow-lg">{selectedEvent.title}</h3>
                 <div className="flex items-center text-white/90 text-lg">
@@ -268,7 +268,7 @@ const UpcomingAdventures = () => {
                   </div>
                 </div>
               </div>
-              
+
               {/* Gallery */}
               <div className="mb-8">
                 <h4 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
@@ -307,7 +307,7 @@ const UpcomingAdventures = () => {
                     ))}
                   </ul>
                 </div>
-                
+
                 <div className="bg-gradient-to-br from-red-50 to-rose-50 rounded-2xl p-6 border border-red-100">
                   <div className="flex items-center gap-3 font-bold text-red-800 mb-4 text-lg">
                     <div className="bg-red-500 rounded-full p-2">

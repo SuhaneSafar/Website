@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import { 
-  FaMapMarkerAlt, 
-  FaClock, 
-  FaCheckCircle, 
-  FaTimesCircle, 
-  FaStar, 
-  FaListUl, 
-  FaCamera, 
-  FaCalendarAlt, 
-  FaUsers, 
+import {
+  FaMapMarkerAlt,
+  FaClock,
+  FaCheckCircle,
+  FaTimesCircle,
+  FaStar,
+  FaListUl,
+  FaCamera,
+  FaCalendarAlt,
+  FaUsers,
   FaWhatsapp,
   FaMountain,
   FaGraduationCap,
@@ -110,7 +110,7 @@ const InterIITCarnival = () => {
       "/Images/in9.jpeg",
       "/Images/in10.jpeg",
       "/Images/in11.jpeg",
-      
+
     ],
     reviews: [
       {
@@ -247,14 +247,14 @@ const InterIITCarnival = () => {
       "Final authority lies with Event Directors"
     ]
   };
-  
+
   if (!eventData) {
     return <div>Event not found</div>;
   }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-sky-50">
-      <MetaData 
+      <MetaData
         title="Inter IIT Adventure Carnival 2026 - Suhane Safar"
         description="Join the Inter IIT Adventure Carnival 2026 - A students' initiative hosted by Suhane Safar. Unite with explorers from all IITs for an epic 4-day journey in Manali with adventure, culture, and competitions."
         keywords="Inter IIT, adventure carnival, IIT students, Manali trip, student initiative, adventure travel, cultural events, IIT competition, Suhane Safar"
@@ -288,7 +288,7 @@ const InterIITCarnival = () => {
             src="/Images/interiit.png"
             alt="Inter IIT Background"
             className="w-full h-full object-contain opacity-30"
-            style={{ 
+            style={{
               filter: 'brightness(1.2) contrast(1.1)',
               objectPosition: 'center'
             }}
@@ -315,7 +315,7 @@ const InterIITCarnival = () => {
               {eventData.subtitle}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <a 
+              <a
                 href={eventData.gform}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -323,7 +323,7 @@ const InterIITCarnival = () => {
               >
                 Register Now
               </a>
-              <a 
+              <a
                 href="https://www.instagram.com/interiit_adventure_carnival?igsh=MTE2NzRrajE5bDRuZA=="
                 target="_blank"
                 rel="noopener noreferrer"
@@ -336,7 +336,7 @@ const InterIITCarnival = () => {
                 Explore Details
               </a>
             </div>
-            
+
             {/* Key Info Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
               <div className="bg-white/10 backdrop-blur-xl rounded-2xl p-6 border border-white/20">
@@ -360,7 +360,7 @@ const InterIITCarnival = () => {
                 <p className="text-sky-200">{eventData.price}</p>
               </div>
             </div>
-            
+
             {/* Prize Pool Badge */}
             <div className="mt-8 inline-flex items-center gap-3 bg-sky-600/20 backdrop-blur-xl border-2 border-sky-400/50 text-sky-200 px-8 py-4 rounded-full text-lg font-bold">
               <FaTrophy className="text-2xl text-sky-400" />
@@ -380,13 +380,13 @@ const InterIITCarnival = () => {
                 <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-32 h-2 bg-gradient-to-r from-sky-500 to-sky-400 rounded-full opacity-80"></div>
               </h2>
             </div>
-            
+
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
                   {eventData.overview}
                 </p>
-                
+
                 {/* Participating IITs */}
                 <div className="mb-6">
                   <h3 className="text-xl font-bold text-gray-800 mb-4">Participating IITs:</h3>
@@ -398,7 +398,7 @@ const InterIITCarnival = () => {
                     ))}
                   </div>
                 </div>
-                
+
                 {/* Special Features */}
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
@@ -433,7 +433,7 @@ const InterIITCarnival = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="relative">
                 <img
                   src={eventData.mainImage}
@@ -452,7 +452,7 @@ const InterIITCarnival = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-black text-gray-900 mb-12">Registration Timeline</h2>
-            
+
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white rounded-2xl p-8 shadow-xl border-t-4 border-sky-500">
                 <div className="bg-sky-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
@@ -462,7 +462,7 @@ const InterIITCarnival = () => {
                 <p className="text-2xl font-bold text-sky-600 mb-2">{eventData.registrationDates.open}</p>
                 <p className="text-gray-600">Get ready to register!</p>
               </div>
-              
+
               <div className="bg-white rounded-2xl p-8 shadow-xl border-t-4 border-sky-500">
                 <div className="bg-sky-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <FaClock className="text-2xl text-sky-600" />
@@ -471,7 +471,7 @@ const InterIITCarnival = () => {
                 <p className="text-2xl font-bold text-sky-600 mb-2">{eventData.registrationDates.close}</p>
                 <p className="text-gray-600">Don't miss the deadline!</p>
               </div>
-              
+
               <div className="bg-white rounded-2xl p-8 shadow-xl border-t-4 border-sky-500">
                 <div className="bg-sky-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <FaMountain className="text-2xl text-sky-600" />
@@ -497,7 +497,7 @@ const InterIITCarnival = () => {
               Glimpse into the breathtaking destinations and experiences awaiting you
             </p>
           </div>
-          
+
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={20}
@@ -537,7 +537,7 @@ const InterIITCarnival = () => {
               Experience the perfect blend of adventure, culture, and competition
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300 border border-gray-100">
               <div className="bg-sky-500 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
@@ -553,7 +553,7 @@ const InterIITCarnival = () => {
                 ))}
               </ul>
             </div>
-            
+
             <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300 border border-gray-100">
               <div className="bg-sky-500 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
                 <FaMusic className="text-2xl text-white" />
@@ -568,7 +568,7 @@ const InterIITCarnival = () => {
                 ))}
               </ul>
             </div>
-            
+
             <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300 border border-gray-100">
               <div className="bg-sky-500 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
                 <FaMountain className="text-2xl text-white" />
@@ -590,7 +590,7 @@ const InterIITCarnival = () => {
               </ul>
             </div>
           </div>
-          
+
           {/* Manali Sightseeing Locations */}
           <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100">
             <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center flex items-center justify-center gap-3">
@@ -622,7 +622,7 @@ const InterIITCarnival = () => {
                 Your complete adventure schedule from departure to return
               </p>
             </div>
-            
+
             <div className="space-y-8">
               {eventData.itinerary.map((item, i) => (
                 <div key={i} className="flex gap-6 group">
@@ -652,7 +652,7 @@ const InterIITCarnival = () => {
             <div className="text-center mb-12">
               <h2 className="text-4xl font-black text-gray-900 mb-6">What's Included & Excluded</h2>
             </div>
-            
+
             <div className="grid lg:grid-cols-2 gap-8">
               {/* Inclusions */}
               <div className="bg-white rounded-3xl p-8 shadow-xl border-t-4 border-sky-500">
@@ -671,7 +671,7 @@ const InterIITCarnival = () => {
                   ))}
                 </div>
               </div>
-              
+
               {/* Exclusions */}
               <div className="bg-white rounded-3xl p-8 shadow-xl border-t-4 border-gray-400">
                 <div className="flex items-center gap-3 font-bold text-gray-800 mb-6 text-2xl">
@@ -703,7 +703,7 @@ const InterIITCarnival = () => {
               Hear from fellow IIT students about their adventure experiences
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {eventData.reviews.map((review, i) => (
               <div key={i} className="bg-white rounded-3xl p-8 shadow-xl border border-gray-200">
@@ -741,7 +741,7 @@ const InterIITCarnival = () => {
                 Meet the passionate IITians making this event possible
               </p>
             </div>
-            
+
             {/* Leadership Team */}
             <div className="mb-12">
               <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Leadership Team</h3>
@@ -762,7 +762,7 @@ const InterIITCarnival = () => {
                 ))}
               </div>
             </div>
-            
+
             {/* Operations Team */}
             <div>
               <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Operations Team</h3>
@@ -795,7 +795,7 @@ const InterIITCarnival = () => {
                 Get in touch with us for any queries
               </p>
             </div>
-            
+
             <div className="bg-white rounded-3xl p-8 shadow-xl">
               <div className="grid md:grid-cols-2 gap-6">
                 <a href={`tel:${eventData.contact.phone1.replace(/\s/g, '')}`} className="flex items-center gap-4 bg-sky-50 rounded-xl p-6 hover:shadow-lg transition-shadow border border-sky-200">
@@ -807,7 +807,7 @@ const InterIITCarnival = () => {
                     <p className="text-gray-800 font-bold text-lg">{eventData.contact.phone1}</p>
                   </div>
                 </a>
-                
+
                 <a href={`tel:${eventData.contact.phone2.replace(/\s/g, '')}`} className="flex items-center gap-4 bg-sky-50 rounded-xl p-6 hover:shadow-lg transition-shadow border border-sky-200">
                   <div className="bg-sky-500 rounded-full p-4">
                     <FaPhone className="text-white text-xl" />
@@ -817,7 +817,7 @@ const InterIITCarnival = () => {
                     <p className="text-gray-800 font-bold text-lg">{eventData.contact.phone2}</p>
                   </div>
                 </a>
-                
+
                 <a href={`https://${eventData.contact.website}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-sky-50 rounded-xl p-6 hover:shadow-lg transition-shadow border border-sky-200">
                   <div className="bg-sky-500 rounded-full p-4">
                     <FaGlobe className="text-white text-xl" />
@@ -827,7 +827,7 @@ const InterIITCarnival = () => {
                     <p className="text-gray-800 font-bold text-lg">{eventData.contact.website}</p>
                   </div>
                 </a>
-                
+
                 <a href="https://www.instagram.com/interiit_adventure_carnival?igsh=MTE2NzRrajE5bDRuZA==" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 bg-sky-50 rounded-xl p-6 hover:shadow-lg transition-shadow border border-sky-200">
                   <div className="bg-sky-500 rounded-full p-4">
                     <FaInstagram className="text-white text-xl" />
@@ -853,7 +853,7 @@ const InterIITCarnival = () => {
                 Eligibility & Registration Rules
               </h2>
             </div>
-            
+
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white rounded-3xl p-8 shadow-xl border-t-4 border-sky-500">
                 <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
@@ -871,7 +871,7 @@ const InterIITCarnival = () => {
                   </li>
                 </ul>
               </div>
-              
+
               <div className="bg-white rounded-3xl p-8 shadow-xl border-t-4 border-sky-500">
                 <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
                   <FaUsers className="text-sky-600" />
@@ -911,7 +911,7 @@ const InterIITCarnival = () => {
                 Code of Conduct & Discipline
               </h2>
             </div>
-            
+
             <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-200">
               <div className="mb-8">
                 <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-3">
@@ -927,7 +927,7 @@ const InterIITCarnival = () => {
                   ))}
                 </ul>
               </div>
-              
+
               <div className="border-t-2 border-gray-200 pt-8">
                 <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-3">
                   <FaBan className="text-gray-600" />
@@ -957,7 +957,7 @@ const InterIITCarnival = () => {
                 Safety, Stay & Trek Rules
               </h2>
             </div>
-            
+
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white rounded-2xl p-6 shadow-xl border-t-4 border-sky-500">
                 <h3 className="text-lg font-bold text-gray-800 mb-4 flex items-center gap-2">
@@ -973,7 +973,7 @@ const InterIITCarnival = () => {
                   ))}
                 </ul>
               </div>
-              
+
               <div className="bg-white rounded-2xl p-6 shadow-xl border-t-4 border-sky-500">
                 <h3 className="text-lg font-bold text-gray-800 mb-4 flex items-center gap-2">
                   <FaCampground className="text-sky-600" />
@@ -988,7 +988,7 @@ const InterIITCarnival = () => {
                   ))}
                 </ul>
               </div>
-              
+
               <div className="bg-white rounded-2xl p-6 shadow-xl border-t-4 border-sky-500">
                 <h3 className="text-lg font-bold text-gray-800 mb-4 flex items-center gap-2">
                   <FaMountain className="text-sky-600" />
@@ -1018,7 +1018,7 @@ const InterIITCarnival = () => {
                 Refund, Medical & Emergency
               </h2>
             </div>
-            
+
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               {/* Refund & Cancellation */}
               <div className="bg-white rounded-3xl p-8 shadow-xl border-t-4 border-sky-500">
@@ -1037,7 +1037,7 @@ const InterIITCarnival = () => {
                   ))}
                 </div>
               </div>
-              
+
               {/* Medical Guidelines */}
               <div className="bg-white rounded-3xl p-8 shadow-xl border-t-4 border-sky-500">
                 <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-3">
@@ -1054,7 +1054,7 @@ const InterIITCarnival = () => {
                 </ul>
               </div>
             </div>
-            
+
             {/* Additional Policies */}
             <div className="grid md:grid-cols-2 gap-8">
               {/* Photography & Media */}
@@ -1072,7 +1072,7 @@ const InterIITCarnival = () => {
                   ))}
                 </ul>
               </div>
-              
+
               {/* Responsibility */}
               <div className="bg-white rounded-2xl p-6 shadow-xl border border-gray-200">
                 <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
@@ -1088,7 +1088,7 @@ const InterIITCarnival = () => {
                   ))}
                 </ul>
               </div>
-              
+
               {/* Environment Responsibility */}
               <div className="bg-white rounded-2xl p-6 shadow-xl border border-gray-200">
                 <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
@@ -1104,7 +1104,7 @@ const InterIITCarnival = () => {
                   ))}
                 </ul>
               </div>
-              
+
               {/* Emergency Decisions */}
               <div className="bg-white rounded-2xl p-6 shadow-xl border border-gray-200">
                 <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
@@ -1138,7 +1138,7 @@ const InterIITCarnival = () => {
                 Compete, perform, and win exciting prizes and recognition
               </p>
             </div>
-            
+
             <div className="bg-white rounded-3xl p-8 shadow-xl border-t-4 border-sky-500">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 {eventData.awards}
@@ -1209,7 +1209,7 @@ const InterIITCarnival = () => {
               Join hundreds of IITians for an unforgettable journey of adventure, culture, and camaraderie
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <a 
+              <a
                 href={eventData.gform}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -1218,7 +1218,7 @@ const InterIITCarnival = () => {
                 <FaCalendarAlt className="mr-3 text-xl" />
                 Register Now
               </a>
-              <a 
+              <a
                 href="https://www.instagram.com/interiit_adventure_carnival?igsh=MTE2NzRrajE5bDRuZA=="
                 target="_blank"
                 rel="noopener noreferrer"
@@ -1227,7 +1227,7 @@ const InterIITCarnival = () => {
                 <FaInstagram className="mr-3 text-xl" />
                 Follow Instagram
               </a>
-              <a 
+              <a
                 href={`https://api.whatsapp.com/send/?phone=${eventData.contact.phone1.replace(/\s/g, '').replace('+', '')}&text=Hi, I'm interested in Inter IIT Adventure Carnival 2026`}
                 target="_blank"
                 rel="noopener noreferrer"
