@@ -154,7 +154,7 @@ const upcomingEvents = [
   {
     "id": 9,
     "title": "Munsiyari",
-    "gform": "https://docs.google.com/forms/d/e/1FAIpQLSdjHBejsnHs6nj_nFCiVRPOZ9b1bQlMOYkQ2VYq5sPMOTwPcw/viewform?usp=header",
+    "gform": "https://docs.google.com/forms/d/e/1FAIpQLSep44tMdD93xIqhyhKctIaVQ5NtH8xquKMs4mc-L1YTsWcbFA/viewform?usp=header",
     "subtitle": "Beyond the Summit",
     "mainImage": "/Images/MunsiyariHome.jpg",
     "gallery": [
@@ -223,7 +223,7 @@ const upcomingEvents = [
   , {
     "id": 8,
     "title": "YULLA KANDA",
-    "gform": "https://docs.google.com/forms/d/e/1FAIpQLSdjHBejsnHs6nj_nFCiVRPOZ9b1bQlMOYkQ2VYq5sPMOTwPcw/viewform?usp=header",
+    "gform": "https://docs.google.com/forms/d/e/1FAIpQLSfviRIbQsHyOZwjX4Su8Fn8qOnpoQMCFDi4PRhX_FsokTG1Iw/viewform?usp=header",
     "subtitle": "World’s Highest Shri Krishna Temple",
     "mainImage": "/Images/YullaKandaHome.png",
     "gallery": [
@@ -279,6 +279,67 @@ const upcomingEvents = [
         "title": "DESCENT & RETURN",
         "description": "7:30 AM - Breakfast at base camp. 10:30 AM - Begin descent to road point near bus stop. 11:00 AM - Explore the Yulla Village and culture. 2:00 PM - Begin the return journey in the afternoon and reach the destination early the next morning. Trip ended, memories started. Back with stories and stronger bonds."
       }
+    ],
+    "lastDate": "March 2026"
+  }
+
+  , {
+    "id": 10,
+    "title": "Post-Exam College March Trips",
+    "gform": "https://docs.google.com/forms/d/e/1FAIpQLSdjHBejsnHs6nj_nFCiVRPOZ9b1bQlMOYkQ2VYq5sPMOTwPcw/viewform?usp=header",
+    "subtitle": "Exams over? It’s time to travel! Check out our upcoming college-friendly adventure trips curated specially for students.",
+    "mainImage": "/Images/PostMidTermCollegeTrip.jpeg",
+    "gallery": [
+      "/Images/PostMidTermCollegeTrip.jpeg"
+    ],
+    "price": "Limited seats available — Book now!",
+    "reviews": [
+      {
+        "name": "Rahul",
+        "rating": 5,
+        "text": "Suhane Safar is not just a trip — it’s a vibe, a memory, a community."
+      },
+      {
+        "name": "Pooja",
+        "rating": 4,
+        "text": "Safe & Reliable: Great stays, verified trails, and 24/7 support throughout the journey. ."
+      }
+    ],
+    "pickupDrop": "IIT Roorkee | IIT Delhi | Chandigarh ",
+    "duration": "",
+    "inclusions": [
+      // "1 Nights Camp Stay in Yulla Base Camp (comfortable, shared rooms)",
+      // "3 Delicious Meals - 1 Breakfasts + 1 Dinners + 1 Packed Lunch",
+      // "Round-trip Transportation from iit Delhi, Roorkee to Yulla Village by Tempo Traveller",
+      // "All Required Permits for trekking and travel",
+      // "Surprise Group Games & Gifts to make your experience even more memorable",
+      // "Basic First Aid Kit for safety during the trek",
+      // "Driver Allowance, Toll Tax & Parking Charges included in the package"
+    ],
+    "exclusions": [
+      // "Any personal expenses such as laundry, shopping, tips, or snacks",
+      // "Any adventure activities not specifically mentioned in the itinerary",
+      // "Entrance fees to temples, trek, parks, or sightseeing spots (if applicable)",
+      // "Travel insurance",
+      // "Anything else not clearly mentioned in the inclusions"
+    ],
+    "overview": "Explore new destinations 🤝 Make new friends & unforgettable memories 💸 Budget - friendly & well - planned journeys",
+    "itinerary": [
+      // {
+      //   "day": 1,
+      //   "title": "DEPARTURE TO YULLA VILLAGE",
+      //   "description": "The group assembles at the pick-up point. Departure Location - IIT Roorkee | IIT Delhi | Chandigarh. Departure Time - 08:00 PM. Meet the team captain at Departure Location and get a TOUR briefing. After which, we'll head out on an overnight journey to Udaipur. Halt for dinner in between (not on us)."
+      // },
+      // {
+      //   "day": 2,
+      //   "title": "TREK TO BASE CAMP & TEMPLE VISIT",
+      //   "description": "6:00 AM - Arrive at Yulla village. 6:20 AM - Start the scenic trek to base camp through pine forests and mountain views. 10:30 AM - Reach base camp, freshen up and relax. Afternoon visit to Shri Krishna Yulla Kanda Temple (just 500m from base camp). Evening - Return to base camp for a magical night: Bonfire under the stars, Stargazing sessions, Fun interactions, laughter, bonding games & soulful conversations. Make unforgettable memories & new friendships surrounded by the Himalayas. Meals Included: Breakfast & Dinner. Stay: Tent stay at base camp."
+      // },
+      // {
+      //   "day": 3,
+      //   "title": "DESCENT & RETURN",
+      //   "description": "7:30 AM - Breakfast at base camp. 10:30 AM - Begin descent to road point near bus stop. 11:00 AM - Explore the Yulla Village and culture. 2:00 PM - Begin the return journey in the afternoon and reach the destination early the next morning. Trip ended, memories started. Back with stories and stronger bonds."
+      // }
     ],
     "lastDate": "March 2026"
   }
