@@ -343,6 +343,65 @@ const upcomingEvents = [
     ],
     "lastDate": "March 2026"
   }
+   , {
+    "id": 11,
+    "title": "Kedarnath Yatra 2026",
+    "gform": "https://docs.google.com/forms/d/e/1FAIpQLSeMpxnfYimnoOZfcm-evAcbvwN61fSCVWK-GR9sfRd9Q_TQJQ/viewform?usp=header",
+    "subtitle": "Embark on a Divine Journey! ",
+    "mainImage": "/Images/KedarNath2026.jpeg",
+    "gallery": [
+      "/Images/KedarNath2026.jpeg"
+    ],
+    "price": "4499",
+    "reviews": [
+      {
+        "name": "Rupesh",
+        "rating": 5,
+        "text": "A highly sacred and spiritual pilgrimage site."
+      },
+      {
+        "name": "Ritu",
+        "rating": 4,
+        "text": "The temple is surrounded by the lofty, snow-capped Himalayan mountains, offering stunning views."
+      }
+    ],
+    "pickupDrop": "IIT Roorkee | Delhi | BHU | IIT Bombay | IIT Hyderabad | IIT Kanpur | IIT Kgp & IIT Madras",
+    "duration": "3 Days / 2 Nights",
+    "inclusions": [
+      "Accommodation – 2 Nights Stay (Tent & Hotel in Sitapur & Kedarnath)",
+      "4 Meals – 2 Breakfasts + 2 Dinners",
+      "Transportation by Traveller / Mini Bus",
+      "Local Exploration as per Itinerary",
+      "First Aid Kits",
+      "Driver Allowance, Toll Tax & Parking Charges",
+    ],
+    "exclusions": [
+      "Any personal expenses such as laundry, shopping, tips, or snacks",
+      "Any adventure activities not specifically mentioned in the itinerary",
+      "Entrance fees to temples, trek, parks, or sightseeing spots (if applicable)",
+      "Travel insurance",
+      "Anything else not clearly mentioned in the inclusions"
+    ],
+    "overview": "✨ Come with friends, create lifelong memories, and experience peace and a stress-free spiritual escape.",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "SPIRITUAL JOURNEY STARTS",
+        "description": "Begin your spiritual journey with an early morning departure from Delhi and Roorkee. En route, witness the sacred confluence at Devprayag Sangam and seek blessings at the revered Dhari Devi Temple. By evening, reach Sitapur for dinner and rest, preparing your mind and body for the divine journey ahead."
+      },
+      {
+        "day": 2,
+        "title": "TREK TO KEDARNATH & DIVINE DARSHAN",
+        "description": "Begin early morning with the 22 km trek from Sitapur towards the sacred Kedarnath Temple. Walk through breathtaking Himalayan landscapes and spiritual surroundings, reaching Kedarnath by evening. Attend the divine night aarti at the temple and experience the powerful spiritual atmosphere. Conclude the day with dinner and overnight stay at the camp near Kedarnath."
+      },
+      {
+        "day": 3,
+        "title": "DIVINE DARSHAN & JOURNEY BACK",
+        "description": "Begin the day with sacred darshan at Kedarnath Temple, followed by visits to Bhairavnath Temple and the Shankaracharya Samadhi, embracing the spiritual energy of the Himalayas. After divine blessings, begin the descent trek to Sitapur at 12:00 PM. The return journey to Roorkee and Delhi continues overnight, with early morning arrival. The trip concludes with refreshed minds, strengthened faith, and unforgettable memories."
+      }
+    ],
+    "lastDate": "10 April 2026"
+  }
 
 
 
