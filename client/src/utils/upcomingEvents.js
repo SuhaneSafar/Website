@@ -350,7 +350,8 @@ const upcomingEvents = [
     "subtitle": "Embark on a Divine Journey! ",
     "mainImage": "/Images/KedarNath2026.jpeg",
     "gallery": [
-      "/Images/KedarNath2026.jpeg"
+      "/Images/KedarNath2026.jpeg",
+      "/Images/KedarNath2026-1.jpeg",
     ],
     "price": "4499",
     "reviews": [
