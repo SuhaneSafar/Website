@@ -84,71 +84,63 @@ const upcomingEvents = [
   ,
   {
     "id": 7,
-    "title": "Manali Holi Special – Celebrate Holi in the Hills",
-    "gform": "https://docs.google.com/forms/d/e/1FAIpQLSf5D4FBjuP30A-tM_L8E6khhFsoMPS_U-H6YoU9rqM3gtEG3Q/viewform?usp=header",
-    "subtitle": "College life dream trip with friends",
-    "mainImage": "/Images/KulluManaliHoli.jpeg",
+    "title": "Tungnath - Chandrashila Trek",
+    "gform": "https://docs.google.com/forms/d/e/1FAIpQLSfF0oXkqvui99cIt0ITRLxt4LhMhTodojeFPiYbJ-oS9lheEA/viewform?usp=header",
+    "subtitle": "Start your year at 12,000+ ft with breathtaking sunrise views, divine vibes & unforgettable memories!",
+    "mainImage": "/Images/Tungnath.jpeg",
     "gallery": [
-      "/Images/KulluManaliHoli1.jpeg",
-      "/Images/KulluManaliHoli2.jpeg",
-      "/Images/KulluManaliHoli3.jpeg",
-      "/Images/KulluManaliHoli4.jpeg",
+      "/Images/Tungnath.jpeg",
+      "/Images/Tungnath2.png"
     ],
-    "price": "5999",
+    "price": "3999/5499",
     "reviews": [
       {
         "name": "Ankit",
         "rating": 5,
-        "text": "Perfect trip with adventure, snow and amazing bonding sessions."
+        "text": "Perfect trip with adventure, trek and amazing bonding sessions."
       },
       {
         "name": "Neha",
         "rating": 4,
-        "text": "Loved the bonfire night and Solang Valley snow activities."
+        "text": " world's highest Shiva temple and panoramic Himalayan views from the Chandrashila summit."
       }
     ],
-    "pickupDrop": "IIT Roorkee | IIT Delhi NCR | Chandigarh",
-    "duration": "4 Days / 3 Nights",
+    "pickupDrop": "IIT Roorkee | IIT Delhi NCR & Rishikesh",
+    "duration": "2 Days / 1 Night",
     "inclusions": [
-      "Accommodation: 2-night stay in Manali",
-      "Meals: 2 breakfasts & 2 dinners",
-      "Transportation: Pickup to drop point and local travel during the trip",
-      "Activities & Fun: All games.",
-      "Logistics Covered: Driver allowance, toll charges, parking fees",
-      "Safety: First aid kits available throughout the trip"
+      "Accommodation: 1 Nights Stay Camp/Homestay at Chopta",
+      "2 Meals – 1 Breakfasts + 1 Dinner + 1 Snacks Free",
+      "Transportation by Traveller / Mini Bus",
+      "Local Exploration as per Itinerary",
+      "First Aid Kits",
+      "Driver Allowance, Toll Tax & Parking Charges"
     ],
     "exclusions": [
       "Personal expenses: Laundry, shopping, tips, etc.",
       "Adventure activities not specifically mentioned in the itinerary",
+      "Lunch (self-sponsored)",
       "Travel insurance",
       "Entrance fees not included in inclusions",
-      "Snow jackets/kits",
-      "Note: If heavy snowfall or weather conditions prevent travel to Atal Tunnel, participants can use self-paid local transport."
     ],
-    "overview": "This Holi, trade city chaos for mountain madness! Play Holi with colors, snow, music, and best college vibes in Manali. A perfect getaway full of celebration, adventure, and unforgettable memories.",
+    "overview": "Start your year at 12,000+ ft with breathtaking sunrise views, divine vibes & unforgettable memories!",
     "itinerary": [
       {
+        "day": 0,
+        "title": "FRIDAY NIGHT – OVERNIGHT JOURNEY",
+        "description": "Pickup from Gurugram & Delhi ISBT | Reporting Time: 9:00 – 10:00 PM | Start of the overnight road journey with light music, ice-breaker games & group bonding | Overnight travel towards Uttarakhand."
+      },
+      {
         "day": 1,
-        "title": "Departure & Gathering",
-        "description": "All travellers gather at designated pickup points: IIT Roorkee & Delhi NCR. Meet team leaders and fellow participants. Enjoy an overnight journey with music, mountain vibes and chill conversations."
+        "title": "SCENIC DRIVE TO CHOPTA",
+        "description": "Early morning arrival near Roorkee / Rishikesh & Departure from IIT Roorkee | Short freshen-up and break time. | Proceed on a beautiful scenic drive through the Garhwal Hills, enjoying river valleys, pine forests, and mountain views. | Arrival at Ukhimath by evening. | Visit the historic Omkareshwar Temple. | Visit Rudraprayag Sangam | Visit Dhari Devi Temple | Continue the drive to Chopta. | Check-in at the campsite/Homestay for overnight stay. | Dinner followed by an interactive fun evening with group bonding activities, music, and discussions."
       },
       {
         "day": 2,
-        "title": "Arrival & Local Exploration",
-        "description": "Early morning arrival in Manali & Fresh-up. Colors loud. Music louder. Holi celebration. Explore Hadimba Temple & Mall Road. Enjoy the serene riverside nature and relax. Interaction sessions & Dinner. Bonfire night for stories, laughter and bonding."
+        "title": "TUNGNATH – CHANDRASHILA TREK",
+        "description": "Early morning light breakfast.Trek starts at 2:00 AM towards the sunrise point.Reach Tungnath Temple (6 km) – the highest Shiva temple in the world. Continue to Chandrashila Peak (2 km) for stunning Himalayan views. Descend and return to Chopta by afternoon. Afternoon departure towards Delhi / Roorkee / Rishikesh. Overnight journey & Reach Roorkee/Delhi late night or early morning"
       },
-      {
-        "day": 3,
-        "title": "Snow Adventures",
-        "description": "Early morning breakfast, followed by an excursion to Sissu, Atal tunnel and Solang valley (Transport Dependant). Optional snow activities (self-paid) and Anjani Mahadev trek for adventure lovers. Evening Fun. Bonfire night to unwind and enjoy mountain vibes. Dj night and fun."
-      },
-      {
-        "day": 4,
-        "title": "Adventure Sports & Return",
-        "description": "Breakfast, then explore Kullu, enjoy river rafting, paragliding, waterfalls. River rafting, Paragliding (self-paid), Hot balloon. Checkout from hotel in the early morning and reach to respective pickup points. Early morning arrival at the pickup point."
-      }
     ],
-    "lastDate": "27 February 2026"
+    "lastDate": "13 March 2026"
   }
   ,
   {
