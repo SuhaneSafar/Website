@@ -74,6 +74,16 @@ const Navbar = () => {
             <div className="absolute inset-0 bg-white/10 backdrop-blur-sm rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-sky-400 to-yellow-400 group-hover:w-full transition-all duration-300"></div>
           </a>
+          <a 
+            href="https://docs.google.com/forms/d/e/1FAIpQLSez-ccadPhOlmRMgAns9XV9EAH6vyScxgOXpPJIlAGHn04xDg/viewform?usp=header" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative group px-4 py-2 text-white/90 hover:text-white transition-all duration-300 text-sm xl:text-base font-medium"
+          >
+            <span className="relative z-10">Feedback</span>
+            <div className="absolute inset-0 bg-white/10 backdrop-blur-sm rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-sky-400 to-yellow-400 group-hover:w-full transition-all duration-300"></div>
+          </a>
           {/* <a href="#amenities" className="relative group px-4 py-2 text-white/90 hover:text-white transition-all duration-300 text-sm xl:text-base font-medium">
             <span className="relative z-10">Amenities</span>
             <div className="absolute inset-0 bg-white/10 backdrop-blur-sm rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
@@ -176,6 +186,17 @@ const Navbar = () => {
             onClick={closeMobileMenu}
           >
             <span className="relative z-10">Reviews</span>
+            <div className="absolute inset-0 bg-white/10 backdrop-blur-sm rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-yellow-400 group-hover:w-16 transition-all duration-300"></div>
+          </a>
+           <a 
+            href="https://docs.google.com/forms/d/e/1FAIpQLSez-ccadPhOlmRMgAns9XV9EAH6vyScxgOXpPJIlAGHn04xDg/viewform?usp=header" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative group w-full max-w-xs text-center py-3 px-6 text-white/90 hover:text-white transition-all duration-300 text-lg font-medium"
+            onClick={closeMobileMenu}
+          >
+            <span className="relative z-10">Feedback</span>
             <div className="absolute inset-0 bg-white/10 backdrop-blur-sm rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-yellow-400 group-hover:w-16 transition-all duration-300"></div>
           </a>
