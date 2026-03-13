@@ -395,6 +395,80 @@ const upcomingEvents = [
     ],
     "lastDate": "10 April 2026"
   }
+  , {
+    "id": 12,
+    "title": "Kullu-Manali",
+    "gform": "https://docs.google.com/forms/d/e/1FAIpQLSftZ9g-ZiEHHUOvuu4Pdw0A2Wp5-GPygQPKa6ljPaASE2sAXQ/viewform?usp=header",
+    "subtitle": "The Ultimate College Adventure Trip – Manali ",
+    "mainImage": "/Images/manali-main-19thmarch.jpeg",
+    "gallery": [
+      "/Images/manali-main.png",
+      "/Images/manali1.png",
+    ],
+    "price": "5999",
+    "reviews": [
+      {
+        "name": "Deepa",
+        "rating": 5,
+        "text": "A great place to refresh your mind and soul."
+      },
+      {
+        "name": "Ritesh",
+        "rating": 4,
+        "text": "The place is amazing with beautiful views and amazing adventures."
+      }
+    ],
+    "pickupDrop": "IIT Roorkee | Delhi | BHU | IIT Hyderabad | Chandigarh",
+    "duration": "3 Days / 2 Nights",
+    "inclusions": [ 
+      "Accommodation: 2-night stay in Manali",
+      "Meals: 2 breakfasts & 2 dinners",
+      "Activities & Fun: All games.",
+      "Logistics Covered: Driver allowance, toll charges, parking fees",
+      "Safety: First aid kits available throughout the trip",
+      "⭐ 4-Star Hotel Stay",
+      "🏊 Swimming Pool Access",
+      "🚌 Comfortable Transport",
+      "🍽️ Delicious Meals",
+      "📶 Free Wi-Fi",
+      "🎧 DJ Night",
+      "🔥 Bonfire Evening",
+      "🎯 Fun Activities & Games",
+    ],
+    "exclusions": [
+      "Personal expenses: Laundry, Shopping, tips, etc.",
+      "Adventure activities not specifically mentioned in the itinerary",
+      "Travel insurance",
+      "Entrance fees not included in inclusions",
+      "Snow jackets/kits",
+      "Note: If heavy snowfall or weather conditions prevent travel to Atal Tunnel, participants can use self-paid local transport."
+    ],
+    "overview": "✨ Come with friends, create lifelong memories, and experience peace, thrill and a stress-free escape.",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "DEPARTURE & GATHERING",
+        "description": "All Travellers gather at designated pickup points: Delhi NCR, and Gurgaon. Meet team leaders and fellow participants. Enjoy an overnight journey with music, mountain vibes, and chill conversations, setting the mood for an adventure-filled carnival."
+      },
+      {
+        "day": 2,
+        "title": "ARRIVAL & LOCAL EXPLORATION",
+        "description": "Early morning arrival in Manali. Explore Hadimba Temple, Mall Road, and Old Manali. Enjoy the serene riverside nature and relax. Evening Activities: Interaction sessions. Icebreaking games. Bonfire night for stories, laughter, and bonding"
+      },
+      {
+        "day": 3,
+        "title": "SNOW ADVENTURES",
+        "description": "Early morning breakfast, followed by an excursion to Sissu/Rohtang Pass, Atal Tunnel, and Solang Valley (transport dependent). Optional snow activities (self-paid) and Anjani Mahadev trek for adventure lovers. Evening Fun: Bonfire night to unwind and enjoy mountain vibes Dj Night and fun."
+      },
+      {
+        "day": 4,
+        "title": "ADVENTURE SPORTS & RETURN",
+        "description": "Breakfast, then explore Kullu & scenic mountains view. River Rafting. Paragliding. Hot Balloon. Checkout from hotel in the morning. And reach to respective pickup points. Reach Delhi / Roorkee the next day early morning with beautiful memories of the journey. Note: All activities are self paid and optional. Participants can choose based on their preferences and budget. The itinerary is flexible and may be adjusted based on weather conditions and group preferences."
+      }
+    ],
+    "lastDate": "16 March 2026"
+  }
+
 
 
 
