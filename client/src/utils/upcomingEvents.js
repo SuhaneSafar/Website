@@ -123,7 +123,7 @@ const upcomingEvents = [
     "lastDate": "March 2026"
   }
 
-   , {
+  ,{
     "id": 11,
     "title": "Kedarnath Yatra 2026",
     "gform": "https://docs.google.com/forms/d/e/1FAIpQLSeMpxnfYimnoOZfcm-evAcbvwN61fSCVWK-GR9sfRd9Q_TQJQ/viewform?usp=header",
