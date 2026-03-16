@@ -264,7 +264,7 @@ const upcomingEvents = [
     "mainImage": "/Images/harshil-main-2nd-april.jpeg",
     "gallery": [
       "/Images/harshil-main.png",
-      "/Images/harshil-1.png",
+      "/Images/harshil-1.jpg",
     ],
     "price": "4199",
     "reviews": [
