@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import upcomingEvents from "../utils/upcomingEvents";
+import { upcomingEvents } from "../utils/upcomingEvents";
 import {
   FaMapMarkerAlt,
   FaClock,

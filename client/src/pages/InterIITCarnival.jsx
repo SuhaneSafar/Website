@@ -34,7 +34,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import MetaData from '../container/MetaData';
-import upcomingEvents from '../utils/upcomingEvents';
+import { upcomingEvents } from '../utils/upcomingEvents';
 
 // Import Swiper styles
 import 'swiper/css';
