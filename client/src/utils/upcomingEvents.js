@@ -257,10 +257,81 @@ const upcomingEvents = [
     "lastDate": "16 March 2026"
   }
   , {
+    "id": 13,
+    "title": "Harshil Valley",
+    "gform": "https://forms.gle/DSaAYDd6haQ4aTyi6",
+    "subtitle": "Harshil Valley - The Mini Switzerland of India",
+    "mainImage": "/Images/harshil-main-2nd-april.jpeg",
+    "gallery": [
+      "/Images/harshil-main.png",
+      "/Images/harshil-1.jpg",
+    ],
+    "price": "4199",
+    "reviews": [
+      {
+        "name": "Puneet",
+        "rating": 4,
+        "text": "Had so much fun! The place is beautiful and the activities were amazing."
+      },
+      {
+        "name": "Neetu",
+        "rating": 5,
+        "text": "The place was absolutely beautiful. Felt like I was in Switzerland."
+      },
+    ],
+    "pickupDrop": "IIT Roorkee | Delhi",
+    "duration": "3 Days / 2 Nights",
+    "inclusions": [ 
+      "2 night camp stay.",
+      "2 Breakfasts & 2 Dinner",
+      "Tempo Traveller / Mini Bus",
+      "Trip leader",
+      "Logistics Covered: Driver allowance, toll charges, parking fees.",
+      "Safety: First aid kits available throughout the trip.",
+      "Note: If Registrations are less price may increase accordingly and Cab travel will be provided"
+    ],
+    "exclusions": [
+      "Personal expenses",
+      "Entry / jeep / cab charges",
+      "Scooty / car rental for self-exploration",
+      "Any food, drinks or services not mentioned in inclusions",
+      "Entrance fees to temples, trek, parks, or sightseeing spots (if applicable)"
+    ],
+    "overview": "Explore the serene beauty of Harshil Valley, often called the Mini Switzerland of India. Surrounded by pine forests, snow-capped Himalayan peaks, and the Bhagirathi river, this trip blends scenic drives, peaceful villages, temple visits, and refreshing treks for a perfect mountain escape.",
+    "itinerary": [
+      {
+        "day": 0,
+        // "title": "DEPARTURE ",
+        "description": "Departure from Delhi at 9–10 PM & Overnight Journey by Bus."
+      },
+      {
+        "day": 1,
+        // "title": "ADVENTURE SPORTS & RETURN",
+        "description": "Departure From Roorkee / Rishikesh. Arrival at Uttarkashi. Visit Kashivishwanath temple. Rest, acclimatization, and local exploration. Overnight stay at Harshil Village"
+      },
+      {
+        "day": 2,
+        // "title": "ARRIVAL & LOCAL EXPLORATION",
+        "description": "Early morning departure. Drive to Gangotri. Visit Surya Kund. Explore Himalayan Art Gallery. Visit Mukhba Village and Harshil Valley Market Explore"
+      },
+      {
+        "day": 3,
+        // "title": "SNOW ADVENTURES",
+        "description": "Early morning trek to Lama Top. Drive to Bagoni Village. Enjoy panoramic views. Descend and begin return journey. Roorkee Arrival 10 PM"
+      },
+      {
+        "day": 4,
+        // "title": "DEPARTURE ",
+        "description": "Arrival At Delhi In morning."
+      }
+    ],
+    "lastDate": "26 March 2026"
+    }
+  , {
     "id": 14,
     "title": "Kuari Pass",
     "gform": "https://docs.google.com/forms/d/e/1FAIpQLSevK0heTSeQ3avmpQnhsjrr_6K7y2FxpLcRoU94hhXpeXsUEQ/viewform?usp=header",
-    "subtitle": "Harshil Valley - The Mini Switzerland of India",
+    "subtitle": "Trek through snow-covered trails to witness breathtaking views of Nanda Devi and the mighty Himalayan peaks.",
     "mainImage": "/Images/kuari pass/kuari pass-main-april.png",
     "gallery": [
       "/Images/kuari pass/kuari-pass1.png",
