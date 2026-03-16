@@ -257,71 +257,72 @@ const upcomingEvents = [
     "lastDate": "16 March 2026"
   }
   , {
-    "id": 13,
-    "title": "Harshil Valley",
-    "gform": "https://forms.gle/DSaAYDd6haQ4aTyi6",
+    "id": 14,
+    "title": "Kuari Pass",
+    "gform": "https://docs.google.com/forms/d/e/1FAIpQLSevK0heTSeQ3avmpQnhsjrr_6K7y2FxpLcRoU94hhXpeXsUEQ/viewform?usp=header",
     "subtitle": "Harshil Valley - The Mini Switzerland of India",
-    "mainImage": "/Images/harshil-main-2nd-april.jpeg",
+    "mainImage": "/Images/kuari pass/kuari pass-main-april.png",
     "gallery": [
-      "/Images/harshil-main.png",
-      "/Images/harshil-1.jpg",
+      "/Images/kuari pass/kuari-pass1.png",
+    //   "/Images/harshil-1.jpg",
     ],
-    "price": "4199",
+    "price": "4699",
     "reviews": [
       {
-        "name": "Puneet",
+        "name": "Ankit",
         "rating": 4,
-        "text": "Had so much fun! The place is beautiful and the activities were amazing."
+        "text": "Kuari pass trek was absolutely magical. One of the best trekking experiences I've ever had!"
       }, 
       {
-        "name": "Neetu",
+        "name": "Sneha",
         "rating": 5,
-        "text": "The place was absolutely beautiful. Felt like I was in Switzerland."}
+        "text": "Perfect mix of adventure and scenic beauty. The place was breathtakingly beautiful."
+      }
     ],
-    "pickupDrop": "IIT Roorkee | Delhi",
-    "duration": "3 Days / 2 Nights",
+    "pickupDrop": "IIT Roorkee | Delhi NCR",
+    "duration": "4 Days / 2 Nights",
     "inclusions": [ 
-      "2 night camp stay.",
-      "2 Breakfasts & 2 Dinner",
-      "Tempo Traveller / Mini Bus",
-      "Trip leader",
-      "Logistics Covered: Driver allowance, toll charges, parking fees.",
-      "Safety: First aid kits available throughout the trip.",
-      "Note: If Registrations are less price may increase accordingly and Cab travel will be provided"   
+      "1 night hotel stay",
+      "1 night camp stay",
+      "Meals- 2 Breakfast, 2 lunch and 2 dinner",
+      "Trek leaders,guide",
+      "Transport",
+      "Transportation tempo traveller from Dehradun to Pantwari Village",
+      "Local Exploration as per the itinerary",
+      "All Required Permits for trekking and travel",
+      "Surprise Games & Gifts to make your experience even more memorable",
+      "Basic First Aid Kit for safety during the trip",
+      "Driver Allowance, Toll Tax & Parking Charges included in the package"
+      
     ],
     "exclusions": [
-      "Personal expenses",
-      "Entry / jeep / cab charges",
-      "Scooty / car rental for self-exploration",
-      "Any food, drinks or services not mentioned in inclusions",
-      "Entrance fees to temples, trek, parks, or sightseeing spots (if applicable)"
+      "Any personal expenses such as laundry, shopping, tips, or snacks",
+      "Any adventure activities not specifically mentioned in the itinerary",
+      "Entrance fees to temples, trek, parks, or sightseeing spots (if applicable)",
+      "Travel insurance",
+      "Anything else not clearly mentioned in the inclusions"
     ],
-    "overview": "Explore the serene beauty of Harshil Valley, often called the Mini Switzerland of India. Surrounded by pine forests, snow-capped Himalayan peaks, and the Bhagirathi river, this trip blends scenic drives, peaceful villages, temple visits, and refreshing treks for a perfect mountain escape.",
+    "overview": "Experience the breathtaking trek to Kuari Pass, a hidden gem in the Garhwal Himalayas, offering stunning views of snow-capped peaks, lush valleys, and serene landscapes. This trek is perfect for adventure seekers and nature lovers looking to explore the beauty of Uttarakhand.",
     "itinerary": [
       {
-        "day": 0,
-        // "title": "DEPARTURE ",
-        "description": "Departure from Delhi at 9–10 PM & Overnight Journey by Bus."
-      },
-      {
         "day": 1,
-        // "title": "ADVENTURE SPORTS & RETURN",
-        "description": "Departure From Roorkee / Rishikesh. Arrival at Uttarkashi. Visit Kashivishwanath temple. Rest, acclimatization, and local exploration. Overnight stay at Harshil Village"
+        "title": "3 APRIL - DEPARTURE",
+        "description": "Morning Depart From Roorkee To Joshimath Stay At Joshimath Hotel."
       },
       {
         "day": 2,
-        // "title": "ARRIVAL & LOCAL EXPLORATION",
-        "description": "Early morning departure. Drive to Gangotri. Visit Surya Kund. Explore Himalayan Art Gallery. Visit Mukhba Village and Harshil Valley Market Explore"
+        "title": "4 APRIL",
+        "description": "Trek from Joshimath to Gulling to Khullara. Stay at Khullara overnight"
       },
       {
         "day": 3,
-        // "title": "SNOW ADVENTURES",
-        "description": "Early morning trek to Lama Top. Drive to Bagoni Village. Enjoy panoramic views. Descend and begin return journey. Roorkee Arrival 10 PM"
+        "title": "5 APRIL",
+        "description": "Trek from Khullara to Kuari Pass (8 km) Return to Joshimath till Evening"
       },
       {
         "day": 4,
-        // "title": "DEPARTURE ",
-        "description": "Arrival At Delhi In morning."
+        "title": "6 APRIL",
+        "description": "Early morning arrival at pickup location."
       }
     ],
     "lastDate": "26 March 2026"
