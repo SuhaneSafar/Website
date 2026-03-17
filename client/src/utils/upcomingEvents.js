@@ -398,6 +398,90 @@ const upcomingEvents = [
     ],
     "lastDate": "26 March 2026"
   },
+  {
+    "id": 14,
+    "title": "Ladakh",
+    "gform": "https://docs.google.com/forms/d/e/1FAIpQLScE8qzKzVBD8uCyTR__rWW9ykx5LlAqP4Fp1dKKdBBIPaEzng/viewform?usp=header",
+    "subtitle": "Ride through rugged mountain passes and explore the raw beauty of Ladakh, where every turn feels like a dream.",
+    "mainImage": "/Images/Ladakh/Ladakh-main-may.png",
+    "gallery": [
+      "/Images/Ladakh/ladakh-beauty.jpeg",
+      "/Images/Ladakh/ladakh-temple.jpeg",
+      "/Images/Ladakh/ladakh-travel.jpeg",
+      "/Images/Ladakh/ladakh-yaks.jpeg",
+        
+    ],
+    "price": "19,000/22,000/25,000",
+    "reviews": [
+      {
+        "name": "Aman",
+        "rating": 5,
+        "text": "Leh Ladakh was beyond anything I imagined. The landscapes, Pangong Lake, and the road journey were absolutely surreal."
+      },
+      {
+        "name": "Karan",
+        "rating": 4,
+        "text": "Perfect mix of thrill and peace. The journey was challenging but the views made it completely worth it."
+      },
+    ],
+    "pickupDrop": "IIT Roorkee | Delhi",
+    "duration": "6 Days / 5 Nights",
+    "inclusions": [ 
+      "🏨 5 nights accommodation on sharing basis",
+      "🍽 5 breakfasts & 5 dinners",
+      "🚖 Airport pickup and drop in Leh",
+      "🚌 Transportation for the complete trip",
+      "📄 Inner Line Permit",
+      "🏍 Himalayan bikes with fuel for touring",
+      "🛠 Backup car with mechanic for 3 days",
+      "🛡 Riding Safety Gear-Helmet, Elbow guard & Knee pad",
+      "🫁 1 Oxygen cylinder support"
+    ],
+    "exclusions": [
+      "🎫 Airfare / train fare",
+      "✈ Delhi to Delhi flight",
+      "💸 Personal expenses",
+      "🎟 Entry fees and guide charges",
+      "🍛 Lunch and any meals not mentioned",
+      "➕ Extra sightseeing not mentioned in the itinerary"
+    ],
+    
+    "overview": "Experience the ultimate Leh–Ladakh adventure with high-altitude passes, crystal-clear lakes like Pangong, serene monasteries, and breathtaking landscapes that make every moment unforgettable",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "ARRIVAL IN LEH & LOCAL SIGHTSEEING",
+        "description": "Depart from Delhi Airport for your flight to Leh. Arrive in Leh and check in to the hotel. Take some rest and allow your body to adjust to the high altitude. In the evening, explore the beautiful local attractions of Leh including Shanti Stupa, Leh Palace, Central Asian Museum, Soma Gompa, and Leh Market. Return to the hotel for dinner and overnight stay."
+      },
+      {
+        "day": 2,
+        "title": " SHAM VALLEY EXCURSION",
+        "description": "After breakfast, begin the Sham Valley tour. Visit Hall of Fame War Memorial, Spituk Temple, Pathar Sahib Gurudwara, Magnetic Hill, and Sangam, the meeting point of the Indus and Zanskar rivers. Later, return to Leh. Dinner and overnight stay at the hotel."
+    
+      },
+      {
+        "day": 3,
+        "title": " LEH TO NUBRA VALLEY",
+        "description": "After an early breakfast, drive towards Nubra Valley via the famous Khardung La Pass, one of the world’s highest motorable roads. On arrival, visit Diskit Monastery, Buddha Statue, and the sand dunes of Hunder. Enjoy the scenic beauty of the valley. Dinner and overnight stay at camp/resort in Nubra."
+      },
+      {
+        "day": 4,
+        "title": "NUBRA TO PANGONG LAKE",
+        "description": "After breakfast, proceed towards the stunning Pangong Lake via the Shayok route. Enjoy the breathtaking journey through mountain landscapes and river views. On reaching Pangong, spend time near the lake and witness its magical beauty.Dinner and overnight stay near Pangong Lake."
+      },
+      {
+        "day": 5,
+        "title": "PANGONG TO LEH",
+        "description": "After breakfast, drive back to Leh via Chang La Pass. On the way, visit Thiksey Monastery, Shey Palace, 3 Idiots School, and Sindhu Ghat. Reach Leh by evening. Dinner and overnight stay at the hotel."
+      },
+      {
+        "day": 6,
+        "title": "DEPARTURE FROM LEH",
+        "description": "After breakfast, transfer to Leh Airport for your onward journey. Carry back unforgettable memories, lifelong friends, and the incredible experience of Ladakh’s breathtaking beauty. Return home with unforgettable memories, breathtaking views, and amazing experiences with Suhane Safar."
+      }
+    ],
+    "lastDate": "13 May 2026"
+    }, 
 ];
 
 export { upcomingEvents };
