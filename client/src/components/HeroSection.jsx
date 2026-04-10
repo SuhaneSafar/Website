@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { FaWhatsapp, FaTelegramPlane, FaInstagram, FaPhoneAlt, FaStar, FaPlay, FaYoutube } from "react-icons/fa";
 import testimonials from "../utils/reviews";
-
 const HeroSection = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
@@ -23,6 +23,7 @@ const HeroSection = () => {
     }, 2000);
     return () => clearInterval(wordInterval);
   }, []);
+
 
   return (
     <div
@@ -70,15 +71,37 @@ const HeroSection = () => {
         {/* Left: Enhanced Heading and Content */}
         <div className="flex-1 flex flex-col justify-center items-start mt-20 lg:mt-0 max-w-3xl">
           {/* Enhanced Animated Badge */}
-          <div className={`
-            inline-flex items-center gap-2 bg-white/10 backdrop-blur-xl border border-sky-400/30 
-            text-sky-200 px-6 py-3 rounded-full text-sm font-medium mb-6 
-            transition-all duration-1000 transform hover:bg-white/15 hover:scale-105
-            ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}
-          `}>
-            <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></div>
-            <span>Live Your Adventure Dreams</span>
-          </div>
+          <Link 
+            to="/inter-iit-carnival"
+            className={`
+              relative inline-flex items-center justify-center p-[2px] mb-6 rounded-full overflow-visible
+              transition-all duration-1000 transform hover:scale-105 group shadow-[0_0_20px_rgba(59,130,246,0.2)] hover:shadow-[0_0_30px_rgba(236,72,153,0.4)]
+              ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}
+            `}
+          >
+            {/* Spinning gradient background for border */}
+            <div className="absolute inset-0 rounded-full overflow-hidden">
+              <div 
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300%] aspect-square animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#ec4899_0%,#3b82f6_50%,#ec4899_100%)] opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+              ></div>
+            </div>
+            
+            {/* Main Button Content */}
+            <div className="relative inline-flex items-center gap-2 bg-slate-900/95 backdrop-blur-xl px-6 py-3 rounded-full text-sm font-medium text-sky-200 group-hover:bg-slate-800/90 transition-colors w-full h-full">
+              <div className="w-2 h-2 bg-pink-400 rounded-full animate-pulse shadow-[0_0_8px_rgba(244,114,182,0.8)]"></div>
+              <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-pink-300">Inter IIT Carnival</span>
+            </div>
+
+            {/* Glowing Blinking NEW badge */}
+            <div className="absolute -top-3 -right-2 sm:-right-4 z-50">
+              <div className="relative flex items-center justify-center">
+                <div className="absolute inset-0 bg-red-500 rounded-full animate-ping opacity-60"></div>
+                <div className="relative bg-gradient-to-r from-red-500 via-orange-500 to-red-600 text-white text-[10px] sm:text-[11px] font-black px-2.5 py-0.5 rounded-full animate-bounce shadow-[0_0_15px_rgba(239,68,68,0.9)] border border-white/50 tracking-wider">
+                  NEW
+                </div>
+              </div>
+            </div>
+          </Link>
 
           {/* Main Heading with Animation */}
           <h1 className={`
@@ -101,18 +124,20 @@ const HeroSection = () => {
 
           {/* Animated Subtitle */}
           <div className={`
-            text-white text-lg sm:text-xl mb-8 font-semibold flex items-center gap-4
+            text-white text-base sm:text-xl mb-8 font-semibold flex flex-wrap items-center justify-start gap-2 sm:gap-4 w-full
             transition-all duration-1000 delay-500 transform
             ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'}
           `}>
             <span className="text-blue-300">Discover</span>
             <div className="w-2 h-2 bg-yellow-400 rounded-full animate-bounce"></div>
-            <span 
-              className="text-yellow-400 transition-all duration-500 transform"
-              key={currentWordIndex}
-            >
-              {words[currentWordIndex]}
-            </span>
+            <div className="w-[110px] sm:w-[130px] flex justify-center">
+              <span 
+                className="text-yellow-400 transition-all duration-500 transform"
+                key={currentWordIndex}
+              >
+                {words[currentWordIndex]}
+              </span>
+            </div>
             <div className="w-2 h-2 bg-blue-400 rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
             <span className="text-purple-300">Unforgettable</span>
           </div>
