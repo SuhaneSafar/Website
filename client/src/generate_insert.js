@@ -1,3 +1,6 @@
+import fs from 'fs';
+
+// Inline the data to avoid module import issues.
 const upcomingEvents = [
   {
     "id": 8,
@@ -8,7 +11,7 @@ const upcomingEvents = [
     "gallery": [
       "/Images/YullaKanda.jpeg",
       "/Images/YullaKanda1.jpeg",
-      "/Images/YullaKanda2.jpeg",
+      "/Images/YullaKanda2.jpeg"
     ],
     "price": "4499",
     "reviews": [
@@ -69,7 +72,7 @@ const upcomingEvents = [
     "mainImage": "/Images/kedarnath/kedarnath-13may.jpeg",
     "gallery": [
       "/Images/KedarNath2026.jpeg",
-      "/Images/KedarNath2026-1.jpeg",
+      "/Images/KedarNath2026-1.jpeg"
     ],
     "price": "3999",
     "reviews": [
@@ -120,8 +123,7 @@ const upcomingEvents = [
       }
     ],
     "lastDate": "10 May 2026"
-  }
-  ,
+  },
   {
     "id": 13,
     "title": "Harshil Valley",
@@ -130,7 +132,7 @@ const upcomingEvents = [
     "mainImage": "/Images/harshil valley/harshil-10april.jpeg",
     "gallery": [
       "/Images/harshil-main.png",
-      "/Images/harshil-1.jpg",
+      "/Images/harshil-1.jpg"
     ],
     "price": "4199",
     "reviews": [
@@ -143,7 +145,7 @@ const upcomingEvents = [
         "name": "Neetu",
         "rating": 5,
         "text": "The place was absolutely beautiful. Felt like I was in Switzerland."
-      },
+      }
     ],
     "pickupDrop": "IIT Roorkee | Delhi",
     "duration": "3 Days / 2 Nights",
@@ -167,41 +169,35 @@ const upcomingEvents = [
     "itinerary": [
       {
         "day": 0,
-        // "title": "DEPARTURE ",
         "description": "Departure from Delhi at 9–10 PM & Overnight Journey by Bus."
       },
       {
         "day": 1,
-        // "title": "ADVENTURE SPORTS & RETURN",
         "description": "Departure From Roorkee / Rishikesh. Arrival at Uttarkashi. Visit Kashivishwanath temple. Rest, acclimatization, and local exploration. Overnight stay at Harshil Village"
       },
       {
         "day": 2,
-        // "title": "ARRIVAL & LOCAL EXPLORATION",
         "description": "Early morning departure. Drive to Gangotri. Visit Surya Kund. Explore Himalayan Art Gallery. Visit Mukhba Village and Harshil Valley Market Explore"
       },
       {
         "day": 3,
-        // "title": "SNOW ADVENTURES",
         "description": "Early morning trek to Lama Top. Drive to Bagoni Village. Enjoy panoramic views. Descend and begin return journey. Roorkee Arrival 10 PM"
       },
       {
         "day": 4,
-        // "title": "DEPARTURE ",
         "description": "Arrival At Delhi In morning."
       }
     ],
     "lastDate": "26 March 2026"
-  }
-  , {
+  },
+  {
     "id": 14,
     "title": "Kuari Pass",
     "gform": "https://docs.google.com/forms/d/e/1FAIpQLSevK0heTSeQ3avmpQnhsjrr_6K7y2FxpLcRoU94hhXpeXsUEQ/viewform?usp=header",
     "subtitle": "Trek through snow-covered trails to witness breathtaking views of Nanda Devi and the mighty Himalayan peaks.",
     "mainImage": "/Images/kuari pass/kuari pass-main-april.png",
     "gallery": [
-      "/Images/kuari pass/kuari-pass1.png",
-      //   "/Images/harshil-1.jpg",
+      "/Images/kuari pass/kuari-pass1.png"
     ],
     "price": "4699",
     "reviews": [
@@ -230,7 +226,6 @@ const upcomingEvents = [
       "Surprise Games & Gifts to make your experience even more memorable",
       "Basic First Aid Kit for safety during the trip",
       "Driver Allowance, Toll Tax & Parking Charges included in the package"
-
     ],
     "exclusions": [
       "Any personal expenses such as laundry, shopping, tips, or snacks",
@@ -265,7 +260,7 @@ const upcomingEvents = [
     "lastDate": "26 March 2026"
   },
   {
-    "id": 14,
+    "id": 15,
     "title": "Ladakh",
     "gform": "https://docs.google.com/forms/d/e/1FAIpQLScE8qzKzVBD8uCyTR__rWW9ykx5LlAqP4Fp1dKKdBBIPaEzng/viewform?usp=header",
     "subtitle": "Ride through rugged mountain passes and explore the raw beauty of Ladakh, where every turn feels like a dream.",
@@ -274,8 +269,7 @@ const upcomingEvents = [
       "/Images/Ladakh/ladakh-beauty.jpeg",
       "/Images/Ladakh/ladakh-temple.jpeg",
       "/Images/Ladakh/ladakh-travel.jpeg",
-      "/Images/Ladakh/ladakh-yaks.jpeg",
-
+      "/Images/Ladakh/ladakh-yaks.jpeg"
     ],
     "price": "19,000/22,000/25,000",
     "reviews": [
@@ -288,7 +282,7 @@ const upcomingEvents = [
         "name": "Karan",
         "rating": 4,
         "text": "Perfect mix of thrill and peace. The journey was challenging but the views made it completely worth it."
-      },
+      }
     ],
     "pickupDrop": "IIT Roorkee | Delhi",
     "duration": "6 Days / 5 Nights",
@@ -311,7 +305,6 @@ const upcomingEvents = [
       "🍛 Lunch and any meals not mentioned",
       "➕ Extra sightseeing not mentioned in the itinerary"
     ],
-
     "overview": "Experience the ultimate Leh–Ladakh adventure with high-altitude passes, crystal-clear lakes like Pangong, serene monasteries, and breathtaking landscapes that make every moment unforgettable",
     "itinerary": [
       {
@@ -323,7 +316,6 @@ const upcomingEvents = [
         "day": 2,
         "title": " SHAM VALLEY EXCURSION",
         "description": "After breakfast, begin the Sham Valley tour. Visit Hall of Fame War Memorial, Spituk Temple, Pathar Sahib Gurudwara, Magnetic Hill, and Sangam, the meeting point of the Indus and Zanskar rivers. Later, return to Leh. Dinner and overnight stay at the hotel."
-
       },
       {
         "day": 3,
@@ -347,8 +339,35 @@ const upcomingEvents = [
       }
     ],
     "lastDate": "13 May 2026"
-  },
+  }
 ];
 
-export { upcomingEvents };
-//
+let sql = `INSERT INTO public.upcoming_adventures (title, subtitle, gform, "mainImage", gallery, price, "pickupDrop", duration, inclusions, exclusions, overview, itinerary, reviews, "lastDate") VALUES \n`;
+
+const escapeString = (str) => {
+  if (!str) return 'NULL';
+  return "'" + str.replace(/'/g, "''") + "'";
+};
+
+const evts = upcomingEvents.map(e => {
+  const title = escapeString(e.title);
+  const subtitle = escapeString(e.subtitle);
+  const gform = escapeString(e.gform);
+  const mainImage = escapeString(e.mainImage);
+  const gallery = `ARRAY[${e.gallery ? e.gallery.map(g => escapeString(g)).join(',') : ''}]::text[]`;
+  const price = escapeString(e.price);
+  const pickupDrop = escapeString(e.pickupDrop);
+  const duration = escapeString(e.duration);
+  const inclusions = `ARRAY[${e.inclusions ? e.inclusions.map(inc => escapeString(inc)).join(',') : ''}]::text[]`;
+  const exclusions = `ARRAY[${e.exclusions ? e.exclusions.map(exc => escapeString(exc)).join(',') : ''}]::text[]`;
+  const overview = escapeString(e.overview);
+  const itinerary = `'${JSON.stringify(e.itinerary).replace(/'/g, "''")}'::jsonb`;
+  const reviews = `'${JSON.stringify(e.reviews).replace(/'/g, "''")}'::jsonb`;
+  const lastDate = escapeString(e.lastDate);
+
+  return `(${title}, ${subtitle}, ${gform}, ${mainImage}, ${gallery}, ${price}, ${pickupDrop}, ${duration}, ${inclusions}, ${exclusions}, ${overview}, ${itinerary}, ${reviews}, ${lastDate})`;
+});
+
+sql += evts.join(',\n') + ';';
+fs.writeFileSync('insert_queries.sql', sql);
+console.log("SQL successfully generated.");

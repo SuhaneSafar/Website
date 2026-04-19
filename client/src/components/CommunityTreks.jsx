@@ -119,7 +119,7 @@ const CommunityTreks = () => (
     </div>
     
     {/* Custom styles for pagination */}
-    <style jsx>{`
+    <style>{`
       .treks-bullet {
         width: 12px !important;
         height: 12px !important;

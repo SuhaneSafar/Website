@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import { upcomingEvents } from "../utils/upcomingEvents";
+import { fetchAdventures, deleteAdventure } from '../api/events';
+import { supabase } from '../supabaseClient';
+import AdventureFormModal from './AdventureFormModal';
+import toast from 'react-hot-toast';
 import {
   FaMapMarkerAlt,
   FaClock,
@@ -23,19 +26,111 @@ import 'swiper/css/pagination';
 
 const UpcomingAdventures = () => {
   const [selectedEvent, setSelectedEvent] = useState(null);
+  const [events, setEvents] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [isAdmin, setIsAdmin] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [editingAdventure, setEditingAdventure] = useState(null);
+  const [deletingAdventureId, setDeletingAdventureId] = useState(null);
+
+  const loadEvents = async () => {
+    try {
+      const { adventures, error } = await fetchAdventures();
+      if (!error && adventures) {
+        setEvents(adventures);
+      }
+    } catch (err) {
+      console.error("Failed to load adventures:", err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    const checkAuth = async () => {
+      const { data: { session } } = await supabase.auth.getSession();
+      setIsAdmin(!!session);
+    };
+    checkAuth();
+
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+      setIsAdmin(!!session);
+    });
+
+    loadEvents();
+
+    return () => subscription.unsubscribe();
+  }, []);
+
+  const handleDeleteClick = (e, id) => {
+    e.stopPropagation(); // prevent opening the details modal
+    setDeletingAdventureId(id);
+  };
+
+  const confirmDelete = async () => {
+    if (!deletingAdventureId) return;
+    const toastId = toast.loading("Deleting...");
+    const { error } = await deleteAdventure(deletingAdventureId);
+    if (error) {
+      toast.error("Failed to delete", { id: toastId });
+    } else {
+      toast.success("Successfully deleted", { id: toastId });
+      loadEvents();
+    }
+    setDeletingAdventureId(null);
+  };
+
+  const cancelDelete = () => {
+    setDeletingAdventureId(null);
+  };
+
+  const openAddModal = () => {
+    setEditingAdventure(null);
+    setIsModalOpen(true);
+  };
+
+  const openEditModal = (e, adventure) => {
+    e.stopPropagation(); // prevent opening details
+    setEditingAdventure(adventure);
+    setIsModalOpen(true);
+  };
+
+  if (loading) {
+    return (
+      <section className="py-12 px-4 mx-4 sm:mx-8 mt-8 relative bg-gradient-to-br from-slate-50 to-sky-50 rounded-3xl flex justify-center items-center h-[500px]">
+        <div className="flex flex-col items-center gap-4">
+          <div className="w-16 h-16 border-4 border-sky-200 border-t-sky-500 rounded-full animate-spin"></div>
+          <p className="text-sky-700 font-medium animate-pulse text-lg">Loading adventures...</p>
+        </div>
+      </section>
+    );
+  }
+
+  if (events.length === 0) return null;
 
   return (
     <section className="py-12 px-4 mx-4 sm:mx-8 mt-8 relative bg-gradient-to-br from-slate-50 to-sky-50 rounded-3xl">
-      <div className="text-center mb-16">
-        <div className="inline-flex items-center gap-2 bg-sky-100 text-sky-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
-          <FaCalendarAlt />
-          Coming Soon
+      <div className="text-center mb-8 md:mb-16 relative w-full">
+        <div className="flex flex-row justify-center items-center gap-4 mb-6 w-full relative">
+          <div className="inline-flex items-center gap-2 bg-sky-100 text-sky-700 px-4 py-2 rounded-full text-sm font-medium">
+            <FaCalendarAlt />
+            Coming Soon
+          </div>
+          
+          {isAdmin && (
+            <button 
+              onClick={openAddModal}
+              className="bg-slate-700 hover:bg-slate-700 text-sky-100 px-4 py-2 rounded-full shadow-lg font-bold transition-all hover:scale-105 flex items-center gap-2 text-sm sm:text-base sm:absolute sm:right-0 sm:top-0 z-10 border border-sky-900/50"
+            >
+              <span>+</span> <span className="hidden sm:inline">Add New Adventure</span><span className="sm:hidden">Add New</span>
+            </button>
+          )}
         </div>
-        <h2 className="text-5xl font-black text-gray-900 mb-6 relative inline-block">
+        <h2 className="text-3xl font-black text-gray-900 mb-6 relative inline-block">
           Upcoming Adventures
           <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-32 h-2 bg-gradient-to-r from-sky-500 via-purple-500 to-yellow-400 rounded-full opacity-80"></div>
         </h2>
-        <p className="text-gray-600 text-xl max-w-3xl mx-auto leading-relaxed">
+        <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
           Embark on extraordinary journeys that will leave you with stories to tell for a lifetime.
           Each adventure is carefully crafted to deliver unforgettable experiences.
         </p>
@@ -83,7 +178,7 @@ const UpcomingAdventures = () => {
           }}
           className="adventure-swiper pb-20"
         >
-          {upcomingEvents.map((event) => (
+          {events.map((event) => (
             <SwiperSlide key={event.id}>
               <div
                 className="
@@ -103,6 +198,25 @@ const UpcomingAdventures = () => {
                   />
                   {/* Enhanced gradient overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+
+                  {isAdmin && (
+                    <div className="absolute top-4 left-4 flex gap-2 z-20">
+                      <button 
+                        onClick={(e) => openEditModal(e, event)}
+                        className="bg-white/90 hover:bg-white text-sky-600 p-2 rounded-full shadow-md transition-transform hover:scale-110"
+                        title="Edit Adventure"
+                      >
+                        ✏️
+                      </button>
+                      <button 
+                        onClick={(e) => handleDeleteClick(e, event.id)}
+                        className="bg-white/90 hover:bg-white text-red-600 p-2 rounded-full shadow-md transition-transform hover:scale-110"
+                        title="Delete Adventure"
+                      >
+                        🗑️
+                      </button>
+                    </div>
+                  )}
 
                   {/* Price badge */}
                   <div className="absolute top-4 right-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-bold px-3 py-1 rounded-full text-sm shadow-lg">
@@ -172,7 +286,7 @@ const UpcomingAdventures = () => {
       </div>
 
       {/* Custom styles for pagination and animations */}
-      <style jsx>{`
+      <style>{`
         .custom-bullet {
           width: 16px !important;
           height: 16px !important;
@@ -200,6 +314,41 @@ const UpcomingAdventures = () => {
           animation: fadeIn 0.3s ease-out;
         }
       `}</style>
+
+      <AdventureFormModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        initialData={editingAdventure}
+        onSuccess={() => loadEvents()}
+      />
+
+      {/* Delete Confirmation Modal */}
+      {deletingAdventureId && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+          <div className="absolute inset-0 bg-slate-900/80 backdrop-blur-sm" onClick={cancelDelete}></div>
+          <div className="relative bg-slate-900 border border-red-500/30 rounded-2xl p-6 shadow-2xl max-w-sm w-full text-center">
+            <div className="w-16 h-16 bg-red-500/20 text-red-500 rounded-full flex items-center justify-center mx-auto mb-4 border border-red-500/50">
+              <FaTimesCircle className="w-8 h-8" />
+            </div>
+            <h3 className="text-xl font-bold text-white mb-2">Delete Adventure?</h3>
+            <p className="text-slate-400 text-sm mb-6">Are you sure you want to permanently delete this adventure? This action cannot be undone.</p>
+            <div className="flex gap-3 justify-center">
+              <button 
+                onClick={cancelDelete}
+                className="px-4 py-2 rounded-lg text-slate-300 font-medium hover:bg-slate-800 transition duration-200 border border-slate-700 w-full"
+              >
+                Cancel
+              </button>
+              <button 
+                onClick={confirmDelete}
+                className="px-4 py-2 rounded-lg bg-red-500 hover:bg-red-600 text-white font-bold transition duration-200 shadow-lg w-full"
+              >
+                Delete
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Enhanced Modal for Event Details */}
       {selectedEvent && (

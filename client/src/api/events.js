@@ -1,0 +1,90 @@
+import { supabase } from '../supabaseClient';
+
+/**
+ * Fetch all upcoming adventures from Supabase
+ */
+export const fetchAdventures = async () => {
+  try {
+    const { data, error } = await supabase
+      .from('upcoming_adventures')
+      .select('*')
+      .order('created_at', { ascending: false });
+
+    if (error) {
+      throw error;
+    }
+
+    return { adventures: data, error: null };
+  } catch (error) {
+    console.error('Error fetching adventures:', error);
+    return { adventures: null, error: error.message };
+  }
+};
+
+/**
+ * Add a new adventure event to Supabase
+ * @param {Object} eventData - Formatted object matching the upcoming_adventures schema
+ */
+export const addAdventure = async (eventData) => {
+  try {
+    const { data, error } = await supabase
+      .from('upcoming_adventures')
+      .insert([eventData])
+      .select();
+
+    if (error) {
+      throw error;
+    }
+
+    return { data, error: null };
+  } catch (error) {
+    console.error('Error adding adventure:', error);
+    return { data: null, error: error.message };
+  }
+};
+
+/**
+ * Update an existing adventure event
+ * @param {string|number} id - The id of the adventure
+ * @param {Object} eventData - The fields to update
+ */
+export const updateAdventure = async (id, eventData) => {
+  try {
+    const { data, error } = await supabase
+      .from('upcoming_adventures')
+      .update(eventData)
+      .eq('id', id)
+      .select();
+
+    if (error) {
+      throw error;
+    }
+
+    return { data, error: null };
+  } catch (error) {
+    console.error('Error updating adventure:', error);
+    return { data: null, error: error.message };
+  }
+};
+
+/**
+ * Delete an adventure event
+ * @param {string|number} id - The id of the adventure to delete
+ */
+export const deleteAdventure = async (id) => {
+  try {
+    const { error } = await supabase
+      .from('upcoming_adventures')
+      .delete()
+      .eq('id', id);
+
+    if (error) {
+      throw error;
+    }
+
+    return { error: null };
+  } catch (error) {
+    console.error('Error deleting adventure:', error);
+    return { error: error.message };
+  }
+};

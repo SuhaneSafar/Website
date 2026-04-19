@@ -164,7 +164,7 @@ const CommunityTrips = () => {
       </div>
       
       {/* Enhanced Custom styles for pagination */}
-      <style jsx>{`
+      <style>{`
         .trips-bullet {
           width: 16px !important;
           height: 16px !important;
