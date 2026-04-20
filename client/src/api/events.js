@@ -88,3 +88,78 @@ export const deleteAdventure = async (id) => {
     return { error: error.message };
   }
 };
+
+/**
+ * Fetch all community trips from Supabase
+ */
+export const fetchCommunityTrips = async () => {
+  try {
+    const { data, error } = await supabase
+      .from('community_trips')
+      .select('*')
+      .order('created_at', { ascending: true });
+
+    if (error) throw error;
+    return { trips: data, error: null };
+  } catch (error) {
+    console.error('Error fetching community trips:', error);
+    return { trips: null, error: error.message };
+  }
+};
+
+/**
+ * Add a new community trip to Supabase
+ */
+export const addCommunityTrip = async (tripData) => {
+  try {
+    const { data, error } = await supabase
+      .from('community_trips')
+      .insert([tripData])
+      .select();
+
+    if (error) throw error;
+    return { data, error: null };
+  } catch (error) {
+    console.error('Error adding community trip:', error);
+    return { data: null, error: error.message };
+  }
+};
+
+/**
+ * Update an existing community trip
+ */
+export const updateCommunityTrip = async (id, tripData) => {
+  try {
+    // Remove id from the update payload if it somehow sneaks in
+    const { id: _, ...updateData } = tripData;
+    const { data, error } = await supabase
+      .from('community_trips')
+      .update(updateData)
+      .eq('id', id)
+      .select();
+
+    if (error) throw error;
+    return { data, error: null };
+  } catch (error) {
+    console.error('Error updating community trip:', error);
+    return { data: null, error: error.message };
+  }
+};
+
+/**
+ * Delete a community trip
+ */
+export const deleteCommunityTrip = async (id) => {
+  try {
+    const { error } = await supabase
+      .from('community_trips')
+      .delete()
+      .eq('id', id);
+
+    if (error) throw error;
+    return { error: null };
+  } catch (error) {
+    console.error('Error deleting community trip:', error);
+    return { error: error.message };
+  }
+};

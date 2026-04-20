@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay, EffectCards } from 'swiper/modules';
-import { FaCar, FaChevronLeft, FaChevronRight, FaMapMarkerAlt, FaClock } from "react-icons/fa";
-import communityTrips from "../utils/communitytrips";
+import { FaCar, FaChevronLeft, FaChevronRight, FaMapMarkerAlt, FaClock, FaTimesCircle } from "react-icons/fa";
+
+import { supabase } from '../supabaseClient';
+import { fetchCommunityTrips, deleteCommunityTrip } from '../api/events';
+import CommunityTripFormModal from './CommunityTripFormModal';
+import toast from 'react-hot-toast';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -12,6 +16,66 @@ import 'swiper/css/effect-cards';
 
 const CommunityTrips = () => {
   const [showModal, setShowModal] = useState(false);
+  const [tripsData, setTripsData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [isAdmin, setIsAdmin] = useState(false);
+  const [isFormModalOpen, setIsFormModalOpen] = useState(false);
+  const [editingTrip, setEditingTrip] = useState(null);
+  const [deletingTripId, setDeletingTripId] = useState(null);
+
+  const loadTrips = async () => {
+    setLoading(true);
+    const { trips, error } = await fetchCommunityTrips();
+    if (!error && trips) setTripsData(trips);
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    const checkAuth = async () => {
+      const { data: { session } } = await supabase.auth.getSession();
+      setIsAdmin(!!session);
+    };
+    checkAuth();
+
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+      setIsAdmin(!!session);
+    });
+
+    loadTrips();
+
+    return () => subscription.unsubscribe();
+  }, []);
+
+  const handleDeleteClick = (e, id) => {
+    e.stopPropagation();
+    setDeletingTripId(id);
+  };
+
+  const confirmDelete = async () => {
+    if (!deletingTripId) return;
+    const toastId = toast.loading("Deleting trip...");
+    const { error } = await deleteCommunityTrip(deletingTripId);
+    if (error) {
+      toast.error("Failed to delete", { id: toastId });
+    } else {
+      toast.success("Successfully deleted", { id: toastId });
+      loadTrips();
+    }
+    setDeletingTripId(null);
+  };
+
+  const cancelDelete = () => setDeletingTripId(null);
+
+  const openAddModal = () => {
+    setEditingTrip(null);
+    setIsFormModalOpen(true);
+  };
+
+  const openEditModal = (e, trip) => {
+    e.stopPropagation();
+    setEditingTrip(trip);
+    setIsFormModalOpen(true);
+  };
 
   const handleRegisterClick = (registrationLink) => {
     if (registrationLink === "Not aviable") {
@@ -20,6 +84,16 @@ const CommunityTrips = () => {
       window.open(registrationLink, "_blank", "noopener,noreferrer");
     }
   };
+
+  if (loading) {
+    return (
+      <section className="relative py-20 px-4 mx-4 sm:mx-8 mt-16 overflow-hidden rounded-3xl flex justify-center items-center bg-gradient-to-br from-slate-900 via-sky-900 to-slate-900 min-h-[500px]" id="community-trips">
+        <div className="w-16 h-16 border-4 border-sky-400/20 border-t-sky-500 rounded-full animate-spin"></div>
+      </section>
+    );
+  }
+
+  if (tripsData.length === 0) return null;
 
   return (
     <section className="relative bg-gradient-to-br from-slate-900 via-sky-900 to-slate-900 py-20 px-4 mx-4 sm:mx-8 mt-16 overflow-hidden rounded-3xl" id="community-trips">
@@ -41,10 +115,21 @@ const CommunityTrips = () => {
       </div>
 
       <div className="relative max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-xl border border-sky-400/40 text-sky-200 px-6 py-3 rounded-full text-sm font-medium mb-6 hover:bg-white/15 transition-all duration-300">
-            <FaCar className="animate-pulse text-yellow-400" />
-            <span>Explore Together</span>
+        <div className="text-center mb-16 relative w-full">
+          <div className="flex flex-row justify-center items-center gap-4 mb-6 relative">
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-xl border border-sky-400/40 text-sky-200 px-6 py-3 rounded-full text-sm font-medium hover:bg-white/15 transition-all duration-300">
+              <FaCar className="animate-pulse text-yellow-400" />
+              <span>Explore Together</span>
+            </div>
+
+            {isAdmin && (
+              <button 
+                onClick={openAddModal}
+                className="bg-slate-700 hover:bg-slate-600 text-sky-100 px-4 py-2 rounded-full shadow-lg font-bold transition-all hover:scale-105 flex items-center gap-2 text-sm sm:text-base sm:absolute sm:right-0 sm:top-0 z-10 border border-sky-900/50"
+              >
+                <span>+</span> <span className="hidden sm:inline">Add New Trip</span><span className="sm:hidden">Add New</span>
+              </button>
+            )}
           </div>
           <h2 className="text-4xl md:text-5xl font-black text-white mb-6 relative inline-block">
             Community 
@@ -96,8 +181,8 @@ const CommunityTrips = () => {
           }}
           className="trips-swiper pb-12"
         >
-          {communityTrips.map((trip, idx) => (
-            <SwiperSlide key={idx}>
+          {tripsData.map((trip) => (
+            <SwiperSlide key={trip.id}>
               <div className="relative bg-black rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 min-h-[420px] group transform hover:scale-105">
                 {/* Background Image with overlay */}
                 <img
@@ -105,6 +190,25 @@ const CommunityTrips = () => {
                   alt={trip.title}
                   className="absolute inset-0 w-full h-full object-cover object-center z-0 group-hover:scale-110 transition-transform duration-700"
                 />
+
+                {isAdmin && (
+                  <div className="absolute top-4 right-4 flex gap-2 z-30">
+                    <button 
+                      onClick={(e) => openEditModal(e, trip)}
+                      className="bg-white/80 hover:bg-white text-sky-600 p-2 text-xl rounded-full shadow-md transition-transform hover:scale-110"
+                      title="Edit Trip"
+                    >
+                      ✏️
+                    </button>
+                    <button 
+                      onClick={(e) => handleDeleteClick(e, trip.id)}
+                      className="bg-white/80 hover:bg-white text-red-600 p-2 text-xl rounded-full shadow-md transition-transform hover:scale-110"
+                      title="Delete Trip"
+                    >
+                      🗑️
+                    </button>
+                  </div>
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20 z-10" />
 
                 {/* Duration and Tag */}
@@ -220,6 +324,41 @@ const CommunityTrips = () => {
               animation: scaleIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             }
           `}</style>
+        </div>
+      )}
+
+      {/* Admin Modals */}
+      <CommunityTripFormModal
+        isOpen={isFormModalOpen}
+        onClose={() => setIsFormModalOpen(false)}
+        initialData={editingTrip}
+        onSuccess={() => loadTrips()}
+      />
+
+      {deletingTripId && (
+        <div className="fixed inset-0 z-[110] flex items-center justify-center p-4">
+          <div className="absolute inset-0 bg-slate-900/80 backdrop-blur-sm" onClick={cancelDelete}></div>
+          <div className="relative bg-slate-900 border border-red-500/30 rounded-2xl p-6 shadow-2xl max-w-sm w-full text-center">
+            <div className="w-16 h-16 bg-red-500/20 text-red-500 rounded-full flex items-center justify-center mx-auto mb-4 border border-red-500/50">
+              <FaTimesCircle className="w-8 h-8" />
+            </div>
+            <h3 className="text-xl font-bold text-white mb-2">Delete Trip?</h3>
+            <p className="text-slate-400 text-sm mb-6">Are you sure you want to permanently delete this trip? This action cannot be undone.</p>
+            <div className="flex gap-3 justify-center">
+              <button 
+                onClick={cancelDelete}
+                className="px-4 py-2 rounded-lg text-slate-300 font-medium hover:bg-slate-800 transition duration-200 border border-slate-700 w-full"
+              >
+                Cancel
+              </button>
+              <button 
+                onClick={confirmDelete}
+                className="px-4 py-2 rounded-lg bg-red-500 hover:bg-red-600 text-white font-bold transition duration-200 shadow-lg w-full"
+              >
+                Delete
+              </button>
+            </div>
+          </div>
         </div>
       )}
     </section>

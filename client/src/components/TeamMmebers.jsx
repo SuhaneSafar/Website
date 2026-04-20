@@ -1,4 +1,11 @@
 import React from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 const TeamMembers = () => {
   const team = [
@@ -29,32 +36,73 @@ const TeamMembers = () => {
         Who We Are
       </h2>
 
-      {/* Responsive Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full">
-        {team.map((member, idx) => (
-          <div
-            key={idx}
-            className="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] p-6 sm:p-8 flex flex-col items-center text-center w-full"
-          >
-            <div className="w-56 h-56 sm:w-64 sm:h-64 mb-6 rounded-xl overflow-hidden ">
-              <img
-                src={member.img}
-                alt={member.name}
-                className="w-full h-full object-fill"
-              />
-            </div>
-            <h3 className="text-base sm:text-lg font-extrabold uppercase">
-              {member.role}
-            </h3>
-            <p className="text-sm sm:text-base font-semibold mt-1 mb-4">
-              {member.name}
-            </p>
-            <p className="text-sm text-gray-700 leading-relaxed">
-              {member.desc}
-            </p>
-          </div>
-        ))}
+      <div className="relative w-full">
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          spaceBetween={30}
+          slidesPerView={1}
+          pagination={{ clickable: true }}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
+          loop={true}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+          }}
+          className="pb-16"
+        >
+          {team.map((member, idx) => (
+            <SwiperSlide key={idx} className="h-auto flex justify-center pb-4">
+              <div
+                className="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] p-6 sm:p-8 flex flex-col items-center text-center w-full h-full max-w-[400px]"
+              >
+                <div className="w-56 h-56 sm:w-64 sm:h-64 mb-6 rounded-xl overflow-hidden shrink-0">
+                  <img
+                    src={member.img}
+                    alt={member.name}
+                    className="w-full h-full object-fill"
+                  />
+                </div>
+                <h3 className="text-base sm:text-lg font-extrabold uppercase">
+                  {member.role}
+                </h3>
+                <p className="text-sm sm:text-base font-semibold mt-1 mb-4">
+                  {member.name}
+                </p>
+                <p className="text-sm text-gray-700 leading-relaxed max-w-sm flex-grow">
+                  {member.desc}
+                </p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
+
+      <style>{`
+        .swiper-pagination-bullet {
+          width: 10px;
+          height: 10px;
+          background-color: #93c5fd;
+          opacity: 0.5;
+        }
+        .swiper-pagination-bullet-active {
+          background-color: #2563eb;
+          opacity: 1;
+        }
+      `}</style>
     </div>
   );
 };
