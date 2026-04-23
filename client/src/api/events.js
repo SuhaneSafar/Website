@@ -163,3 +163,78 @@ export const deleteCommunityTrip = async (id) => {
     return { error: error.message };
   }
 };
+
+/**
+ * Fetch all team members from Supabase
+ */
+export const fetchTeamMembers = async () => {
+  try {
+    const { data, error } = await supabase
+      .from('team_members')
+      .select('*')
+      .order('id', { ascending: true });
+
+    if (error) throw error;
+    return { members: data, error: null };
+  } catch (error) {
+    console.error('Error fetching team members:', error);
+    return { members: null, error: error.message };
+  }
+};
+
+/**
+ * Add a new team member to Supabase
+ */
+export const addTeamMember = async (memberData) => {
+  try {
+    const { data, error } = await supabase
+      .from('team_members')
+      .insert(Array.isArray(memberData) ? memberData : [memberData])
+      .select();
+
+    if (error) throw error;
+    return { data, error: null };
+  } catch (error) {
+    console.error('Error adding team member:', error);
+    return { data: null, error: error.message };
+  }
+};
+
+/**
+ * Update an existing team member
+ */
+export const updateTeamMember = async (id, memberData) => {
+  try {
+    const { id: _, ...updateData } = memberData;
+    const { data, error } = await supabase
+      .from('team_members')
+      .update(updateData)
+      .eq('id', id)
+      .select();
+
+    if (error) throw error;
+    return { data, error: null };
+  } catch (error) {
+    console.error('Error updating team member:', error);
+    return { data: null, error: error.message };
+  }
+};
+
+/**
+ * Delete a team member
+ */
+export const deleteTeamMember = async (id) => {
+  try {
+    const { error } = await supabase
+      .from('team_members')
+      .delete()
+      .eq('id', id);
+
+    if (error) throw error;
+    return { error: null };
+  } catch (error) {
+    console.error('Error deleting team member:', error);
+    return { error: error.message };
+  }
+};
+

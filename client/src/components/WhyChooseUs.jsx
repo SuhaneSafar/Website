@@ -108,8 +108,8 @@ const WhyChooseUs = () => {
               What Makes Us Special
             </h3>
             
-            {/* Feature Cards */}
-            <div className="grid gap-6">
+            {/* Feature Cards Desktop */}
+            <div className="hidden md:grid gap-6">
               {features.map((feature, idx) => (
                 <div key={idx} className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
                   <div className="flex items-start gap-4">
@@ -127,6 +127,41 @@ const WhyChooseUs = () => {
                   </div>
                 </div>
               ))}
+            </div>
+
+            {/* Feature Cards Mobile Slider */}
+            <div 
+              className="md:hidden relative h-[380px] overflow-hidden rounded-2xl" 
+              style={{ maskImage: 'linear-gradient(to bottom, transparent, black 10%, black 90%, transparent)', WebkitMaskImage: 'linear-gradient(to bottom, transparent, black 10%, black 90%, transparent)' }}
+            >
+              <div 
+                className="flex flex-col gap-6 active:[animation-play-state:paused]"
+                style={{ animation: 'slideUpCards 12s linear infinite' }}
+              >
+                {[...features, ...features].map((feature, idx) => (
+                  <div key={`mobile-${idx}`} className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
+                    <div className="flex items-start gap-4">
+                      <div className="bg-gradient-to-br from-sky-500/20 to-yellow-400/20 rounded-xl p-3">
+                        {feature.icon}
+                      </div>
+                      <div className="flex-1">
+                        <h4 className="text-xl font-bold text-white mb-2">
+                          {feature.title}
+                        </h4>
+                        <p className="text-gray-300 leading-relaxed text-sm">
+                          {feature.description}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <style>{`
+                @keyframes slideUpCards {
+                  0% { transform: translateY(0); }
+                  100% { transform: translateY(calc(-50% - 12px)); }
+                }
+              `}</style>
             </div>
 
             {/* Additional Benefits */}
@@ -157,7 +192,8 @@ const WhyChooseUs = () => {
               Our Adventure Gallery
             </h3>
             
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {/* Gallery Desktop Grid */}
+            <div className="hidden md:grid grid-cols-2 md:grid-cols-3 gap-4">
               {gallery.map((img, idx) => (
                 <div
                   key={idx}
@@ -191,6 +227,61 @@ const WhyChooseUs = () => {
                   </div>
                 </div>
               ))}
+            </div>
+
+            {/* Gallery Mobile Vertical Slider */}
+            <div 
+              className="md:hidden relative overflow-hidden rounded-2xl h-[480px]"
+              style={{ maskImage: 'linear-gradient(to bottom, transparent, black 5%, black 95%, transparent)', WebkitMaskImage: 'linear-gradient(to bottom, transparent, black 5%, black 95%, transparent)' }}
+            >
+              <div 
+                className="flex flex-col gap-4 active:[animation-play-state:paused]"
+                style={{ animation: 'slideUpGallery 25s linear infinite' }}
+              >
+                {[1, 2].map((chunk) => (
+                  <div key={`gallery-chunk-${chunk}`} className="grid grid-cols-2 gap-4">
+                    {gallery.map((img, idx) => (
+                      <div
+                        key={`gallery-img-${chunk}-${idx}`}
+                        className="relative group rounded-2xl overflow-hidden bg-gradient-to-br from-sky-500/20 to-yellow-400/20 border border-white/20 transition-all duration-300 cursor-pointer"
+                        onClick={() => setSelectedImage(img)}
+                      >
+                        <div className="aspect-square overflow-hidden">
+                          <img
+                            src={img.src}
+                            alt={img.label || `gallery-${idx}`}
+                            className="w-full h-full object-cover"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        
+                        {/* Overlay remains active on touch */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 active:opacity-100 transition-opacity duration-300">
+                          <div className="absolute bottom-0 left-0 right-0 p-3">
+                            <h4 className="text-white font-bold text-sm mb-1">{img.label}</h4>
+                            <div className="flex items-center gap-1">
+                              <FaPlay className="text-yellow-400 text-xs" />
+                              <span className="text-gray-200 text-xs whitespace-nowrap">View Details</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Hover indicator */}
+                        <div className="absolute top-2 right-2 bg-yellow-400/90 text-black rounded-full p-1.5 opacity-0 group-hover:opacity-100 active:opacity-100 transition-opacity duration-300">
+                          <FaMapMarkerAlt className="text-xs" />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                ))}
+              </div>
+              <style>{`
+                @keyframes slideUpGallery {
+                  0% { transform: translateY(0); }
+                  100% { transform: translateY(calc(-50% - 8px)); }
+                }
+              `}</style>
             </div>
             
             <div className="text-center">
