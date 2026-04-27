@@ -238,3 +238,76 @@ export const deleteTeamMember = async (id) => {
   }
 };
 
+/**
+ * Fetch all gallery images from Supabase
+ */
+export const fetchGallery = async () => {
+  try {
+    const { data, error } = await supabase
+      .from('adventure_gallery')
+      .select('*')
+      .order('id', { ascending: true });
+
+    if (error) throw error;
+    return { gallery: data, error: null };
+  } catch (error) {
+    console.error('Error fetching gallery:', error);
+    return { gallery: null, error: error.message };
+  }
+};
+
+/**
+ * Add new gallery items to Supabase
+ */
+export const addGalleryItem = async (galleryData) => {
+  try {
+    const { data, error } = await supabase
+      .from('adventure_gallery')
+      .insert(Array.isArray(galleryData) ? galleryData : [galleryData])
+      .select();
+
+    if (error) throw error;
+    return { data, error: null };
+  } catch (error) {
+    console.error('Error adding gallery item:', error);
+    return { data: null, error: error.message };
+  }
+};
+
+/**
+ * Update an existing gallery item
+ */
+export const updateGalleryItem = async (id, galleryData) => {
+  try {
+    const { id: _, ...updateData } = galleryData;
+    const { data, error } = await supabase
+      .from('adventure_gallery')
+      .update(updateData)
+      .eq('id', id)
+      .select();
+
+    if (error) throw error;
+    return { data, error: null };
+  } catch (error) {
+    console.error('Error updating gallery item:', error);
+    return { data: null, error: error.message };
+  }
+};
+
+/**
+ * Delete a gallery item
+ */
+export const deleteGalleryItem = async (id) => {
+  try {
+    const { error } = await supabase
+      .from('adventure_gallery')
+      .delete()
+      .eq('id', id);
+
+    if (error) throw error;
+    return { error: null };
+  } catch (error) {
+    console.error('Error deleting gallery item:', error);
+    return { error: error.message };
+  }
+};
