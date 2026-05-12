@@ -146,7 +146,7 @@ const WhyChooseUs = () => {
           <h2 className="text-4xl md:text-5xl font-black text-white mb-6 relative inline-block">
             Why Choose 
             <span className="bg-gradient-to-r from-sky-400 via-yellow-400 to-sky-400 bg-clip-text text-transparent ml-3">
-              Suhane Safar
+              Us
             </span>
             <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-32 h-1.5 bg-gradient-to-r from-sky-500 via-yellow-400 to-sky-500 rounded-full"></div>
           </h2>

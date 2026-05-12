@@ -311,3 +311,20 @@ export const deleteGalleryItem = async (id) => {
     return { error: error.message };
   }
 };
+
+/**
+ * Submit Feedback
+ */
+export const submitFeedback = async (feedbackData) => {
+  try {
+    const { error } = await supabase
+      .from('feedback')
+      .insert([feedbackData]);
+
+    if (error) throw error;
+    return { data: null, error: null };
+  } catch (error) {
+    console.error('Error submitting feedback:', error);
+    return { data: null, error: error.message };
+  }
+};

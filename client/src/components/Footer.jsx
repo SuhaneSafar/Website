@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useFeedback } from "../context/FeedbackContext";
 import {
   FaInstagram,
   FaYoutube,
@@ -10,6 +11,7 @@ import {
 } from "react-icons/fa6";
 
 const Footer = () => {
+  const { openFeedbackModal } = useFeedback();
   const [formData, setFormData] = useState({
     name: "",
     contact: "",
@@ -207,10 +209,10 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSez-ccadPhOlmRMgAns9XV9EAH6vyScxgOXpPJIlAGHn04xDg/viewform?usp=header" className="group flex items-center gap-3 text-gray-300 hover:text-white transition-colors duration-300">
+                <button onClick={openFeedbackModal} className="group flex items-center gap-3 text-gray-300 hover:text-white transition-colors duration-300 w-full text-left">
                   <div className="w-1 h-1 bg-yellow-400 rounded-full group-hover:scale-150 transition-transform duration-300"></div>
                  Feedback
-                </a>
+                </button>
               </li>
             </ul>
           </div>
