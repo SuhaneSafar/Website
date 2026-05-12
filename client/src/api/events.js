@@ -328,3 +328,57 @@ export const submitFeedback = async (feedbackData) => {
     return { data: null, error: error.message };
   }
 };
+
+/**
+ * Fetch all feedback for Admins
+ */
+export const fetchAllFeedback = async () => {
+  try {
+    const { data, error } = await supabase
+      .from('feedback')
+      .select('*')
+      .order('created_at', { ascending: false });
+
+    if (error) throw error;
+    return { data, error: null };
+  } catch (error) {
+    console.error('Error fetching feedback:', error);
+    return { data: null, error: error.message };
+  }
+};
+
+/**
+ * Delete a feedback record
+ */
+export const deleteFeedbackRecord = async (id) => {
+  try {
+    const { error } = await supabase
+      .from('feedback')
+      .delete()
+      .eq('id', id);
+
+    if (error) throw error;
+    return { error: null };
+  } catch (error) {
+    console.error('Error deleting feedback:', error);
+    return { error: error.message };
+  }
+};
+
+/**
+ * Update a feedback record
+ */
+export const updateFeedbackRecord = async (id, updatedData) => {
+  try {
+    const { error } = await supabase
+      .from('feedback')
+      .update(updatedData)
+      .eq('id', id);
+
+    if (error) throw error;
+    return { error: null };
+  } catch (error) {
+    console.error('Error updating feedback:', error);
+    return { error: error.message };
+  }
+};
