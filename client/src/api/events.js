@@ -382,3 +382,56 @@ export const updateFeedbackRecord = async (id, updatedData) => {
     return { error: error.message };
   }
 };
+
+/**
+ * Submit a Trip Registration
+ */
+export const submitRegistration = async (registrationData) => {
+  try {
+    const { error } = await supabase
+      .from('registrations')
+      .insert([registrationData]);
+
+    if (error) throw error;
+    return { error: null };
+  } catch (error) {
+    console.error('Error submitting registration:', error);
+    return { error: error.message };
+  }
+};
+
+/**
+ * Fetch All Registrations
+ */
+export const fetchAllRegistrations = async () => {
+  try {
+    const { data, error } = await supabase
+      .from('registrations')
+      .select('*')
+      .order('created_at', { ascending: false });
+
+    if (error) throw error;
+    return { data, error: null };
+  } catch (error) {
+    console.error('Error fetching registrations:', error);
+    return { data: null, error: error.message };
+  }
+};
+
+/**
+ * Delete a Registration
+ */
+export const deleteRegistrationRecord = async (id) => {
+  try {
+    const { error } = await supabase
+      .from('registrations')
+      .delete()
+      .eq('id', id);
+
+    if (error) throw error;
+    return { error: null };
+  } catch (error) {
+    console.error('Error deleting registration:', error);
+    return { error: error.message };
+  }
+};

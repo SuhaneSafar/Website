@@ -3,11 +3,14 @@ import { supabase } from "../supabaseClient";
 import { logoutAdmin } from "../api/auth";
 import toast from "react-hot-toast";
 import { useFeedback } from "../context/FeedbackContext";
+import RegistrationsAdminModal from "./RegistrationsAdminModal";
 
 const Navbar = () => {
   const { openFeedbackModal } = useFeedback();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [user, setUser] = useState(null);
+  const [isRegistrationsModalOpen, setIsRegistrationsModalOpen] = useState(false);
+  const [unseenRegistrationsCount, setUnseenRegistrationsCount] = useState(0);
 
   useEffect(() => {
     // Check for active session upon mount
@@ -24,6 +27,42 @@ const Navbar = () => {
 
     return () => subscription.unsubscribe();
   }, []);
+
+  // Real-time listener for new registrations (only for admins)
+  useEffect(() => {
+    if (!user) return;
+
+    const fetchInitialUnseen = async () => {
+      const lastViewed = localStorage.getItem('lastViewedRegistrations') || new Date(0).toISOString();
+      const { count, error } = await supabase
+        .from('registrations')
+        .select('*', { count: 'exact', head: true })
+        .gt('created_at', lastViewed);
+
+      if (!error) setUnseenRegistrationsCount(count || 0);
+    };
+
+    fetchInitialUnseen();
+
+    const channel = supabase
+      .channel('registrations-changes')
+      .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'registrations' }, (payload) => {
+        setUnseenRegistrationsCount(prev => prev + 1);
+        // Play a subtle notification sound if you like, or just toast
+        toast('New Registration Arrived!', { icon: '🎒', position: 'top-right' });
+      })
+      .subscribe();
+
+    return () => {
+      supabase.removeChannel(channel);
+    };
+  }, [user]);
+
+  const handleOpenRegistrations = () => {
+    setIsRegistrationsModalOpen(true);
+    setUnseenRegistrationsCount(0);
+    localStorage.setItem('lastViewedRegistrations', new Date().toISOString());
+  };
 
   const handleLogout = async () => {
     const { error } = await logoutAdmin();
@@ -43,6 +82,7 @@ const Navbar = () => {
   };
 
   return (
+    <>
     <header className="backdrop-blur-xl bg-gradient-to-br from-slate-900/95 via-sky-900/95 to-slate-900/95 border-b border-white/10 w-full h-20 flex justify-start text-xl font-semibold top-0 px-4 sm:px-6 lg:px-10 fixed z-50 shadow-2xl">
       {/* Enhanced background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-slate-900/60 via-sky-900/60 to-slate-900/60"></div>
@@ -115,7 +155,24 @@ const Navbar = () => {
           </button>
           
           {user ? (
-            <button onClick={handleLogout} className="relative group px-4 py-2 text-white/90 hover:text-white transition-all duration-300 text-sm xl:text-base font-medium flex items-center gap-2">
+            <>
+              <button 
+                onClick={handleOpenRegistrations}
+                className="relative group px-4 py-2 text-white/90 hover:text-white transition-all duration-300 text-sm xl:text-base font-medium flex items-center gap-2"
+              >
+                <span className="relative z-10">Registrations</span>
+                {unseenRegistrationsCount > 0 && (
+                  <span className="relative flex h-5 w-5 z-20">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-5 w-5 bg-red-500 text-[10px] items-center justify-center font-bold text-white shadow-lg">
+                      {unseenRegistrationsCount}
+                    </span>
+                  </span>
+                )}
+                <div className="absolute inset-0 bg-white/10 backdrop-blur-sm rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-green-400 to-green-600 group-hover:w-full transition-all duration-300"></div>
+              </button>
+              <button onClick={handleLogout} className="relative group px-4 py-2 text-white/90 hover:text-white transition-all duration-300 text-sm xl:text-base font-medium flex items-center gap-2">
                 <span className="relative z-10">Logout</span>
               <svg className="relative z-10 w-5 h-5 text-red-500/80 group-hover:text-red-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
@@ -123,6 +180,7 @@ const Navbar = () => {
               <div className="absolute inset-0 bg-white/10 backdrop-blur-sm rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-red-400 to-red-600 group-hover:w-full transition-all duration-300"></div>
             </button>
+            </>
           ) : (
             <a href="/admin/login" className="relative group px-4 py-2 text-white/90 hover:text-white transition-all duration-300 text-sm xl:text-base font-medium flex items-center gap-2">
               <span className="relative z-10">Admin Login</span>
@@ -246,6 +304,23 @@ const Navbar = () => {
           </button>
           
           {user ? (
+            <>
+            <button 
+              onClick={() => { closeMobileMenu(); handleOpenRegistrations(); }} 
+              className="relative group w-full max-w-xs text-center py-3 px-6 text-white/90 hover:text-white transition-all duration-300 text-lg font-medium flex items-center justify-center gap-2"
+            >
+              <span className="relative z-10">Registrations</span>
+              {unseenRegistrationsCount > 0 && (
+                <span className="relative flex h-6 w-6 z-20">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-6 w-6 bg-red-500 text-[12px] items-center justify-center font-bold text-white shadow-lg">
+                    {unseenRegistrationsCount}
+                  </span>
+                </span>
+              )}
+              <div className="absolute inset-0 bg-green-500/10 backdrop-blur-sm rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-green-400 to-green-600 group-hover:w-16 transition-all duration-300"></div>
+            </button>
             <button 
               onClick={() => { handleLogout(); closeMobileMenu(); }} 
               className="relative group w-full max-w-xs text-center py-3 px-6 text-white/90 hover:text-white transition-all duration-300 text-lg font-medium flex items-center justify-center gap-2"
@@ -257,6 +332,7 @@ const Navbar = () => {
               <div className="absolute inset-0 bg-red-500/10 backdrop-blur-sm rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-red-400 to-red-600 group-hover:w-16 transition-all duration-300"></div>
             </button>
+            </>
           ) : (
             <a 
               href="/admin/login" 
@@ -276,6 +352,15 @@ const Navbar = () => {
       </div>
       
     </header>
+
+      {/* Admin Modals */}
+      {user && (
+        <RegistrationsAdminModal 
+          isOpen={isRegistrationsModalOpen} 
+          onClose={() => setIsRegistrationsModalOpen(false)} 
+        />
+      )}
+    </>
   );
 };
 

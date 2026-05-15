@@ -88,21 +88,23 @@ const FeedbackFormModal = () => {
 
       if (dbError) throw dbError;
 
-      // 2. Send directly to your email via FormSubmit
+      // 2. Send directly to your email via Web3Forms (More reliable than FormSubmit)
       try {
-        await fetch("https://formsubmit.co/ajax/suhanesafar28@gmail.com", {
+        await fetch("https://api.web3forms.com/submit", {
           method: "POST",
           headers: { 
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
+            "Content-Type": "application/json",
+            "Accept": "application/json"
           },
           body: JSON.stringify({
+            access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY,
+            subject: "New Feedback Submission from Suhane Safar!",
+            from_name: "Suhane Safar Feedback",
             Name: formData.name,
             Email: formData.email || 'Not provided',
             Phone: formData.phone || 'Not provided',
-            Rating: formData.rating > 0 ? `${formData.rating} Stars` : 'Not provided',
-            Message: formData.message,
-            _subject: "New Feedback Submission from Suhane Safar!"
+            Rating: formData.rating > 0 ? `${formData.rating} Stars` : 'No rating provided',
+            Message: formData.message
           })
         });
       } catch (emailErr) {

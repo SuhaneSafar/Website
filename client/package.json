@@ -12,6 +12,8 @@
   "dependencies": {
     "@supabase/supabase-js": "^2.103.0",
     "@tailwindcss/vite": "^4.1.11",
+    "jspdf": "^4.2.1",
+    "jspdf-autotable": "^5.0.7",
     "lottie-react": "^2.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

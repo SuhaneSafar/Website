@@ -10,12 +10,13 @@ const AdventureFormModal = ({ isOpen, onClose, initialData, onSuccess }) => {
   const [formData, setFormData] = useState({
     title: '',
     subtitle: '',
-    gform: '',
     price: '',
     pickupDrop: '',
     duration: '',
     overview: '',
     lastDate: '',
+    startDate: '',
+    endDate: '',
   });
 
   const [mainImageFile, setMainImageFile] = useState(null); 
@@ -35,12 +36,13 @@ const AdventureFormModal = ({ isOpen, onClose, initialData, onSuccess }) => {
         setFormData({
           title: initialData.title || '',
           subtitle: initialData.subtitle || '',
-          gform: initialData.gform || '',
           price: initialData.price || '',
           pickupDrop: initialData.pickupDrop || '',
           duration: initialData.duration || '',
           overview: initialData.overview || '',
           lastDate: initialData.lastDate || '',
+          startDate: initialData.startDate || '',
+          endDate: initialData.endDate || '',
         });
         setMainImagePreview(initialData.mainImage || null);
         setMainImageFile(null);
@@ -52,7 +54,7 @@ const AdventureFormModal = ({ isOpen, onClose, initialData, onSuccess }) => {
       } else {
         // Add mode - reset
         setFormData({
-          title: '', subtitle: '', gform: '', price: '', pickupDrop: '', duration: '', overview: '', lastDate: ''
+          title: '', subtitle: '', price: '', pickupDrop: '', duration: '', overview: '', lastDate: '', startDate: '', endDate: ''
         });
         setMainImageFile(null);
         setMainImagePreview(null);
@@ -217,10 +219,6 @@ const AdventureFormModal = ({ isOpen, onClose, initialData, onSuccess }) => {
                 <input required type="text" name="subtitle" value={formData.subtitle} onChange={handleInputChange} className="w-full bg-slate-950 border border-slate-700 text-white rounded-lg px-3 py-2 text-sm focus:ring-1 focus:ring-sky-500 focus:outline-none" />
               </div>
               <div className="space-y-1">
-                <label className="text-slate-300 text-xs font-bold">Google Form Link</label>
-                <input type="url" name="gform" value={formData.gform} onChange={handleInputChange} className="w-full bg-slate-950 border border-slate-700 text-white rounded-lg px-3 py-2 text-sm focus:ring-1 focus:ring-sky-500 focus:outline-none" />
-              </div>
-              <div className="space-y-1">
                 <label className="text-slate-300 text-xs font-bold">Price</label>
                 <input required type="text" name="price" placeholder="4499" value={formData.price} onChange={handleInputChange} className="w-full bg-slate-950 border border-slate-700 text-white rounded-lg px-3 py-2 text-sm focus:ring-1 focus:ring-sky-500 focus:outline-none" />
               </div>
@@ -232,9 +230,17 @@ const AdventureFormModal = ({ isOpen, onClose, initialData, onSuccess }) => {
                 <label className="text-slate-300 text-xs font-bold">Duration</label>
                 <input type="text" name="duration" placeholder="3 Days / 2 Nights" value={formData.duration} onChange={handleInputChange} className="w-full bg-slate-950 border border-slate-700 text-white rounded-lg px-3 py-2 text-sm focus:ring-1 focus:ring-sky-500 focus:outline-none" />
               </div>
-               <div className="space-y-1">
-                <label className="text-slate-300 text-xs font-bold">Last Date</label>
+              <div className="space-y-1">
+                <label className="text-slate-300 text-xs font-bold">Last Date to Register</label>
                 <input type="text" name="lastDate" placeholder="26 March 2026" value={formData.lastDate} onChange={handleInputChange} className="w-full bg-slate-950 border border-slate-700 text-white rounded-lg px-3 py-2 text-sm focus:ring-1 focus:ring-sky-500 focus:outline-none" />
+              </div>
+              <div className="space-y-1">
+                <label className="text-slate-300 text-xs font-bold">Trip Start Date</label>
+                <input required type="date" name="startDate" value={formData.startDate} onChange={handleInputChange} className="w-full bg-slate-950 border border-slate-700 text-white rounded-lg px-3 py-2 text-sm focus:ring-1 focus:ring-sky-500 focus:outline-none [color-scheme:dark]" />
+              </div>
+              <div className="space-y-1">
+                <label className="text-slate-300 text-xs font-bold">Trip End Date</label>
+                <input required type="date" name="endDate" value={formData.endDate} onChange={handleInputChange} className="w-full bg-slate-950 border border-slate-700 text-white rounded-lg px-3 py-2 text-sm focus:ring-1 focus:ring-sky-500 focus:outline-none [color-scheme:dark]" />
               </div>
             </div>
 

@@ -4,6 +4,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { fetchAdventures, deleteAdventure } from '../api/events';
 import { supabase } from '../supabaseClient';
 import AdventureFormModal from './AdventureFormModal';
+import { useRegistration } from '../context/RegistrationContext';
 import toast from 'react-hot-toast';
 import {
   FaMapMarkerAlt,
@@ -25,6 +26,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const UpcomingAdventures = () => {
+  const { openRegistrationModal } = useRegistration();
   const [selectedEvent, setSelectedEvent] = useState(null);
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -530,15 +532,13 @@ const UpcomingAdventures = () => {
 
               {/* CTA Button */}
               <div className="text-center">
-                <a
-                  href={selectedEvent.gform}
+                <button
+                  onClick={() => openRegistrationModal({ ...selectedEvent, type: 'adventure' })}
                   className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-700 hover:from-blue-700 hover:via-purple-700 hover:to-blue-800 text-white text-lg font-bold px-8 py-4 rounded-2xl shadow-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
-                  target="_blank"
-                  rel="noopener noreferrer"
                 >
                   <FaCalendarAlt />
                   Book This Adventure
-                </a>
+                </button>
               </div>
             </div>
           </div>

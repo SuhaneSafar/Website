@@ -6,6 +6,7 @@ import { FaCar, FaChevronLeft, FaChevronRight, FaMapMarkerAlt, FaClock, FaTimesC
 import { supabase } from '../supabaseClient';
 import { fetchCommunityTrips, deleteCommunityTrip } from '../api/events';
 import CommunityTripFormModal from './CommunityTripFormModal';
+import { useRegistration } from '../context/RegistrationContext';
 import toast from 'react-hot-toast';
 
 // Import Swiper styles
@@ -15,6 +16,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-cards';
 
 const CommunityTrips = () => {
+  const { openRegistrationModal } = useRegistration();
   const [showModal, setShowModal] = useState(false);
   const [tripsData, setTripsData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -77,12 +79,10 @@ const CommunityTrips = () => {
     setIsFormModalOpen(true);
   };
 
-  const handleRegisterClick = (registrationLink) => {
-    if (registrationLink === "Not aviable") {
-      setShowModal(true);
-    } else {
-      window.open(registrationLink, "_blank", "noopener,noreferrer");
-    }
+  const handleRegisterClick = (trip) => {
+    // If you need a way to mark trips as "closed", you can add a status column later.
+    // For now, always open the new native modal.
+    openRegistrationModal({ ...trip, type: 'community' });
   };
 
   if (loading) {
@@ -246,7 +246,7 @@ const CommunityTrips = () => {
                     </div>
                   </div>
                   <button
-                    onClick={() => handleRegisterClick(trip.registrationLink)}
+                    onClick={() => handleRegisterClick(trip)}
                     className="w-full bg-gradient-to-r from-sky-600 to-sky-700 hover:from-sky-700 hover:to-sky-800 text-white font-semibold py-3 rounded-xl shadow-lg text-lg transition-all duration-300 transform hover:scale-105"
                   >
                     Register Now

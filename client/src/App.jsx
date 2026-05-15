@@ -4,6 +4,7 @@ import { Toaster } from 'react-hot-toast'
 import RoutesView from './container/RoutesView'
 
 import FeedbackFormModal from './components/FeedbackFormModal'
+import RegistrationModal from './components/RegistrationModal'
 
 function App() {
   
@@ -12,6 +13,7 @@ function App() {
       <RoutesView />
       <Toaster />
       <FeedbackFormModal />
+      <RegistrationModal />
     </Router>
   )
 }

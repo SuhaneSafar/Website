@@ -11,7 +11,8 @@ const CommunityTripFormModal = ({ isOpen, onClose, initialData, onSuccess }) => 
     title: '',
     duration: '',
     price: '',
-    registrationLink: '',
+    startDate: '',
+    endDate: '',
   });
 
   const [mainImageFile, setMainImageFile] = useState(null); 
@@ -27,14 +28,15 @@ const CommunityTripFormModal = ({ isOpen, onClose, initialData, onSuccess }) => 
           title: initialData.title || '',
           duration: initialData.duration || '',
           price: initialData.price || '',
-          registrationLink: initialData.registrationLink || '',
+          startDate: initialData.startDate || '',
+          endDate: initialData.endDate || '',
         });
         setMainImagePreview(initialData.image || null);
         setMainImageFile(null);
         setTags(initialData.tags?.length ? initialData.tags : ['']);
       } else {
         setFormData({
-          title: '', duration: '', price: '', registrationLink: ''
+          title: '', duration: '', price: '', startDate: '', endDate: ''
         });
         setMainImageFile(null);
         setMainImagePreview(null);
@@ -154,8 +156,12 @@ const CommunityTripFormModal = ({ isOpen, onClose, initialData, onSuccess }) => 
                 <input required type="number" name="price" value={formData.price} onChange={handleInputChange} className="w-full bg-slate-950 border border-slate-700 text-white rounded-lg px-3 py-2 text-sm focus:ring-1 focus:ring-sky-500 focus:outline-none" placeholder="e.g. 5999" />
               </div>
               <div className="space-y-1">
-                <label className="text-slate-300 text-xs font-bold">Registration Link</label>
-                <input type="text" name="registrationLink" value={formData.registrationLink} onChange={handleInputChange} className="w-full bg-slate-950 border border-slate-700 text-white rounded-lg px-3 py-2 text-sm focus:ring-1 focus:ring-sky-500 focus:outline-none" placeholder="URL or 'Not aviable'" />
+                <label className="text-slate-300 text-xs font-bold">Trip Start Date</label>
+                <input required type="date" name="startDate" value={formData.startDate} onChange={handleInputChange} className="w-full bg-slate-950 border border-slate-700 text-white rounded-lg px-3 py-2 text-sm focus:ring-1 focus:ring-sky-500 focus:outline-none [color-scheme:dark]" />
+              </div>
+              <div className="space-y-1">
+                <label className="text-slate-300 text-xs font-bold">Trip End Date</label>
+                <input required type="date" name="endDate" value={formData.endDate} onChange={handleInputChange} className="w-full bg-slate-950 border border-slate-700 text-white rounded-lg px-3 py-2 text-sm focus:ring-1 focus:ring-sky-500 focus:outline-none [color-scheme:dark]" />
               </div>
             </div>
 
